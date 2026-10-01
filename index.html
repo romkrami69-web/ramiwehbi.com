@@ -1,115 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rami Wehbi — Wedding & Fine Art Photographer</title>
-<meta name="description" content="Rami Wehbi Photography — cinematic wedding and fine art photography in Lebanon and worldwide.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aperture &mdash; Free Photography Portfolio Template by uiCookies</title>
+    <meta name="description" content="Aperture is a free, image-first Bootstrap 5 photography portfolio template — masonry gallery with a hand-built vanilla lightbox, package pricing, and zero script dependencies.">
 
-<div class="loader"><div class="loader-name">RAMI WEHBI</div><div class="loader-line"><span></span></div></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<header class="nav">
-  <a class="logo" href="#top"><b>RW</b><span>RAMI WEHBI<br>PHOTOGRAPHY</span></a>
-  <nav>
-    <a href="#work">Work</a><a href="#story">Story</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
-  </nav>
-  <a class="book-link" href="#contact">Book your date <span>↗</span></a>
-</header>
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-<main id="top">
-<section class="hero">
-  <img src="wedding-1.jpeg" alt="Wedding couple">
-  <div class="hero-gradient"></div>
-  <div class="hero-top"><span>LEBANON</span><i></i><span>WORLDWIDE</span></div>
-  <div class="hero-title">
-    <p class="kicker">WEDDING · EDITORIAL · FINE ART</p>
-    <h1>Stories<br><em>worth keeping.</em></h1>
-    <p class="hero-copy">Photographs for couples who want their wedding memories to feel as beautiful as the day itself.</p>
-    <a class="circle-link" href="#work"><span>Explore<br>the work</span><b>↓</b></a>
-  </div>
-  <div class="hero-bottom"><span>SCROLL</span><div></div><span>01 / 05</span></div>
-</section>
+    <a class="ap-skip" href="#main">Skip to content</a>
 
-<section class="manifesto">
-  <div class="number">01</div>
-  <div>
-    <p class="kicker">THE PHILOSOPHY</p>
-    <h2>Quiet moments.<br><em>Beautifully directed.</em></h2>
-    <p class="manifesto-text">My approach blends editorial direction with real emotion — creating photographs that are polished enough for a magazine, yet personal enough to feel like your own story.</p>
-  </div>
-</section>
+    <!-- ============ HEADER ============ -->
+    <header class="ap-header" id="top">
+      <div class="ap-header__inner">
+        <a class="ap-brand" href="#top" aria-label="Aperture — home">
+          <span class="ap-brand__mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="13" cy="13" r="11.25" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M13 1.9 8.1 10.4h9.8L13 1.9Z" fill="currentColor" opacity=".9"/>
+              <path d="M24.1 13 19.2 4.6l-4.9 8.5 9.8 8.5-.0-8.6Z" fill="currentColor" opacity=".55"/>
+              <path d="M13 24.1 17.9 15.6H8.1L13 24.1Z" fill="currentColor" opacity=".9"/>
+              <path d="M1.9 13 6.8 21.4l4.9-8.5L1.9 4.4 1.9 13Z" fill="currentColor" opacity=".55"/>
+              <circle cx="13" cy="13" r="3.1" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="ap-brand__word">Aperture</span>
+        </a>
 
-<section id="work" class="work">
-  <div class="work-head">
-    <div><p class="kicker">SELECTED STORIES</p><h2>Recent <em>work</em></h2></div>
-    <p>01—09 / A collection of wedding and fine art imagery.</p>
-  </div>
-  <div class="gallery">
-    <figure class="g1"><img src="wedding-2.jpeg" alt="Wedding couple"></figure>
-    <figure class="g2"><img src="wedding-3.jpeg" alt="Bride portrait"></figure>
-    <figure class="g3"><img src="wedding-4.jpeg" alt="Wedding staircase portrait"></figure>
-    <figure class="g4"><img src="wedding-5.jpeg" alt="Fine art bride portrait"></figure>
-    <figure class="g5"><img src="wedding-6.jpeg" alt="Wedding couple portrait"></figure>
-    <figure class="g6"><img src="wedding-7.jpeg" alt="Wedding couple outdoors"></figure>
-    <figure class="g7"><img src="wedding-8.jpeg" alt="Wedding portrait"></figure>
-    <figure class="g8"><img src="wedding-9.jpeg" alt="Wedding close portrait"></figure>
-    <figure class="g9"><img src="wedding-10.jpeg" alt="Romantic wedding portrait"></figure>
-  </div>
-  <div class="view-all"><a href="#contact">View availability <span>↗</span></a></div>
-</section>
+        <nav class="ap-nav" aria-label="Primary">
+          <button class="ap-nav__toggle" type="button" aria-expanded="false" aria-controls="ap-menu" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="ap-nav__list" id="ap-menu">
+            <li><a href="#work" data-nav>Work</a></li>
+            <li><a href="#about" data-nav>Studio</a></li>
+            <li><a href="#services" data-nav>Packages</a></li>
+            <li><a href="#stories" data-nav>Stories</a></li>
+            <li><a href="#contact" class="ap-nav__cta" data-nav>Book a shoot</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<section id="story" class="story">
-  <div class="story-photo"><img src="wedding-5.jpeg" alt="Rami Wehbi wedding photography"></div>
-  <div class="story-content">
-    <p class="kicker">RAMI WEHBI PHOTOGRAPHY</p>
-    <h2>The art of<br><em>remembering.</em></h2>
-    <p>There is a difference between taking pictures and telling a story. I look for the gestures, glances and atmosphere that make your celebration unmistakably yours.</p>
-    <p>From the first portrait to the final dance, every frame is created with intention — natural when it should be natural, directed when it should be iconic.</p>
-    <div class="signature">Rami Wehbi</div>
-  </div>
-</section>
+    <main id="main">
 
-<section id="experience" class="experience">
-  <div class="exp-intro"><p class="kicker">THE EXPERIENCE</p><h2>Designed around<br><em>your story.</em></h2></div>
-  <div class="exp-list">
-    <article><span>01</span><div><h3>Editorial Portraits</h3><p>Refined posing, elegant composition and confident direction for photographs with a fashion-editorial feeling.</p></div></article>
-    <article><span>02</span><div><h3>Unscripted Emotion</h3><p>Quiet observation throughout the day, preserving the moments you didn't even know were happening.</p></div></article>
-    <article><span>03</span><div><h3>Fine Art Retouching</h3><p>A carefully finished visual style with attention to skin, light, tone and every small detail.</p></div></article>
-    <article><span>04</span><div><h3>Destination Weddings</h3><p>Available across Lebanon and for celebrations worldwide.</p></div></article>
-  </div>
-</section>
+      <!-- ============ HERO ============ -->
+      <section class="ap-hero" aria-labelledby="ap-hero-title">
+        <img class="ap-hero__img" src="img/hero.jpg" alt="Golden-hour portrait shot on the Oregon coast, backlit by low winter sun" fetchpriority="high">
+        <div class="ap-hero__scrim" aria-hidden="true"></div>
+        <div class="ap-hero__inner">
+          <p class="ap-eyebrow ap-eyebrow--light">Portland, OR &nbsp;·&nbsp; Est. 2014</p>
+          <h1 class="ap-hero__title" id="ap-hero-title">Light,<br>held still.</h1>
+          <p class="ap-hero__lede">Aperture is the portrait, wedding &amp; landscape studio of <strong>Nadia Vestergaard</strong> — quiet frames made in real light, from the coast to the timber country.</p>
+          <div class="ap-hero__actions">
+            <a class="ap-btn ap-btn--solid" href="#work">See the work</a>
+            <a class="ap-btn ap-btn--ghost" href="#contact">Book a session</a>
+          </div>
+        </div>
+        <a class="ap-hero__cue" href="#intro" aria-label="Scroll to introduction">
+          <span class="ap-hero__cue-line" aria-hidden="true"></span>
+          Scroll
+        </a>
+      </section>
 
-<section class="statement-image">
-  <img src="wedding-10.jpeg" alt="Wedding fine art photograph">
-  <div><p>MAKE IT<br><em>TIMELESS.</em></p><span>RAMI WEHBI / 2026</span></div>
-</section>
+      <!-- ============ INTRO / STATEMENT + STATS ============ -->
+      <section class="ap-intro" id="intro" aria-labelledby="ap-intro-title">
+        <div class="ap-shell ap-intro__grid">
+          <div class="ap-intro__lead ap-reveal">
+            <p class="ap-eyebrow">The approach</p>
+            <h2 class="ap-intro__title" id="ap-intro-title">I photograph the ten seconds nobody poses for.</h2>
+          </div>
+          <div class="ap-intro__body ap-reveal">
+            <p>No shot-lists shouted across a field, no stiff hands on hips. I work slow and close — reading the light, waiting for the pause between the poses. What comes back is a set of frames that still smells like the day they were made.</p>
+            <p>Everything you see here was shot on location in natural light and finished by hand. No presets sold as a personality. Just film-honest color and a little patience.</p>
+          </div>
+        </div>
+        <div class="ap-shell">
+          <dl class="ap-stats ap-reveal">
+            <div class="ap-stat">
+              <dt>Weddings documented</dt>
+              <dd><span data-count="240">240</span><span class="ap-stat__plus">+</span></dd>
+            </div>
+            <div class="ap-stat">
+              <dt>Years behind the lens</dt>
+              <dd><span data-count="11">11</span></dd>
+            </div>
+            <div class="ap-stat">
+              <dt>Rolls of film a year</dt>
+              <dd><span data-count="600">600</span><span class="ap-stat__plus">+</span></dd>
+            </div>
+            <div class="ap-stat">
+              <dt>Editorial features</dt>
+              <dd><span data-count="18">18</span></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-<section class="quote"><p>“Your wedding day happens once.<br><em>Your photographs should last forever.</em>”</p></section>
+      <!-- ============ GALLERY ============ -->
+      <section class="ap-work" id="work" aria-labelledby="ap-work-title">
+        <div class="ap-shell">
+          <div class="ap-section-head ap-reveal">
+            <div>
+              <p class="ap-eyebrow">Selected frames</p>
+              <h2 class="ap-section-title" id="ap-work-title">The portfolio</h2>
+            </div>
+            <p class="ap-section-note">Tap any frame to open it full-size. Use the arrow keys to move through the set.</p>
+          </div>
 
-<section id="contact" class="contact">
-  <p class="kicker">LET'S TALK</p>
-  <h2>Your date.<br><em>Your story.</em></h2>
-  <p>Tell me your wedding date, location and vision. I’ll reply with availability and the complete experience.</p>
-  <div class="contact-buttons">
-    <a class="primary" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp <span>↗</span></a>
-    <a class="secondary" href="mailto:info@ramiwehbi.com">info@ramiwehbi.com <span>↗</span></a>
-  </div>
-  <div class="contact-meta"><span>LEBANON · WORLDWIDE</span><span>@ramiwehbiphotographyy</span></div>
-</section>
-</main>
+          <div class="ap-filter ap-reveal" role="group" aria-label="Filter gallery by category">
+            <button class="ap-filter__btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="ap-filter__btn" type="button" data-filter="portrait" aria-pressed="false">Portrait</button>
+            <button class="ap-filter__btn" type="button" data-filter="wedding" aria-pressed="false">Wedding</button>
+            <button class="ap-filter__btn" type="button" data-filter="landscape" aria-pressed="false">Landscape</button>
+          </div>
+        </div>
 
-<footer><div class="footer-logo">RAMI WEHBI <small>PHOTOGRAPHY</small></div><p>© 2026 Rami Wehbi Photography</p><a href="#top">Back to top ↑</a></footer>
+        <div class="ap-shell">
+          <div class="ap-masonry" id="ap-gallery">
 
-<script>
-window.addEventListener('load',()=>document.body.classList.add('loaded'));
-const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
-document.querySelectorAll('section,.gallery figure,.exp-list article').forEach(el=>{el.classList.add('reveal');reveal.observe(el)});
-</script>
-</body>
+            <figure class="ap-tile ap-reveal" data-cat="portrait">
+              <button class="ap-tile__btn" type="button" data-full="img/g1.jpg" data-caption="Ilse, studio daylight — Portland" data-exif="Kodak Portra 400 · 85mm · f/1.4">
+                <img src="img/g1.jpg" alt="Studio portrait of a woman turned toward a north-facing window" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 01</span><span class="ap-tile__exif">85mm · f/1.4</span></span>
+              </button>
+            </figure>
+
+            <figure class="ap-tile ap-reveal" data-cat="landscape">
+              <button class="ap-tile__btn" type="button" data-full="img/g2.jpg" data-caption="Fog line over the Coast Range at dawn" data-exif="Ektar 100 · 35mm · f/8">
+                <img src="img/g2.jpg" alt="Layered ridgelines of the Oregon Coast Range under morning fog" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 02</span><span class="ap-tile__exif">35mm · f/8</span></span>
+              </button>
+            </figure>
+
+            <figure class="ap-tile ap-reveal" data-cat="wedding">
+              <button class="ap-tile__btn" type="button" data-full="img/g3.jpg" data-caption="First look — Maren &amp; Cole, Hood River orchard" data-exif="Portra 800 · 50mm · f/2">
+                <img src="img/g3.jpg" alt="A couple's first look moment in a fruit orchard at dusk" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 03</span><span class="ap-tile__exif">50mm · f/2</span></span>
+              </button>
+            </figure>
+
+            <figure class="ap-tile ap-reveal" data-cat="portrait">
+              <button class="ap-tile__btn" type="button" data-full="img/g4.jpg" data-caption="June, available light — home sitting" data-exif="Portra 400 · 105mm · f/2.8">
+                <img src="img/g4.jpg" alt="Close natural-light portrait of a woman smiling softly indoors" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 04</span><span class="ap-tile__exif">105mm · f/2.8</span></span>
+              </button>
+            </figure>
+
+            <figure class="ap-tile ap-reveal" data-cat="landscape">
+              <button class="ap-tile__btn" type="button" data-full="img/g5.jpg" data-caption="Alpine light, Cascade traverse" data-exif="Velvia 50 · 24mm · f/11">
+                <img src="img/g5.jpg" alt="Sunlit granite peak of a Cascade mountain against clear sky" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 05</span><span class="ap-tile__exif">24mm · f/11</span></span>
+              </button>
+            </figure>
+
+            <figure class="ap-tile ap-reveal" data-cat="landscape">
+              <button class="ap-tile__btn" type="button" data-full="img/g6.jpg" data-caption="Quiet block, early Sunday — SE Portland" data-exif="Tri-X 400 · 28mm · f/5.6">
+                <img src="img/g6.jpg" alt="Empty city street in soft morning light, black and white feel" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 06</span><span class="ap-tile__exif">28mm · f/5.6</span></span>
+              </button>
+            </figure>
+
+            <figure class="ap-tile ap-reveal" data-cat="wedding">
+              <button class="ap-tile__btn" type="button" data-full="img/g7.jpg" data-caption="Last dance — Astoria barn, no flash" data-exif="Portra 800 · 35mm · f/1.8">
+                <img src="img/g7.jpg" alt="Couple sharing their last dance in low warm barn light" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 07</span><span class="ap-tile__exif">35mm · f/1.8</span></span>
+              </button>
+            </figure>
+
+            <figure class="ap-tile ap-reveal" data-cat="portrait">
+              <button class="ap-tile__btn" type="button" data-full="img/g8.jpg" data-caption="Theo, studio session — hard key" data-exif="Delta 100 · 90mm · f/4">
+                <img src="img/g8.jpg" alt="Studio portrait of a man lit with a single hard key light" loading="lazy">
+                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 08</span><span class="ap-tile__exif">90mm · f/4</span></span>
+              </button>
+            </figure>
+
+          </div>
+          <p class="ap-work__empty" hidden>No frames in this set yet — try another filter.</p>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="ap-about" id="about" aria-labelledby="ap-about-title">
+        <div class="ap-shell ap-about__grid">
+          <div class="ap-about__media ap-reveal">
+            <img src="img/about.jpg" alt="Photographer Nadia Vestergaard loading a roll of film into a medium-format camera">
+            <span class="ap-about__tag">Nadia, on the Nehalem &mdash; 2025</span>
+          </div>
+          <div class="ap-about__text ap-reveal">
+            <p class="ap-eyebrow">The studio</p>
+            <h2 class="ap-about__title" id="ap-about-title">Hello, I&rsquo;m Nadia.</h2>
+            <p class="ap-lead">I started Aperture in a rented darkroom off Alberta Street with one Pentax and too much stubbornness. Eleven years on, it&rsquo;s still just me — which means the person you meet for coffee is the person behind the camera and the one who hands back your prints.</p>
+            <p>I shoot a mix of digital and 35mm/medium-format film, and I finish every frame myself. I&rsquo;ll travel anywhere there&rsquo;s good light and a reason to be there. If your day is loud and full or small and barefoot, I&rsquo;ll meet it where it is.</p>
+            <ul class="ap-facts">
+              <li><span>Based in</span> Portland, Oregon</li>
+              <li><span>Shooting since</span> 2014</li>
+              <li><span>Formats</span> Digital · 35mm · 120</li>
+              <li><span>Travel</span> PNW &amp; worldwide</li>
+            </ul>
+            <a class="ap-btn ap-btn--dark" href="#contact">Start a conversation</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES / PACKAGES ============ -->
+      <section class="ap-services" id="services" aria-labelledby="ap-services-title">
+        <div class="ap-shell">
+          <div class="ap-section-head ap-reveal">
+            <div>
+              <p class="ap-eyebrow">What it costs</p>
+              <h2 class="ap-section-title" id="ap-services-title">Packages &amp; pricing</h2>
+            </div>
+            <p class="ap-section-note">Honest, all-in numbers. Custom day rates for editorial and brand work — just ask.</p>
+          </div>
+
+          <div class="ap-plans">
+
+            <article class="ap-plan ap-reveal">
+              <header class="ap-plan__head">
+                <h3 class="ap-plan__name">Portrait Session</h3>
+                <p class="ap-plan__price"><span class="ap-plan__num">$350</span></p>
+                <p class="ap-plan__sub">Individuals, couples &amp; families</p>
+              </header>
+              <ul class="ap-plan__list">
+                <li>90-minute session, one location</li>
+                <li>Pre-shoot planning call</li>
+                <li>25 hand-edited high-res images</li>
+                <li>Private online gallery for a year</li>
+                <li>Print-release for personal use</li>
+              </ul>
+              <a class="ap-btn ap-btn--outline" href="#contact">Book a portrait</a>
+            </article>
+
+            <article class="ap-plan ap-plan--feature ap-reveal">
+              <span class="ap-plan__flag">Most booked</span>
+              <header class="ap-plan__head">
+                <h3 class="ap-plan__name">Wedding Collection</h3>
+                <p class="ap-plan__price"><span class="ap-plan__from">from</span><span class="ap-plan__num">$2,400</span></p>
+                <p class="ap-plan__sub">Full-day coverage, start to last dance</p>
+              </header>
+              <ul class="ap-plan__list">
+                <li>Up to 8 hours, two photographers</li>
+                <li>Engagement session included</li>
+                <li>400+ edited images, film &amp; digital</li>
+                <li>Sneak peek within 48 hours</li>
+                <li>Heirloom gallery &amp; print store</li>
+              </ul>
+              <a class="ap-btn ap-btn--solid" href="#contact">Check your date</a>
+            </article>
+
+            <article class="ap-plan ap-reveal">
+              <header class="ap-plan__head">
+                <h3 class="ap-plan__name">Editorial &amp; Brand</h3>
+                <p class="ap-plan__price"><span class="ap-plan__num">$1,200</span><span class="ap-plan__unit">/ day</span></p>
+                <p class="ap-plan__sub">Lookbooks, campaigns &amp; press</p>
+              </header>
+              <ul class="ap-plan__list">
+                <li>Half &amp; full-day rates available</li>
+                <li>Art direction &amp; shot planning</li>
+                <li>Commercial usage licensing</li>
+                <li>Same-week selects delivery</li>
+                <li>Studio or on-location</li>
+              </ul>
+              <a class="ap-btn ap-btn--outline" href="#contact">Request a quote</a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FEATURED SHOOT BAND ============ -->
+      <section class="ap-featured" id="featured" aria-labelledby="ap-featured-title">
+        <img class="ap-featured__img" src="img/featured.jpg" alt="Maren and Cole standing at a coastal overlook during their elopement at sunset" loading="lazy">
+        <div class="ap-featured__scrim" aria-hidden="true"></div>
+        <div class="ap-shell ap-featured__inner ap-reveal">
+          <p class="ap-eyebrow ap-eyebrow--light">Featured story</p>
+          <h2 class="ap-featured__title" id="ap-featured-title">Maren &amp; Cole &mdash; an elopement on the edge of the Pacific</h2>
+          <p class="ap-featured__text">Two people, a borrowed cabin, and a storm that cleared at exactly the right hour. We hiked out past Ecola at 5 a.m. and shot until the light gave up. It&rsquo;s still one of my favorite days on the job.</p>
+          <a class="ap-btn ap-btn--ghost" href="#work">View the full set</a>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="ap-quotes" id="stories" aria-labelledby="ap-quotes-title">
+        <div class="ap-shell">
+          <div class="ap-section-head ap-reveal">
+            <div>
+              <p class="ap-eyebrow">In their words</p>
+              <h2 class="ap-section-title" id="ap-quotes-title">What couples say</h2>
+            </div>
+            <p class="ap-section-note">A few notes from people who trusted me with their day.</p>
+          </div>
+
+          <div class="ap-quote-grid">
+            <figure class="ap-quote ap-reveal">
+              <div class="ap-quote__stars" aria-label="Five out of five stars">
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>&ldquo;Nadia disappears at exactly the right moments. We barely noticed the camera, and yet somehow she caught every look that mattered. The film scans wreck me every time.&rdquo;</blockquote>
+              <figcaption><span class="ap-quote__name">Maren &amp; Cole</span><span class="ap-quote__role">Elopement · Cannon Beach</span></figcaption>
+            </figure>
+
+            <figure class="ap-quote ap-reveal">
+              <div class="ap-quote__stars" aria-label="Five out of five stars">
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>&ldquo;I hate having my picture taken and told her so on the call. She still got me to laugh for real. Best headshots I&rsquo;ve ever had &mdash; my whole team switched to her.&rdquo;</blockquote>
+              <figcaption><span class="ap-quote__name">Priya Raman</span><span class="ap-quote__role">Brand portraits · Studio</span></figcaption>
+            </figure>
+
+            <figure class="ap-quote ap-reveal">
+              <div class="ap-quote__stars" aria-label="Five out of five stars">
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>&ldquo;We got the gallery back and my mom cried in the kitchen. That&rsquo;s the whole review, honestly. Worth every dollar and then some.&rdquo;</blockquote>
+              <figcaption><span class="ap-quote__name">The Okonkwo Family</span><span class="ap-quote__role">Family session · Forest Park</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="ap-contact" id="contact" aria-labelledby="ap-contact-title">
+        <div class="ap-shell ap-contact__grid">
+          <div class="ap-contact__intro ap-reveal">
+            <p class="ap-eyebrow">Let&rsquo;s make something</p>
+            <h2 class="ap-contact__title" id="ap-contact-title">Tell me about your day.</h2>
+            <p class="ap-lead">The best way to start is a few honest lines about what you&rsquo;re picturing. I reply to every message within two working days.</p>
+            <ul class="ap-contact__list">
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <a href="mailto:hello@aperture.studio">hello@aperture.studio</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M5 4h3l1.6 4-2 1.4a12 12 0 0 0 5 5l1.4-2 4 1.6V19a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                <a href="tel:+15035550142">(503) 555-0142</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+                <span>Studio at 218 NE Alberta St, Portland</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="ap-form ap-reveal" id="ap-contact-form" novalidate>
+            <div class="ap-field">
+              <label for="ap-name">Your name</label>
+              <input type="text" id="ap-name" name="name" autocomplete="name" required placeholder="Maren Okonkwo">
+              <span class="ap-field__error" data-error>Please add your name.</span>
+            </div>
+            <div class="ap-field">
+              <label for="ap-email">Email</label>
+              <input type="email" id="ap-email" name="email" autocomplete="email" required placeholder="you@example.com">
+              <span class="ap-field__error" data-error>Please add a valid email.</span>
+            </div>
+            <div class="ap-field ap-field--half">
+              <label for="ap-type">Session type</label>
+              <select id="ap-type" name="type">
+                <option>Portrait</option>
+                <option>Wedding</option>
+                <option>Elopement</option>
+                <option>Editorial / Brand</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="ap-field ap-field--half">
+              <label for="ap-date">Approx. date</label>
+              <input type="date" id="ap-date" name="date">
+            </div>
+            <div class="ap-field">
+              <label for="ap-message">The story so far</label>
+              <textarea id="ap-message" name="message" rows="4" required placeholder="Where, when, and what it should feel like…"></textarea>
+              <span class="ap-field__error" data-error>Tell me a little about it.</span>
+            </div>
+            <button class="ap-btn ap-btn--solid ap-form__submit" type="submit">Send enquiry</button>
+            <p class="ap-form__ok" role="status" hidden>Thank you — your message is on its way. I&rsquo;ll be in touch within two working days.</p>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="ap-footer">
+      <div class="ap-shell ap-footer__grid">
+        <div class="ap-footer__brand">
+          <a class="ap-brand ap-brand--footer" href="#top" aria-label="Aperture — back to top">
+            <span class="ap-brand__mark" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="11.25" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M13 1.9 8.1 10.4h9.8L13 1.9Z" fill="currentColor" opacity=".9"/>
+                <path d="M24.1 13 19.2 4.6l-4.9 8.5 9.8 8.5-.0-8.6Z" fill="currentColor" opacity=".55"/>
+                <path d="M13 24.1 17.9 15.6H8.1L13 24.1Z" fill="currentColor" opacity=".9"/>
+                <path d="M1.9 13 6.8 21.4l4.9-8.5L1.9 4.4 1.9 13Z" fill="currentColor" opacity=".55"/>
+                <circle cx="13" cy="13" r="3.1" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="ap-brand__word">Aperture</span>
+          </a>
+          <p class="ap-footer__tag">Portrait, wedding &amp; landscape photography made in real light. Portland, Oregon &amp; wherever the work takes me.</p>
+        </div>
+
+        <nav class="ap-footer__col" aria-label="Explore">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#about">The studio</a></li>
+            <li><a href="#services">Packages</a></li>
+            <li><a href="#stories">Stories</a></li>
+          </ul>
+        </nav>
+
+        <nav class="ap-footer__col" aria-label="Elsewhere">
+          <h3>Elsewhere</h3>
+          <ul class="ap-footer__social">
+            <li><a href="#top" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+              Instagram</a></li>
+            <li><a href="#top" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9.5 19c-.3-1.6 0-3 .6-5.3.4-1.5-.3-3 1.2-4a2.4 2.4 0 0 1 3.6 2c0 2-1 3.6-2.5 3.6-.9 0-1.4-.7-1.2-1.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Pinterest</a></li>
+            <li><a href="#top" aria-label="Journal">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M6 4h9l4 4v12H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12h7M9 15.5h7M9 8.5h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Journal</a></li>
+          </ul>
+        </nav>
+
+        <div class="ap-footer__col ap-footer__note">
+          <h3>Studio hours</h3>
+          <p>Tue &ndash; Sat, by appointment<br>218 NE Alberta St, Portland OR</p>
+          <a class="ap-btn ap-btn--outline ap-btn--sm" href="#contact">Book a shoot</a>
+        </div>
+      </div>
+
+      <div class="ap-shell ap-footer__bar">
+        <p>&copy; 2026 Aperture Studio &mdash; Nadia Vestergaard. All frames are illustrative.</p>
+        <p>Free template by <a href="https://uicookies.com/" target="_blank" rel="noopener">uiCookies</a></p>
+      </div>
+    </footer>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="ap-lb" id="ap-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <div class="ap-lb__backdrop" data-lb-close></div>
+      <button class="ap-lb__btn ap-lb__close" type="button" data-lb-close aria-label="Close viewer">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button class="ap-lb__btn ap-lb__nav ap-lb__prev" type="button" data-lb-prev aria-label="Previous image">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="ap-lb__btn ap-lb__nav ap-lb__next" type="button" data-lb-next aria-label="Next image">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <figure class="ap-lb__stage">
+        <img class="ap-lb__img" id="ap-lb-img" src="" alt="">
+        <figcaption class="ap-lb__cap">
+          <span class="ap-lb__title" id="ap-lb-cap"></span>
+          <span class="ap-lb__exif" id="ap-lb-exif"></span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
