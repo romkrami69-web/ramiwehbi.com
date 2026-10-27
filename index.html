@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rami Wehbi Photography | Wedding & Outdoor Photographer in Lebanon</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rami Wehbi Photography | Wedding &amp; Outdoor Photographer in Lebanon</title>
     <meta name="description" content="Rami Wehbi Photography — wedding, portrait &amp; outdoor photography in Lebanon. Elegant, emotional and timeless photography.">
     <meta name="author" content="Rami Wehbi Photography">
     <meta name="robots" content="index,follow">
@@ -18,12 +18,7 @@
     <meta name="twitter:description" content="Wedding, portrait and outdoor photography in Lebanon.">
     <meta name="twitter:image" content="https://ramiwehbi.com/img/hero.jpg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
   
     <script type="application/ld+json">
     {
@@ -38,483 +33,1735 @@
       "priceRange":"$250-$1000"
     }
     </script>
+<style>html,body{margin:0;padding:0}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Geist:wght@300..600&family=Geist+Mono:wght@400;500&family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500&display=swap">
+<style>
+[hidden]{display:none!important}
+:root{
+  /* Layout: a darkroom you walk through. Hero = a 3D ring of prints around the viewer; then a contact sheet, a spec sheet and a price list, all captioned in camera-data mono. */
+  --ink:#0d0c0b;
+  --ink-2:#171512;
+  --ink-3:#24201c;
+  --paper:#f0e9dd;
+  --muted:#a69d91;
+  --accent:#dcbd8d;
+  --line:color-mix(in srgb, var(--paper) 13%, transparent);
+  --line-2:color-mix(in srgb, var(--paper) 26%, transparent);
+  --f-display:"Bodoni Moda","Bodoni 72",Didot,"Times New Roman",serif;
+  --f-body:"Geist","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --gutter:max(16px,4.5vw);
+  --maxw:1320px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:dark;
+}
+html{background:var(--ink)}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+body{background:var(--ink);color:var(--paper);font-family:var(--f-body);font-size:1.0625rem;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--accent);color:var(--ink)}
+a{color:inherit}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.02;letter-spacing:-.012em;text-wrap:balance;margin:0}
+h1 em,h2 em{font-style:italic}
+p{margin:0}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+section{scroll-margin-top:84px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.mono{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
 
-  <style>
-/* Lightbox: show the photo only — no template caption or camera metadata */
-.ap-lb__cap { display: none !important; }
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:46px;padding:.85em 1.5em;border-radius:999px;border:1px solid var(--paper);background:var(--paper);color:var(--ink);font-family:var(--f-mono);font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .3s,border-color .3s,color .3s,transform .3s var(--ease)}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.btn-ghost{background:transparent;color:var(--paper);border-color:var(--line-2)}
+.btn-ghost:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn-small{min-height:38px;padding:.6em 1.15em;font-size:.68rem}
+
+/* Grain */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden;opacity:.07}
+.grain::before{content:"";position:absolute;inset:-50%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-6%,-2%)}80%{transform:translate(5%,4%)}100%{transform:translate(0,0)}}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;gap:20px;padding:calc(env(safe-area-inset-top,0px) + 14px) var(--gutter) 14px;transition:background .4s,border-color .4s,backdrop-filter .4s;border-bottom:1px solid transparent}
+.nav.solid{background:color-mix(in srgb,var(--ink) 72%,transparent);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);border-bottom-color:var(--line)}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;margin-right:auto}
+.brand-name{font-family:var(--f-display);font-size:1.35rem;letter-spacing:-.01em}
+.brand-sub{font-family:var(--f-mono);font-size:.56rem;letter-spacing:.42em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.nav-links{display:none;gap:28px}
+.nav-links a{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted);transition:color .3s}
+.nav-links a:hover{color:var(--paper)}
+.tog{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:999px;min-height:36px;padding:0 12px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:color .3s,border-color .3s}
+.tog:hover{color:var(--paper);border-color:var(--line-2)}
+#lang-btn{font-family:var(--f-ar-body,var(--f-mono));font-size:.8rem;letter-spacing:0;text-transform:none}
+#snd-btn i{width:6px;height:6px;border-radius:50%;background:var(--muted)}
+#snd-btn[aria-pressed="true"]{color:var(--paper)}
+#snd-btn[aria-pressed="true"] i{background:var(--accent);box-shadow:0 0 8px var(--accent)}
+@media (max-width:879px){#snd-btn{display:none}}
+/* Arabic */
+:root{--f-ar-display:"Amiri","Noto Naskh Arabic",serif;--f-ar-body:"IBM Plex Sans Arabic","Noto Sans Arabic",system-ui,sans-serif}
+html[lang="ar"] body{font-family:var(--f-ar-body);font-size:1.08rem}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] .brand-name,html[lang="ar"] .price,html[lang="ar"] .phone,html[lang="ar"] .foot-lead,html[lang="ar"] .q blockquote,html[lang="ar"] .shutter-name,html[lang="ar"] .bar-txt b,html[lang="ar"] .spec dd,html[lang="ar"] .strip-track span{font-family:var(--f-ar-display);letter-spacing:0;font-weight:400}
+html[lang="ar"] h1 em,html[lang="ar"] h2 em,html[lang="ar"] h3 em{font-style:normal;color:var(--accent)}
+html[lang="ar"] .hero h1{font-size:clamp(2.4rem,7.4vw,7.4rem);line-height:1.18;font-variation-settings:normal}
+html[lang="ar"] .statement{line-height:1.35}
+html[lang="ar"] .sec-head h2,html[lang="ar"] .about-copy h2,html[lang="ar"] .contact h2,html[lang="ar"] .story-head h2{line-height:1.25}
+html[lang="ar"] .btn,html[lang="ar"] .chip,html[lang="ar"] .eyebrow,html[lang="ar"] .field label,html[lang="ar"] .pk-tag,html[lang="ar"] .menu-btn,html[lang="ar"] .nav-links a,html[lang="ar"] .foot-grid h3,html[lang="ar"] .pk-list li,html[lang="ar"] .form-note,html[lang="ar"] .bar-txt span,html[lang="ar"] .copy-btn,html[lang="ar"] .sec-note,html[lang="ar"] .mnav a{font-family:var(--f-ar-body);letter-spacing:0;text-transform:none}
+html[lang="ar"] .btn{font-size:.9rem}
+html[lang="ar"] .chip,html[lang="ar"] .eyebrow,html[lang="ar"] .field label{font-size:.86rem}
+html[lang="ar"] .mnav a{font-family:var(--f-ar-display);font-style:normal!important}
+html[dir="rtl"] .hero-copy{text-align:right}
+html[dir="rtl"] .hud{right:auto;left:calc(var(--gutter) + 18px);text-align:left}
+html[dir="rtl"] .hud .rec{justify-content:flex-start}
+html[dir="rtl"] .drag-hint{right:auto;left:calc(var(--gutter) + 18px)}
+html[dir="rtl"] .brand{margin-right:0;margin-left:auto}
+html[dir="rtl"] .approach-cols{margin-left:0;margin-right:auto}
+html[dir="rtl"] .wordmark em{font-style:normal}
+html[dir="rtl"] .strip-track{animation-direction:reverse}
+html[dir="rtl"] .print-front{transform:translateZ(40px) rotate(-2.5deg)}
+html[dir="rtl"] .print-back{transform:translateZ(-70px) translate(9%,4%) rotate(7deg)}
+html[dir="rtl"] .mono,html[dir="rtl"] .hud,html[dir="rtl"] .card figcaption,html[dir="rtl"] .story-scrub,html[dir="rtl"] .lb-top .mono,html[dir="rtl"] .phone{direction:ltr}
+html[dir="rtl"] .phone{text-align:right}
+.menu-btn{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;background:transparent;color:var(--paper);border:1px solid var(--line-2);border-radius:999px;min-height:38px;padding:0 14px;cursor:pointer}
+.mnav{position:fixed;inset:0;z-index:59;background:color-mix(in srgb,var(--ink) 96%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);padding:calc(env(safe-area-inset-top,0px) + 110px) var(--gutter) 40px;display:flex;flex-direction:column;gap:6px}
+.mnav a{font-family:var(--f-display);font-size:clamp(2.2rem,11vw,3.4rem);text-decoration:none;line-height:1.15}
+.mnav a:nth-child(odd){font-style:italic}
+.mnav p{margin-top:auto;color:var(--muted)}
+@media (min-width:880px){.nav-links{display:flex}.menu-btn{display:none}}
+
+/* Hero */
+.hero{position:relative;height:clamp(600px,100svh,1000px);overflow:hidden;isolation:isolate;background:var(--ink)}
+#gl{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;cursor:grab}
+#gl.grabbing{cursor:grabbing}
+.hero-fallback{position:absolute;inset:0;background-size:cover;background-position:center;display:none}
+.hero.no-gl #gl{display:none}
+.hero.no-gl .hero-fallback{display:block}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:
+  linear-gradient(to top,var(--ink) 0%,color-mix(in srgb,var(--ink) 80%,transparent) 26%,color-mix(in srgb,var(--ink) 18%,transparent) 58%,color-mix(in srgb,var(--ink) 45%,transparent) 100%),
+  linear-gradient(to right,color-mix(in srgb,var(--ink) 55%,transparent),transparent 60%)}
+.vf{position:absolute;z-index:2;pointer-events:none;inset:calc(env(safe-area-inset-top,0px) + 86px) var(--gutter) clamp(18px,3vh,32px)}
+.vf i{position:absolute;width:22px;height:22px;border:0 solid color-mix(in srgb,var(--paper) 55%,transparent)}
+.vf i:nth-child(1){top:0;left:0;border-top-width:1px;border-left-width:1px}
+.vf i:nth-child(2){top:0;right:0;border-top-width:1px;border-right-width:1px}
+.vf i:nth-child(3){bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}
+.vf i:nth-child(4){bottom:0;right:0;border-bottom-width:1px;border-right-width:1px}
+.vf::before{content:"";position:absolute;left:50%;top:42%;width:44px;height:30px;transform:translate(-50%,-50%);border:1px solid color-mix(in srgb,var(--paper) 30%,transparent)}
+.hud{position:absolute;z-index:3;right:calc(var(--gutter) + 18px);top:calc(env(safe-area-inset-top,0px) + 104px);display:grid;gap:6px;text-align:right;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-variant-numeric:tabular-nums;pointer-events:none}
+.hud .k{color:var(--muted)}
+.hud .rec{display:inline-flex;align-items:center;justify-content:flex-end;gap:8px}
+.hud .rec b{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.hero-copy{position:absolute;z-index:3;left:calc(var(--gutter) + 18px);right:calc(var(--gutter) + 18px);bottom:clamp(44px,7vh,86px);max-width:1180px;pointer-events:none}
+.hero h1{font-size:clamp(2.5rem,8.4vw,8.4rem);line-height:.96;margin-top:18px}
+.hero h1 .l{display:block}
+.hero h1 em{color:var(--accent)}
+.lede{max-width:44ch;margin-top:24px;color:color-mix(in srgb,var(--paper) 84%,transparent);font-size:clamp(1rem,1.3vw,1.15rem)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;pointer-events:auto}
+.drag-hint{position:absolute;z-index:3;right:calc(var(--gutter) + 18px);bottom:clamp(44px,7vh,86px);display:none;align-items:center;gap:10px;color:var(--muted);pointer-events:none}
+.drag-hint::before{content:"";width:36px;height:1px;background:var(--line-2)}
+@media (min-width:980px){.drag-hint{display:inline-flex}}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1 .l,.hero .eyebrow,.lede,.cta-row{animation:rise-in 1.4s var(--ease) 1.3s both}
+  .hero h1 .rv-line:nth-child(2) .l{animation-delay:1.42s}
+  .lede{animation-delay:1.54s}.cta-row{animation-delay:1.64s}
+}
+@keyframes rise-in{from{transform:translateY(110%);opacity:0}to{transform:none;opacity:1}}
+
+/* Approach */
+.approach{padding-block:clamp(96px,15vh,190px) clamp(64px,10vh,130px)}
+.statement{font-size:clamp(2.2rem,5.8vw,5.6rem);line-height:1.04;max-width:17ch;margin-top:28px}
+.statement .w{color:var(--muted);transition:color .5s}
+.statement .w.on{color:var(--paper)}
+.statement em .w.on{color:var(--accent)}
+.approach-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px 48px;max-width:860px;margin-left:auto;margin-top:56px;color:var(--muted)}
+.approach-cols p{max-width:42ch}
+
+/* Section heads */
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 40px;margin-bottom:36px}
+.sec-head > div{min-width:0}
+.sec-head h2{font-size:clamp(2.5rem,6.4vw,6rem);margin-top:16px}
+.sec-note{max-width:34ch;color:var(--muted)}
+
+/* Portfolio */
+.work{padding-block:clamp(40px,6vh,80px)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;padding:0 16px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--paper);cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.chip span{color:var(--muted);font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.chip[aria-pressed="true"] span{color:color-mix(in srgb,var(--ink) 60%,transparent)}
+.sheet{columns:1;column-gap:20px}
+@media (min-width:560px){.sheet{columns:2}}
+@media (min-width:980px){.sheet{columns:3}}
+.card{break-inside:avoid;margin:0 0 26px;display:block}
+.card-in{display:block;position:relative;width:100%;aspect-ratio:var(--ar);padding:0;border:0;border-radius:6px;overflow:hidden;background:var(--ink-2);cursor:pointer;transform-style:preserve-3d;transition:transform .6s var(--ease),box-shadow .6s var(--ease);box-shadow:0 0 0 1px var(--line)}
+.card-in img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),filter .6s}
+.card-in:hover{box-shadow:0 30px 60px -30px color-mix(in srgb,var(--ink) 90%,transparent),0 0 0 1px var(--line-2)}
+.card-in:hover img{transform:scale(1.05)}
+.glare{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),color-mix(in srgb,var(--paper) 30%,transparent),transparent 55%);mix-blend-mode:soft-light}
+.card-in:hover .glare{opacity:1}
+.card figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding-top:11px;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+.card figcaption b{font-weight:500;color:var(--paper)}
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline:view()){
+    .card{animation:card-rise linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+    .ft-card{animation:ft-in linear both;animation-timeline:view();animation-range:entry 0% cover 42%}
+    .ft-img{animation:ft-par linear both;animation-timeline:view()}
+  }
+}
+@keyframes card-rise{from{transform:perspective(1000px) translateY(70px) rotateX(16deg) scale(.95)}to{transform:none}}
+@keyframes ft-in{from{transform:perspective(1400px) rotateX(10deg) scale(.86);border-radius:36px}to{transform:none;border-radius:0}}
+@keyframes ft-par{from{transform:translateY(-7%)}to{transform:translateY(7%)}}
+::view-transition-group(*){animation-duration:.55s;animation-timing-function:cubic-bezier(.2,.7,.1,1)}
+
+/* Featured */
+.featured{margin-block:clamp(80px,12vh,160px)}
+.ft-card{position:relative;min-height:clamp(540px,84vh,880px);overflow:hidden;display:grid;align-items:end;isolation:isolate;background:var(--ink-2)}
+.ft-img{position:absolute;left:0;right:0;top:-10%;width:100%;height:120%;max-width:none;object-fit:cover;z-index:-2}
+.ft-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to right,color-mix(in srgb,var(--ink) 88%,transparent),color-mix(in srgb,var(--ink) 30%,transparent) 62%,transparent),linear-gradient(to top,color-mix(in srgb,var(--ink) 70%,transparent),transparent 50%)}
+.ft-copy{padding-block:clamp(40px,8vh,96px);width:100%}
+.ft-copy > *{max-width:560px}
+.ft-copy h2{font-size:clamp(2.6rem,6.6vw,6.4rem);margin-top:16px}
+.ft-copy p{margin-top:20px;color:color-mix(in srgb,var(--paper) 84%,transparent)}
+.ft-copy .btn{margin-top:28px}
+.ft-addon{display:inline-flex;gap:12px;align-items:baseline;margin-top:22px;padding-top:16px;border-top:1px solid var(--line-2)}
+.ft-addon b{font-family:var(--f-display);font-weight:400;font-size:1.6rem;color:var(--accent)}
+
+/* About */
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(48px,7vw,110px);align-items:center;padding-block:clamp(64px,10vh,140px)}
+.about-art{perspective:1300px;min-width:0}
+.stack{position:relative;width:min(100%,500px);aspect-ratio:4/5;margin-inline:auto;transform-style:preserve-3d;transition:transform .8s var(--ease)}
+.print{position:absolute;inset:0;background:var(--paper);padding:3.2% 3.2% 12%;box-shadow:0 40px 80px -40px #000,0 2px 6px -2px color-mix(in srgb,var(--ink) 80%,transparent)}
+.print img{width:100%;height:100%;object-fit:cover}
+.print-back{transform:translateZ(-70px) translate(-9%,4%) rotate(-7deg);filter:brightness(.72)}
+.print-front{transform:translateZ(40px) rotate(2.5deg)}
+.print-cap{position:absolute;left:3.2%;right:3.2%;bottom:3.6%;display:flex;justify-content:space-between;gap:10px;color:var(--ink);font-family:var(--f-mono);font-size:clamp(.52rem,1.2vw,.64rem);letter-spacing:.14em;text-transform:uppercase}
+.about-copy{min-width:0}
+.about-copy h2{font-size:clamp(2.6rem,6.2vw,5.8rem);margin-top:16px}
+.about-copy h2 em{color:var(--accent)}
+.about-copy > p{margin-top:22px;color:var(--muted);max-width:52ch}
+.about-copy > p:first-of-type{margin-top:28px;color:var(--paper);font-size:1.15rem}
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;margin:36px 0;border-top:1px solid var(--line)}
+.spec div{padding:16px 0;border-bottom:1px solid var(--line);min-width:0}
+.spec dt{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.spec dd{margin:6px 0 0;font-family:var(--f-display);font-size:1.25rem;line-height:1.25}
+
+/* Packages */
+.packages{position:relative;padding-block:clamp(64px,10vh,140px)}
+.packages::before{content:"";position:absolute;left:5%;top:30%;width:min(60vw,720px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 16%,transparent),transparent 65%);pointer-events:none;z-index:-1}
+.pk-grid{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:920px){.pk-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.pk-feature{grid-row:1 / span 3}}
+.pk{position:relative;display:flex;flex-direction:column;gap:18px;padding:clamp(22px,3vw,36px);border-radius:20px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink-2) 78%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);transform-style:preserve-3d;transition:transform .6s var(--ease),border-color .4s}
+.pk:hover{border-color:var(--line-2)}
+.pk-feature{background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 17%,var(--ink-2)),var(--ink-2) 58%);border-color:color-mix(in srgb,var(--accent) 38%,transparent);gap:24px}
+.pk-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.pk-top > div{min-width:0}
+.pk h3{font-size:clamp(1.6rem,2.4vw,2.1rem)}
+.pk-feature h3{font-size:clamp(2.2rem,4vw,3.4rem)}
+.pk-for{margin-top:6px;color:var(--muted);font-size:.95rem}
+.pk-tag{display:inline-block;margin-bottom:14px;padding:5px 10px;border-radius:999px;background:var(--accent);color:var(--ink);font-family:var(--f-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase}
+.price{font-family:var(--f-display);font-size:clamp(2.4rem,4vw,3.4rem);line-height:1;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.pk-feature .price{font-size:clamp(4rem,9vw,7.4rem);color:var(--accent)}
+.price .cur{font-size:.42em;vertical-align:.95em;margin-right:.08em}
+.pk-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.pk-list li{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 10px}
+.pk-feature .pk-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.pk-feature .pk-list li{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:13px 0;font-family:var(--f-body);font-size:1rem;letter-spacing:0;text-transform:none;color:var(--paper);display:flex;gap:12px;align-items:center}
+.pk-feature .pk-list li::before{content:"";width:14px;height:1px;background:var(--accent);flex:none}
+.pk .btn{align-self:flex-start;margin-top:auto}
+.pk-foot{margin-top:18px;color:var(--muted);font-size:.95rem}
+
+/* Feedback */
+.feedback{padding-block:clamp(64px,10vh,140px)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.q{margin:0;display:flex;flex-direction:column;gap:28px;padding:clamp(26px,3vw,38px);border-radius:20px;border:1px solid var(--line);background:var(--ink-2);transition:transform .7s var(--ease)}
+.q::before{content:"\201C";font-family:var(--f-display);font-size:4.4rem;line-height:.6;color:var(--accent);height:.4em}
+.q blockquote{margin:0;font-family:var(--f-display);font-size:clamp(1.25rem,1.7vw,1.5rem);line-height:1.35}
+.q figcaption{margin-top:auto;display:flex;flex-direction:column;gap:4px;padding-top:18px;border-top:1px solid var(--line)}
+.q figcaption b{font-weight:500}
+.q figcaption span{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (min-width:980px){
+  .quotes{perspective:1600px}
+  .q:nth-child(1){transform:rotateY(10deg) translateZ(-30px)}
+  .q:nth-child(3){transform:rotateY(-10deg) translateZ(-30px)}
+  .quotes:hover .q{transform:none}
+}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(44px,6vw,100px);padding-block:clamp(80px,12vh,160px);align-items:start}
+.contact-copy{min-width:0}
+.contact h2{font-size:clamp(2.7rem,6.8vw,6.4rem);margin-top:16px}
+.contact h2 em{color:var(--accent)}
+.contact-copy > p{margin-top:22px;color:var(--muted);max-width:44ch}
+.lines{margin-top:40px;display:grid;gap:0;border-top:1px solid var(--line)}
+.line{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.line .mono{color:var(--muted)}
+.phone{font-family:var(--f-display);font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.1;user-select:all;-webkit-user-select:all;font-variant-numeric:lining-nums}
+.line a.val{font-family:var(--f-display);font-size:1.35rem;text-decoration:none;border-bottom:1px solid var(--line-2)}
+.copy-btn{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;background:transparent;color:var(--paper);border:1px solid var(--line-2);border-radius:999px;min-height:34px;padding:0 12px;cursor:pointer}
+.form{display:grid;gap:18px;padding:clamp(22px,3vw,40px);border-radius:24px;border:1px solid var(--line);background:var(--ink-2);min-width:0}
+.field{display:grid;gap:8px;min-width:0}
+.field label{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{width:100%;box-sizing:border-box;font:inherit;font-size:1rem;color:var(--paper);background:var(--ink);border:1px solid var(--line-2);border-radius:12px;padding:14px 14px;transition:border-color .3s}
+.field textarea{resize:vertical;min-height:120px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+.field-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:18px}
+.err{color:var(--accent);font-size:.9rem}
+.form .btn{width:100%}
+.form-note{color:var(--muted);font-size:.88rem;text-align:center}
+
+/* Footer */
+.foot{border-top:1px solid var(--line);padding-top:clamp(56px,8vh,96px);overflow:hidden}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:36px}
+.foot-grid h3{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.foot-grid ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.foot-grid a{text-decoration:none}
+.foot-grid a:hover{color:var(--accent)}
+.foot-lead{font-family:var(--f-display);font-size:1.5rem;line-height:1.25;max-width:20ch}
+.wordmark{font-family:var(--f-display);font-size:clamp(3.4rem,17.4vw,17rem);line-height:.82;letter-spacing:-.03em;white-space:nowrap;text-align:center;margin:clamp(48px,8vh,96px) 0 0;background:linear-gradient(to bottom,var(--paper) 10%,color-mix(in srgb,var(--paper) 0%,transparent) 92%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none}
+.wordmark em{font-style:italic}
+.foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+
+/* Floating WhatsApp */
+.wa-float{position:fixed;z-index:55;right:var(--gutter);bottom:calc(env(safe-area-inset-bottom,0px) + 18px);width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--paper);color:var(--ink);box-shadow:0 14px 34px -12px #000;text-decoration:none;transition:transform .4s var(--ease),background .3s}
+.wa-float:hover{transform:scale(1.08);background:var(--accent)}
+.wa-float svg{width:24px;height:24px}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:95;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:16px;padding:calc(env(safe-area-inset-top,0px) + 16px) var(--gutter) calc(env(safe-area-inset-bottom,0px) + 20px);background:color-mix(in srgb,var(--ink) 95%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.lb-top .mono{color:var(--muted)}
+.lb-stage{display:grid;place-items:center;min-height:0}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 40px 90px -40px #000}
+.lb-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.lb-cap{color:var(--muted);font-size:.95rem;min-width:0}
+.lb-cap b{display:block;font-family:var(--f-mono);font-weight:400;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);margin-bottom:4px}
+.lb-nav{display:flex;gap:8px;flex:none}
+.round{width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--paper);font-size:1.1rem;cursor:pointer;display:grid;place-items:center}
+.round:hover{background:var(--paper);color:var(--ink)}
+
+/* Focus reticle cursor */
+.af{position:fixed;left:0;top:0;z-index:100;pointer-events:none;width:26px;height:26px;opacity:0;transition:opacity .25s}
+.af.on{opacity:1}
+.af i{position:absolute;width:9px;height:9px;border:0 solid var(--accent)}
+.af i:nth-child(1){top:0;left:0;border-top-width:1.5px;border-left-width:1.5px}
+.af i:nth-child(2){top:0;right:0;border-top-width:1.5px;border-right-width:1.5px}
+.af i:nth-child(3){bottom:0;left:0;border-bottom-width:1.5px;border-left-width:1.5px}
+.af i:nth-child(4){bottom:0;right:0;border-bottom-width:1.5px;border-right-width:1.5px}
+.af span{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);white-space:nowrap;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+body.has-af,body.has-af a,body.has-af button,body.has-af #gl{cursor:none}
+body.has-af input,body.has-af textarea,body.has-af select{cursor:auto}
+
+/* Shutter intro */
+.shutter{position:fixed;inset:0;z-index:120;background:color-mix(in srgb,var(--ink) 58%,transparent);display:grid;place-items:center;transition:opacity .7s var(--ease),visibility 0s .7s,background .12s}
+.shutter.open{opacity:0;visibility:hidden}
+/* the site sits behind the camera, out of focus, then snaps sharp */
+html.intro #main,html.intro .nav,html.intro .foot{filter:blur(18px) saturate(.8);transform:scale(1.04)}
+html.intro .bar,html.intro .wa-float{visibility:hidden}
+#main,.nav,.foot{transition:filter 1.1s var(--ease),transform 1.1s var(--ease)}
+html.intro{overflow:hidden}
+
+.shutter-in{display:grid;justify-items:center;gap:14px;text-align:center;transition:opacity .4s}
+.shutter.open .shutter-in{opacity:0}
+.cam{position:relative;width:min(240px,64vw);aspect-ratio:240/160;color:color-mix(in srgb,var(--paper) 70%,transparent)}
+.cam-body{position:absolute;inset:0;width:100%;height:100%}
+.cam-btn{fill:var(--accent);stroke:var(--accent);transform-origin:50% 100%;transition:transform .08s}
+.cam.click .cam-btn{transform:translateY(5px)}
+.iris{position:absolute;left:50%;top:58.75%;width:28.3%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;overflow:hidden;background:#000;--p:0}
+.iris-img{position:absolute;inset:0;background:radial-gradient(circle at 60% 40%,#e9b57f,#8a4a2a 45%,#1a0f0a 80%);transform:scale(1.15)}
+.iris i{position:absolute;left:50%;top:50%;width:300%;height:300%;margin-left:-150%;background:var(--ink);transform-origin:50% 0;transform:rotate(var(--r)) translateY(calc(var(--p) * 16.2%));transition:transform .22s cubic-bezier(.2,.7,.1,1);box-shadow:0 0 0 1px color-mix(in srgb,var(--paper) 30%,transparent)}
+.iris i:nth-child(2){--r:0deg}.iris i:nth-child(3){--r:60deg}.iris i:nth-child(4){--r:120deg}.iris i:nth-child(5){--r:180deg}.iris i:nth-child(6){--r:240deg}.iris i:nth-child(7){--r:300deg}
+.iris.snap i{transition-duration:.07s}
+.flash{position:absolute;inset:-40%;border-radius:50%;background:radial-gradient(circle,#fff6e6,rgba(255,240,220,.6) 30%,transparent 65%);opacity:0;pointer-events:none}
+.flash.go{animation:flash .5s ease-out}
+@keyframes flash{0%{opacity:0}10%{opacity:1}100%{opacity:0}}
+.shutter.white{background:#f6efe3!important}
+
+.shutter-name{font-family:var(--f-display);font-size:1.7rem;letter-spacing:-.01em}
+.shutter-sub{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:var(--muted)}
+.shutter.off{display:none}
+
+/* Scroll progress + chapter */
+.progress{position:fixed;left:0;top:0;z-index:61;height:2px;width:100%;transform-origin:left;transform:scaleX(0);background:var(--accent);pointer-events:none}
+.chapter{display:none;align-items:center;gap:10px;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+.chapter::after{content:"";width:28px;height:1px;background:var(--line-2)}
+.chapter b{font-weight:400;color:var(--paper);min-width:9ch;display:inline-block}
+@media (min-width:880px){.chapter{display:inline-flex}}
+
+/* Marquee filmstrip */
+.strip{position:relative;overflow:hidden;border-block:1px solid var(--line);padding-block:14px;background:var(--ink-2);margin-top:-1px}
+.strip::before,.strip::after{content:"";position:absolute;left:0;right:0;height:5px;background-image:radial-gradient(circle,transparent 0 1.2px,var(--ink) 1.3px);background-size:14px 5px;opacity:.9;pointer-events:none}
+.strip::before{top:4px}.strip::after{bottom:4px}
+.strip-track{display:flex;gap:0;width:max-content;animation:marquee 38s linear infinite}
+.strip-track span{display:inline-flex;align-items:center;gap:26px;padding-right:26px;font-family:var(--f-display);font-size:clamp(1.3rem,2.2vw,1.9rem);white-space:nowrap;color:var(--muted)}
+.strip-track span em{color:var(--paper)}
+.strip-track span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* Word-mask reveals */
+.rv .l,.rv .w{display:inline-block}
+.rv.pend .l,.rv.pend .w{transform:translateY(110%);opacity:0}
+.rv .l,.rv .w{transition:transform 1.1s var(--ease),opacity .8s}
+.rv .l:nth-child(2){transition-delay:.1s}
+.rv-line{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+
+/* Hero light leak */
+.leak{position:absolute;z-index:2;pointer-events:none;width:60vmax;height:60vmax;left:var(--lx,70%);top:var(--ly,30%);transform:translate(-50%,-50%);background:radial-gradient(circle,color-mix(in srgb,var(--accent) 22%,transparent),transparent 60%);mix-blend-mode:screen;filter:blur(20px)}
+
+/* Lightbox entrance */
+.lb{animation:lb-in .5s var(--ease)}
+.lb-stage img{animation:lb-img .7s var(--ease)}
+@keyframes lb-in{from{opacity:0}}
+@keyframes lb-img{from{transform:scale(.92) translateY(14px);opacity:0}}
+
+/* Magnetic + hover polish */
+.btn{position:relative;overflow:hidden;will-change:transform}
+.btn::after{content:"";position:absolute;inset:0;background:var(--accent);transform:translateY(102%);transition:transform .45s var(--ease);z-index:-1}
+.btn:hover::after{transform:none}
+.btn{z-index:0}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn-ghost:hover{color:var(--ink);border-color:var(--accent)}
+.chip:hover{border-color:var(--paper)}
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--accent);transition:right .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.cur::after{right:0}
+.nav-links a.cur{color:var(--paper)}
+.card figcaption{transition:color .3s}
+.card:hover figcaption{color:var(--paper)}
+.sec-head h2{font-size:clamp(2.7rem,7.2vw,6.8rem)}
+.hero h1{font-size:clamp(2.7rem,9vw,9.2rem);letter-spacing:-.025em}
+.sec-num{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.16em;color:var(--muted);margin-left:14px}
+
+/* Wedding-day story: pinned horizontal scroll on desktop, snap scroller on phone */
+.story{position:relative;margin-block:clamp(60px,10vh,140px) 0}
+.story-head{padding-bottom:22px}
+.story-head h2{font-size:clamp(2.5rem,6.4vw,6rem);margin-top:14px}
+.story-scrub{display:flex;align-items:center;gap:14px;margin-top:22px;color:var(--muted);font-variant-numeric:tabular-nums;max-width:420px}
+.story-scrub i{flex:1;height:1px;background:var(--line-2);position:relative}
+.story-scrub b{position:absolute;left:0;top:-2px;height:5px;width:var(--p,0%);background:var(--accent);transition:width .15s linear}
+.story-track{display:flex;gap:14px;padding-inline:var(--gutter);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.story-track::-webkit-scrollbar{display:none}
+.panel{position:relative;flex:0 0 min(78vw,320px);aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:var(--ink-2);scroll-snap-align:start;isolation:isolate}
+.panel-wide{flex-basis:min(92vw,520px);aspect-ratio:3/2}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform 1.2s var(--ease)}
+.panel::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,color-mix(in srgb,var(--ink) 88%,transparent),color-mix(in srgb,var(--ink) 20%,transparent) 55%,transparent)}
+.panel-txt{position:absolute;left:0;right:0;bottom:0;padding:clamp(16px,2.4vw,30px);display:grid;gap:8px}
+.panel-txt .mono{color:var(--accent)}
+.panel-txt h3{font-size:clamp(1.4rem,2.3vw,2.2rem)}
+.panel-txt p:not(.mono){color:color-mix(in srgb,var(--paper) 80%,transparent);font-size:.86rem;line-height:1.45;max-width:34ch}
+.panel-txt .mono{font-size:.62rem}
+@media (min-width:880px){.panel-txt p:not(.mono){font-size:.95rem}}
+.panel-end{background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 18%,var(--ink-2)),var(--ink-2) 60%);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.panel-end::after{display:none}
+.panel-end .panel-txt{position:static;padding:clamp(20px,2.6vw,34px);height:100%;box-sizing:border-box;align-content:end}
+.panel-end h3 em{color:var(--accent)}
+.panel-end .btn{justify-self:start;margin-top:8px}
+.panel-end .ft-addon{margin-top:8px}
+@media (min-width:880px){
+  .story{height:420vh}
+  .story-pin{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(18px,3vh,36px)}
+  .story-head{padding-bottom:0}
+  .story-track{overflow:visible;scroll-snap-type:none;gap:24px;will-change:transform;padding-inline:var(--gutter)}
+  .panel{flex-basis:clamp(300px,26vw,420px);height:min(56svh,620px);aspect-ratio:auto}
+  .panel-wide{flex-basis:clamp(520px,46vw,760px)}
+  .panel-end{flex-basis:clamp(380px,32vw,520px)}
+  .panel:hover img{transform:scale(1.05)}
+}
+
+/* Focus pull: sections sharpen as they enter */
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline:view()){
+    .approach,.work,.about,.packages,.feedback,.contact{animation:focus-pull linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
+  }
+}
+@keyframes focus-pull{from{filter:blur(8px);transform:scale(.97);opacity:.6}to{filter:blur(0);transform:none;opacity:1}}
+
+/* Kinetic wordmark */
+.wordmark .ch{display:inline-block}
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline:view()){
+    .wordmark .ch{animation:ch-rise linear both;animation-timeline:view();animation-range:entry 0% entry 100%;animation-delay:calc(var(--i) * -0.06s)}
+  }
+}
+@keyframes ch-rise{from{transform:translateY(calc(40% + var(--i) * 4%))}to{transform:none}}
+.hero h1{font-variation-settings:"wght" var(--hw,400),"opsz" 96;transition:font-variation-settings .25s}
+
+/* Beirut light + tap to focus */
+.hud .sun{margin-top:10px;padding-top:10px;border-top:1px solid var(--line-2);color:var(--accent);max-width:200px;white-space:normal;line-height:1.5;display:none}
+.sun-line{display:inline-flex;align-items:center;gap:8px;margin-top:14px;color:var(--accent);font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase}
+.sun-line::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+@media (min-width:980px){.hud .sun{display:block}.sun-line{display:none}}
+.leak{opacity:calc(.35 + var(--sun-warm,.5) * .65)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top,transparent 50%,color-mix(in srgb,var(--accent) calc(var(--sun-warm,.5) * 12%),transparent));mix-blend-mode:screen}
+.afbox{position:absolute;z-index:4;width:84px;height:84px;transform:translate(-50%,-50%) scale(1.5);opacity:0;pointer-events:none;transition:transform .35s var(--ease),opacity .25s}
+.afbox.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.afbox i{position:absolute;width:16px;height:16px;border:0 solid #f5d36b}
+.afbox.lock i{border-color:var(--accent)}
+.afbox i:nth-child(1){top:0;left:0;border-top-width:2px;border-left-width:2px}
+.afbox i:nth-child(2){top:0;right:0;border-top-width:2px;border-right-width:2px}
+.afbox i:nth-child(3){bottom:0;left:0;border-bottom-width:2px;border-left-width:2px}
+.afbox i:nth-child(4){bottom:0;right:0;border-bottom-width:2px;border-right-width:2px}
+.afbox span{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);white-space:nowrap;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#f5d36b}
+.afbox.lock span{color:var(--accent)}
+.afopen{position:absolute;z-index:4;left:50%;bottom:clamp(44px,7vh,86px);transform:translateX(-50%);display:none}
+@media (max-width:979px){.afopen{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;border-radius:999px;border:1px solid var(--accent);background:color-mix(in srgb,var(--ink) 70%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--paper);font-family:var(--f-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;bottom:auto;top:calc(env(safe-area-inset-top,0px) + 140px)}.afopen[hidden]{display:none}}
+
+/* Phone */
+.sheet{columns:2;column-gap:12px}
+.card{margin-bottom:16px}
+.card figcaption{font-size:.58rem;gap:2px 8px;padding-top:8px}
+.card figcaption span:last-child{display:none}
+@media (min-width:560px){.sheet{column-gap:20px}.card{margin-bottom:26px}.card figcaption{font-size:.66rem;padding-top:11px}.card figcaption span:last-child{display:inline}}
+.swipe-hint{position:absolute;z-index:3;left:50%;top:calc(env(safe-area-inset-top,0px) + 96px);transform:translateX(-50%);display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;border:1px solid var(--line-2);background:color-mix(in srgb,var(--ink) 55%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--paper);font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;pointer-events:none;transition:opacity .5s}
+.swipe-hint.gone{opacity:0}
+.swipe-hint i{width:18px;height:1px;background:var(--accent);position:relative;animation:swipe 1.6s var(--ease) infinite}
+@keyframes swipe{0%{transform:translateX(-5px)}50%{transform:translateX(5px)}100%{transform:translateX(-5px)}}
+@media (min-width:980px){.swipe-hint{display:none}}
+.bar{position:fixed;z-index:56;left:0;right:0;bottom:0;display:flex;align-items:center;gap:12px;padding:10px var(--gutter) calc(env(safe-area-inset-bottom,0px) + 10px);background:color-mix(in srgb,var(--ink) 78%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .5s var(--ease)}
+.bar.show{transform:none}
+.bar-txt{min-width:0;flex:1;line-height:1.2}
+.bar-txt b{display:block;font-family:var(--f-display);font-weight:400;font-size:1.05rem}
+.bar-txt span{font-family:var(--f-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.bar .btn{flex:none;min-height:42px;padding:.6em 1.1em;font-size:.66rem}
+.bar .btn svg{width:16px;height:16px}
+@media (min-width:880px){.bar{display:none}}
+@media (max-width:879px){.wa-float{display:none}.nav .btn-small{display:none}.foot-base{padding-bottom:90px}}
+@media (pointer:coarse){.grain::before{animation:none}.grain{opacity:.05}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv.pend .l,.rv.pend .w{transform:none;opacity:1}
+  .shutter{display:none}
+  .bar{transform:none}
+}
 </style>
 </head>
-  <body>
+<body>
 
-    <a class="ap-skip" href="#main">Skip to content</a>
-
-    <!-- ============ HEADER ============ -->
-    <header class="ap-header" id="top">
-      <div class="ap-header__inner">
-        <a class="ap-brand" href="#top" aria-label="Rami Wehbi Photography — home">
-          <span class="ap-brand__word">Rami Wehbi</span>
-        </a>
-
-        <nav class="ap-nav" aria-label="Primary">
-          <button class="ap-nav__toggle" type="button" aria-expanded="false" aria-controls="ap-menu" aria-label="Open menu">
-            <span></span><span></span><span></span>
-          </button>
-          <ul class="ap-nav__list" id="ap-menu">
-            <li><a href="#work" data-nav>Work</a></li>
-            <li><a href="#about" data-nav>About</a></li>
-            <li><a href="#services" data-nav>Packages</a></li>
-            <li><a href="#stories" data-nav>Feedback</a></li>
-            <li><a href="#contact" class="ap-nav__cta" data-nav>Book a shoot</a></li>
-          </ul>
-        </nav>
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro');</script>
+<div class="shutter" id="shutter" aria-hidden="true">
+  <div class="shutter-in">
+    <div class="cam" id="cam">
+      <svg class="cam-body" viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="14" y="40" width="212" height="104" rx="14"/>
+        <path d="M78 40l10-16h52l10 16"/>
+        <rect x="178" y="26" width="26" height="14" rx="4" class="cam-btn" id="cam-btn"/>
+        <rect x="26" y="52" width="26" height="12" rx="3"/>
+        <circle cx="120" cy="94" r="44"/>
+        <circle cx="120" cy="94" r="38" stroke-opacity=".45"/>
+        <circle cx="198" cy="60" r="4"/>
+      </svg>
+      <div class="iris" id="iris">
+        <div class="iris-img"></div>
+        <i></i><i></i><i></i><i></i><i></i><i></i>
       </div>
-    </header>
+      <div class="flash" id="flash"></div>
+    </div>
+    <p class="shutter-name">Rami Wehbi</p>
+    <p class="shutter-sub" id="shutter-sub">Loading frames</p>
+  </div>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
-    <main id="main">
+<div class="grain" aria-hidden="true"></div>
 
-      <!-- ============ HERO ============ -->
-      <section class="ap-hero" aria-labelledby="ap-hero-title">
-        <img class="ap-hero__img" src="img/hero.jpg" alt="Rami Wehbi Photography wedding couple" fetchpriority="high">
-        <div class="ap-hero__scrim" aria-hidden="true"></div>
-        <div class="ap-hero__inner">
-          <p class="ap-eyebrow ap-eyebrow--light">Lebanon &nbsp;·&nbsp; Wedding &amp; Fine Art Photography</p>
-          <h1 class="ap-hero__title" id="ap-hero-title">Timeless moments,<br><em>beautifully captured.</em></h1>
-          <p class="ap-hero__lede">Wedding, portrait &amp; outdoor photography in Lebanon — crafted with timeless style, natural emotion, and attention to every detail.</p>
-          <div class="ap-hero__actions">
-            <a class="ap-btn ap-btn--solid" href="#work">See the work</a>
-            <a class="ap-btn ap-btn--ghost" href="#contact">Book a session</a>
-          </div>
-        </div>
-        <a class="ap-hero__cue" href="#intro" aria-label="Scroll to introduction">
-          <span class="ap-hero__cue-line" aria-hidden="true"></span>
-          Scroll
-        </a>
-      </section>
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Rami Wehbi Photography, back to top">
+    <span class="brand-name">Rami Wehbi</span>
+    <span class="brand-sub">Photography</span>
+  </a>
+  <p class="chapter" aria-hidden="true"><span id="ch-n">01</span><b id="ch-t">Intro</b></p>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#packages">Packages</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+  <button class="tog" id="lang-btn" type="button" aria-label="Switch language">عربي</button>
+  <button class="tog" id="snd-btn" type="button" aria-pressed="false" aria-label="Sound"><i></i>Sound</button>
+  <a class="btn btn-small" href="#contact" data-i="nav.book">Book a shoot</a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mnav">Menu</button>
+</header>
 
-      <!-- ============ INTRO / STATEMENT + STATS ============ -->
-      <section class="ap-intro" id="intro" aria-labelledby="ap-intro-title">
-        <div class="ap-shell ap-intro__grid">
-          <div class="ap-intro__lead ap-reveal">
-            <p class="ap-eyebrow">The approach</p>
-            <h2 class="ap-intro__title" id="ap-intro-title">I capture the moments you never planned to pose for.</h2>
-          </div>
-          <div class="ap-intro__body ap-reveal">
-            <p>No forced moments. I focus on real emotions, elegant portraits, and the small details that make your day unforgettable.</p>
-            <p>From weddings to outdoor sessions, every image is carefully edited to create a clean, timeless, and cinematic finish.</p>
-          </div>
-        </div>
-      </section>
+<div class="mnav" id="mnav" hidden>
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#packages">Packages</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#contact">Book a shoot</a>
+  <p class="mono">Lebanon &amp; worldwide · +961 71 560 613</p>
+</div>
 
-      <!-- ============ GALLERY ============ -->
-      <section class="ap-work" id="work" aria-labelledby="ap-work-title">
-        <div class="ap-shell">
-          <div class="ap-section-head ap-reveal">
-            <div>
-              <p class="ap-eyebrow">Selected frames</p>
-              <h2 class="ap-section-title" id="ap-work-title">The portfolio</h2>
-            </div>
-            <p class="ap-section-note">A selection of wedding, portrait and outdoor photography.</p>
-          </div>
-
-          <div class="ap-filter ap-reveal" role="group" aria-label="Filter gallery by category">
-            <button class="ap-filter__btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="ap-filter__btn" type="button" data-filter="portrait" aria-pressed="false">Portrait</button>
-            <button class="ap-filter__btn" type="button" data-filter="wedding" aria-pressed="false">Wedding</button>
-            <button class="ap-filter__btn" type="button" data-filter="outdoor" aria-pressed="false">Outdoor</button>
-          </div>
-        </div>
-
-        <div class="ap-shell">
-          <div class="ap-masonry" id="ap-gallery">
-
-            <figure class="ap-tile ap-reveal" data-cat="portrait">
-              <button class="ap-tile__btn" type="button" data-full="img/g1.jpg" data-caption="Rami Wehbi Photography — Portrait Session" data-exif="Kodak Portra 400 · 85mm · f/1.4">
-                <img src="img/g1.jpg" alt="Studio portrait of a woman turned toward a north-facing window" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 01</span><span class="ap-tile__exif">85mm · f/1.4</span></span>
-              </button>
-            </figure>
-
-            <figure class="ap-tile ap-reveal" data-cat="outdoor">
-              <button class="ap-tile__btn" type="button" data-full="img/g2.jpg" data-caption="Fog line over the Coast Range at dawn" data-exif="Ektar 100 · 35mm · f/8">
-                <img src="img/g2.jpg" alt="Outdoor photography by Rami Wehbi Photography" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 02</span><span class="ap-tile__exif">35mm · f/8</span></span>
-              </button>
-            </figure>
-
-            <figure class="ap-tile ap-reveal" data-cat="wedding">
-              <button class="ap-tile__btn" type="button" data-full="img/g3.jpg" data-caption="Wedding photography — Rami Wehbi Photography" data-exif="Portra 800 · 50mm · f/2">
-                <img src="img/g3.jpg" alt="A couple's first look moment in a fruit orchard at dusk" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 03</span><span class="ap-tile__exif">50mm · f/2</span></span>
-              </button>
-            </figure>
-
-            <figure class="ap-tile ap-reveal" data-cat="portrait">
-              <button class="ap-tile__btn" type="button" data-full="img/g4.jpg" data-caption="June, available light — home sitting" data-exif="Portra 400 · 105mm · f/2.8">
-                <img src="img/g4.jpg" alt="Close natural-light portrait of a woman smiling softly indoors" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 04</span><span class="ap-tile__exif">105mm · f/2.8</span></span>
-              </button>
-            </figure>
-
-            <figure class="ap-tile ap-reveal" data-cat="outdoor">
-              <button class="ap-tile__btn" type="button" data-full="img/g5.jpg" data-caption="Alpine light, Cascade traverse" data-exif="Velvia 50 · 24mm · f/11">
-                <img src="img/g5.jpg" alt="Sunlit granite peak of a Cascade mountain against clear sky" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 05</span><span class="ap-tile__exif">24mm · f/11</span></span>
-              </button>
-            </figure>
-
-            <figure class="ap-tile ap-reveal" data-cat="outdoor">
-              <button class="ap-tile__btn" type="button" data-full="img/g6.jpg" data-caption="Outdoor session — Rami Wehbi Photography" data-exif="Tri-X 400 · 28mm · f/5.6">
-                <img src="img/g6.jpg" alt="Empty city street in soft morning light, black and white feel" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 06</span><span class="ap-tile__exif">28mm · f/5.6</span></span>
-              </button>
-            </figure>
-
-            <figure class="ap-tile ap-reveal" data-cat="wedding">
-              <button class="ap-tile__btn" type="button" data-full="img/g7.jpg" data-caption="Last dance — Astoria barn, no flash" data-exif="Portra 800 · 35mm · f/1.8">
-                <img src="img/g7.jpg" alt="Couple sharing their last dance in low warm barn light" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 07</span><span class="ap-tile__exif">35mm · f/1.8</span></span>
-              </button>
-            </figure>
-
-            <figure class="ap-tile ap-reveal" data-cat="portrait">
-              <button class="ap-tile__btn" type="button" data-full="img/g8.jpg" data-caption="Theo, studio session — hard key" data-exif="Delta 100 · 90mm · f/4">
-                <img src="img/g8.jpg" alt="Studio portrait of a man lit with a single hard key light" loading="lazy">
-                <span class="ap-tile__meta"><span class="ap-tile__frame">Frame 08</span><span class="ap-tile__exif">90mm · f/4</span></span>
-              </button>
-            </figure>
-
-          </div>
-          <p class="ap-work__empty" hidden>No frames in this set yet — try another filter.</p>
-        </div>
-      </section>
-
-      <!-- ============ ABOUT ============ -->
-      <section class="ap-about" id="about" aria-labelledby="ap-about-title">
-        <div class="ap-shell ap-about__grid">
-          <div class="ap-about__media ap-reveal">
-            <img src="img/about.jpg" alt="Rami Wehbi Photography">
-            <span class="ap-about__tag">Rami Wehbi Photography &mdash; Lebanon</span>
-          </div>
-          <div class="ap-about__text ap-reveal">
-            <p class="ap-eyebrow">The studio</p>
-            <h2 class="ap-about__title" id="ap-about-title">Hello, I&rsquo;m Rami.</h2>
-            <p class="ap-lead">I&rsquo;m Rami Wehbi, a photographer from Lebanon focused on weddings, portraits, and outdoor sessions. My goal is simple: create photographs that feel elegant, emotional, and timeless.</p>
-            <p>I work with professional digital photography and a detailed editing process. Whether it&rsquo;s your wedding day or an outdoor session, I focus on natural expressions, beautiful light, and a polished final result.</p>
-            <ul class="ap-facts">
-              <li><span>Based in</span> Lebanon</li>
-              <li><span>Specialty</span> Weddings &amp; Portraits</li>
-              <li><span>Sessions</span> Outdoor &amp; Studio</li>
-              <li><span>Travel</span> Lebanon &amp; worldwide</li>
-            </ul>
-            <a class="ap-btn ap-btn--dark" href="#contact">Start a conversation</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ SERVICES / PACKAGES ============ -->
-      <section class="ap-services" id="services" aria-labelledby="ap-services-title">
-        <div class="ap-shell">
-          <div class="ap-section-head ap-reveal">
-            <div>
-              <p class="ap-eyebrow">Packages</p>
-              <h2 class="ap-section-title" id="ap-services-title">Photography Packages</h2>
-            </div>
-            <p class="ap-section-note">Simple packages with clear pricing. Contact me for your date and custom wedding requirements.</p>
-          </div>
-<div class="ap-plans">
-
-            <article class="ap-plan ap-reveal">
-              <header class="ap-plan__head">
-                <h3 class="ap-plan__name">20 Photos</h3>
-                <p class="ap-plan__price"><span class="ap-plan__num">$250</span></p>
-                <p class="ap-plan__sub">Outdoor photo session</p>
-              </header>
-              <ul class="ap-plan__list">
-                <li>Outdoor photo session</li>
-                <li>20 professionally edited photos</li>
-                <li>High-resolution delivery</li>
-                <li>Professional color grading</li>
-                <li>Online gallery</li>
-              </ul>
-              <a class="ap-btn ap-btn--outline" href="#contact">Book a session</a>
-            </article>
-
-            <article class="ap-plan ap-plan--feature ap-reveal">
-              <span class="ap-plan__flag">Wedding</span>
-              <header class="ap-plan__head">
-                <h3 class="ap-plan__name">Wedding Package</h3>
-                <p class="ap-plan__price"><span class="ap-plan__num">$1,000</span></p>
-                <p class="ap-plan__sub">Wedding photography coverage</p>
-              </header>
-              <ul class="ap-plan__list">
-                <li>Wedding day photography coverage</li>
-                <li>Professionally edited images</li>
-                <li>High-resolution delivery</li>
-                <li>Professional color grading</li>
-                <li>Private online gallery</li>
-              </ul>
-              <a class="ap-btn ap-btn--solid" href="#contact">Check your date</a>
-            </article>
-
-            <article class="ap-plan ap-reveal">
-              <header class="ap-plan__head">
-                <h3 class="ap-plan__name">30 Photos</h3>
-                <p class="ap-plan__price"><span class="ap-plan__num">$300</span></p>
-                <p class="ap-plan__sub">Outdoor photo session</p>
-              </header>
-              <ul class="ap-plan__list">
-                <li>Outdoor photo session</li>
-                <li>30 professionally edited photos</li>
-                <li>High-resolution delivery</li>
-                <li>Professional color grading</li>
-                <li>Online gallery</li>
-              </ul>
-              <a class="ap-btn ap-btn--outline" href="#contact">Book a session</a>
-            </article>
-
-            <article class="ap-plan ap-reveal">
-              <header class="ap-plan__head">
-                <h3 class="ap-plan__name">Reel Outdoor</h3>
-                <p class="ap-plan__price"><span class="ap-plan__num">$150</span></p>
-                <p class="ap-plan__sub">Outdoor cinematic reel</p>
-              </header>
-              <ul class="ap-plan__list">
-                <li>Outdoor reel production</li>
-                <li>Cinematic shooting</li>
-                <li>Professional color grading</li>
-                <li>Edited vertical reel</li>
-                <li>Ready for Instagram &amp; social media</li>
-              </ul>
-              <a class="ap-btn ap-btn--outline" href="#contact">Book a reel</a>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ FEATURED SHOOT BAND ============ -->
-      <section class="ap-featured" id="featured" aria-labelledby="ap-featured-title">
-        <img class="ap-featured__img" src="img/featured.jpg" alt="Wedding photography by Rami Wehbi Photography" loading="lazy">
-        <div class="ap-featured__scrim" aria-hidden="true"></div>
-        <div class="ap-shell ap-featured__inner ap-reveal">
-          <p class="ap-eyebrow ap-eyebrow--light">Featured</p>
-          <h2 class="ap-featured__title" id="ap-featured-title">Wedding photography &mdash; Rami Wehbi Photography</h2>
-          <p class="ap-featured__text">Elegant wedding photography focused on real emotion, beautiful light, and timeless photographs. Reel add-on available for $150.</p>
-          <a class="ap-btn ap-btn--ghost" href="#work">View the full set</a>
-        </div>
-      </section>
-
-      <!-- ============ TESTIMONIALS ============ -->
-      <section class="ap-quotes" id="stories" aria-labelledby="ap-quotes-title">
-        <div class="ap-shell">
-          <div class="ap-section-head ap-reveal">
-            <div>
-              <p class="ap-eyebrow">In their words</p>
-              <h2 class="ap-section-title" id="ap-quotes-title">Client feedback</h2>
-            </div>
-            <p class="ap-section-note">A few words from clients of Rami Wehbi Photography.</p>
-          </div>
-
-          <div class="ap-quote-grid">
-            <figure class="ap-quote ap-reveal">
-              <div class="ap-quote__stars" aria-label="Five out of five stars">
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-              </div>
-              <blockquote>&ldquo;Rami was professional, creative, and easy to work with. The photos exceeded our expectations and captured our day beautifully.&rdquo;</blockquote>
-              <figcaption><span class="ap-quote__name">Bride &amp; Groom</span><span class="ap-quote__role">Wedding Client</span></figcaption>
-            </figure>
-
-            <figure class="ap-quote ap-reveal">
-              <div class="ap-quote__stars" aria-label="Five out of five stars">
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-              </div>
-              <blockquote>&ldquo;Rami captured every moment beautifully. The whole experience was smooth, comfortable, and truly professional.&rdquo;</blockquote>
-              <figcaption><span class="ap-quote__name">Engagement Client</span><span class="ap-quote__role">Outdoor Session</span></figcaption>
-            </figure>
-
-            <figure class="ap-quote ap-reveal">
-              <div class="ap-quote__stars" aria-label="Five out of five stars">
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.2 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.9L10 1.5z" fill="currentColor"/></svg>
-              </div>
-              <blockquote>&ldquo;Rami has a unique eye for detail. Our wedding photos are elegant, emotional, and absolutely stunning.&rdquo;</blockquote>
-              <figcaption><span class="ap-quote__name">Wedding Client</span><span class="ap-quote__role">Wedding Photography</span></figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ CONTACT ============ -->
-      <section class="ap-contact" id="contact" aria-labelledby="ap-contact-title">
-        <div class="ap-shell ap-contact__grid">
-          <div class="ap-contact__intro ap-reveal">
-            <p class="ap-eyebrow">Let&rsquo;s make something</p>
-            <h2 class="ap-contact__title" id="ap-contact-title">Let&rsquo;s plan your shoot.</h2>
-            <p class="ap-lead">Tell me about your wedding or photo session, your date, and what you have in mind. I&rsquo;ll get back to you with the details.</p>
-            <ul class="ap-contact__list">
-              <li>
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-                <a href="https://wa.me/96171560613">+961 71 560 613</a>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M5 4h3l1.6 4-2 1.4a12 12 0 0 0 5 5l1.4-2 4 1.6V19a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-                <a href="https://wa.me/96171560613">71 560 613</a>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
-                <span>Lebanon · Available for weddings &amp; outdoor sessions</span>
-              </li>
-            </ul>
-          </div>
-
-          <form class="ap-form ap-reveal" id="ap-contact-form" novalidate>
-            <div class="ap-field">
-              <label for="ap-name">Your name</label>
-              <input type="text" id="ap-name" name="name" autocomplete="name" required placeholder="Your name">
-              <span class="ap-field__error" data-error>Please add your name.</span>
-            </div>
-            <div class="ap-field ap-field--half">
-              <label for="ap-type">Session type</label>
-              <select id="ap-type" name="type">
-                <option>Wedding</option>
-                <option>Outdoor Session</option>
-                <option>Portrait Session</option>
-                <option>Reel</option>
-              </select>
-            </div>
-            <div class="ap-field ap-field--half">
-              <label for="ap-date">Approx. date</label>
-              <input type="date" id="ap-date" name="date">
-            </div>
-            <div class="ap-field">
-              <label for="ap-message">The story so far</label>
-              <textarea id="ap-message" name="message" rows="4" required placeholder="Your date, location, and what you have in mind…"></textarea>
-              <span class="ap-field__error" data-error>Tell me a little about it.</span>
-            </div>
-            <button class="ap-btn ap-btn--solid ap-form__submit" type="submit">Send enquiry</button>
-            <p class="ap-form__ok" role="status" hidden>Thank you — your message is on its way. I&rsquo;ll be in touch within two working days.</p>
-          </form>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- ============ FOOTER ============ -->
-    <footer class="ap-footer">
-      <div class="ap-shell ap-footer__grid">
-        <div class="ap-footer__brand">
-          <a class="ap-brand ap-brand--footer" href="#top" aria-label="Rami Wehbi Photography — back to top">
-            <span class="ap-brand__word">Rami Wehbi</span>
-          </a>
-          <p class="ap-footer__tag">Wedding, portrait &amp; outdoor photography. Lebanon &amp; worldwide.</p>
-        </div>
-
-        <nav class="ap-footer__col" aria-label="Explore">
-          <h3>Explore</h3>
-          <ul>
-            <li><a href="#work">Portfolio</a></li>
-            <li><a href="#about">The studio</a></li>
-            <li><a href="#services">Packages</a></li>
-            <li><a href="#stories">Stories</a></li>
-          </ul>
-        </nav>
-
-        <nav class="ap-footer__col" aria-label="Elsewhere">
-          <h3>Instagram</h3>
-          <ul class="ap-footer__social">
-            <li><a href="https://www.instagram.com/ramiwehbiphotographyy/" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
-              Instagram</a></li>
-          </ul>
-        </nav>
-
-        <div class="ap-footer__col ap-footer__note">
-          <h3>Booking</h3>
-          <p>By appointment<br>Lebanon &amp; worldwide</p>
-          <a class="ap-btn ap-btn--outline ap-btn--sm" href="#contact">Book a shoot</a>
-        </div>
+<main id="main">
+  <section class="hero" id="top" aria-label="Introduction">
+    <canvas id="gl" aria-label="A 3D gallery of photographs. Drag to turn it, tap a photo to open it." role="img"></canvas>
+    <div class="hero-fallback" aria-hidden="true"></div>
+    <div class="leak" id="leak" aria-hidden="true"></div>
+    <div class="vf" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="hud" aria-hidden="true">
+      <span class="rec k"><b></b>In frame</span>
+      <span id="hud-frame">Frame 03 / 08</span>
+      <span id="hud-lens">50mm · f/2</span>
+      <span id="hud-cat" class="k">Wedding</span>
+      <span id="hud-sun" class="sun">Beirut</span>
+    </div>
+    <div class="afbox" id="afbox" aria-hidden="true"><i></i><i></i><i></i><i></i><span id="afbox-label">AF</span></div>
+    <button class="afopen" id="afopen" type="button" hidden>Open frame</button>
+    <div class="hero-copy">
+      <p class="eyebrow">Lebanon · Wedding &amp; Fine Art Photography</p>
+      <h1><span class="rv-line"><span class="l">Timeless moments,</span></span> <span class="rv-line"><em class="l">beautifully captured.</em></span></h1>
+      <p class="lede">Wedding, portrait and outdoor photography in Lebanon, crafted with timeless style, natural emotion and attention to every detail.</p>
+      <p class="sun-line" id="sun-line">Beirut</p>
+      <div class="cta-row">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn btn-ghost" href="#contact">Book a session</a>
       </div>
+    </div>
+    <p class="drag-hint mono">Drag to turn the gallery</p>
+    <p class="swipe-hint" id="swipe-hint" aria-hidden="true"><i></i>Swipe to turn</p>
+  </section>
 
-      <div class="ap-shell ap-footer__bar">
-        <p>&copy; 2026 Rami Wehbi Photography. All rights reserved.</p>
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track" id="strip">
+      <span><em>Weddings</em></span><span>Portraits</span><span><em>Outdoor sessions</em></span><span>Cinematic reels</span><span><em>Lebanon</em></span><span>Worldwide</span><span><em>Est. in light</em></span><span>Rami Wehbi Photography</span>
+    </div>
+  </div>
+
+  <section class="approach wrap" id="intro" aria-labelledby="statement">
+    <p class="eyebrow">The approach<span class="sec-num">01</span></p>
+    <h2 class="statement rv" id="statement"><span class="w">I</span> <span class="w">capture</span> <span class="w">the</span> <span class="w">moments</span> <span class="w">you</span> <em><span class="w">never</span> <span class="w">planned</span></em> <span class="w">to</span> <span class="w">pose</span> <span class="w">for.</span></h2>
+    <div class="approach-cols">
+      <p>No forced moments. I focus on real emotions, elegant portraits, and the small details that make your day unforgettable.</p>
+      <p>From weddings to outdoor sessions, every image is carefully edited to create a clean, timeless and cinematic finish.</p>
+    </div>
+  </section>
+
+  <section class="work wrap" id="work" aria-labelledby="work-h">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Selected frames<span class="sec-num">02</span></p>
+        <h2 id="work-h" class="rv"><span class="rv-line"><span class="l">The <em>portfolio</em></span></span></h2>
       </div>
-    </footer>
-
-    <!-- ============ LIGHTBOX ============ -->
-    <div class="ap-lb" id="ap-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
-      <div class="ap-lb__backdrop" data-lb-close></div>
-      <button class="ap-lb__btn ap-lb__close" type="button" data-lb-close aria-label="Close viewer">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      </button>
-      <button class="ap-lb__btn ap-lb__nav ap-lb__prev" type="button" data-lb-prev aria-label="Previous image">
-        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <button class="ap-lb__btn ap-lb__nav ap-lb__next" type="button" data-lb-next aria-label="Next image">
-        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <figure class="ap-lb__stage">
-        <img class="ap-lb__img" id="ap-lb-img" src="" alt="">
-        <figcaption class="ap-lb__cap">
-          <span class="ap-lb__title" id="ap-lb-cap"></span>
-          <span class="ap-lb__exif" id="ap-lb-exif"></span>
-        </figcaption>
+      <p class="sec-note">A selection of wedding, portrait and outdoor photography.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter photos">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All <span>08</span></button>
+      <button class="chip" type="button" data-filter="Wedding" aria-pressed="false">Wedding <span>04</span></button>
+      <button class="chip" type="button" data-filter="Portrait" aria-pressed="false">Portrait <span>03</span></button>
+      <button class="chip" type="button" data-filter="Outdoor" aria-pressed="false">Outdoor <span>01</span></button>
+    </div>
+    <div class="sheet" id="sheet">
+      <figure class="card" data-cat="Wedding" data-i="0" style="view-transition-name:f1">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:4/5" aria-label="Open frame 01, bride and groom on a terrace">
+          <img data-photo="g1" alt="Bride and groom laughing on a sunlit terrace in Beirut" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 01</b><span>85mm · f/1.8</span><span>Wedding</span></figcaption>
+      </figure>
+      <figure class="card" data-cat="Wedding" data-i="2" style="view-transition-name:f3">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:3/4" aria-label="Open frame 03, bride in front of a palace">
+          <img data-photo="g3" alt="Bride in a full gown in front of a white palace facade" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 03</b><span>50mm · f/2</span><span>Wedding</span></figcaption>
+      </figure>
+      <figure class="card" data-cat="Outdoor" data-i="1" style="view-transition-name:f2">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:4/5" aria-label="Open frame 02, outdoor street scene">
+          <img data-photo="g2" alt="Street scene in an old European square, outdoor session" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 02</b><span>35mm · f/5.6</span><span>Outdoor</span></figcaption>
+      </figure>
+      <figure class="card" data-cat="Portrait" data-i="3" style="view-transition-name:f4">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:3/4" aria-label="Open frame 04, bride from behind on palace steps">
+          <img data-photo="g4" alt="Bride from behind, beaded open-back dress, palace steps" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 04</b><span>105mm · f/2.8</span><span>Portrait</span></figcaption>
+      </figure>
+      <figure class="card" data-cat="Wedding" data-i="4" style="view-transition-name:f5">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:4/5" aria-label="Open frame 05, bride by candlelight">
+          <img data-photo="g5" alt="Bride by candlelight on a grand staircase" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 05</b><span>35mm · f/1.4</span><span>Wedding</span></figcaption>
+      </figure>
+      <figure class="card" data-cat="Wedding" data-i="6" style="view-transition-name:f7">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:4/5" aria-label="Open frame 07, bride in a glass room">
+          <img data-photo="g7" alt="Bride in a tulle gown in a sunlit glass room" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 07</b><span>35mm · f/2.8</span><span>Wedding</span></figcaption>
+      </figure>
+      <figure class="card" data-cat="Portrait" data-i="5" style="view-transition-name:f6">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:3/4" aria-label="Open frame 06, seated bridal portrait">
+          <img data-photo="g6" alt="Seated bridal portrait in soft window light" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 06</b><span>50mm · f/2</span><span>Portrait</span></figcaption>
+      </figure>
+      <figure class="card" data-cat="Portrait" data-i="7" style="view-transition-name:f8">
+        <button class="card-in" type="button" data-focus data-af="View" style="--ar:4/5" aria-label="Open frame 08, bride turning in tulle">
+          <img data-photo="g8" alt="Bride turning in a tulle gown, veil catching the light" width="800" height="1000"><span class="glare"></span>
+        </button>
+        <figcaption><b>Frame 08</b><span>85mm · f/2</span><span>Portrait</span></figcaption>
       </figure>
     </div>
+  </section>
 
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-  
+  <section class="story" id="story" aria-labelledby="st-h">
+    <div class="story-pin">
+      <div class="story-head wrap">
+        <p class="eyebrow">Your wedding day<span class="sec-num">03</span></p>
+        <h2 id="st-h" class="rv"><span class="rv-line"><span class="l">One day, <em>told in light.</em></span></span></h2>
+        <p class="story-scrub mono" aria-hidden="true"><span id="st-time">07:00</span><i><b id="st-fill"></b></i><span>02:00</span></p>
+      </div>
+      <div class="story-track" id="story-track">
+        <article class="panel">
+          <img data-photo="g6" alt="Getting ready: the bride seated in soft window light" width="800" height="1000">
+          <div class="panel-txt"><p class="mono">07:00 · Getting ready</p><h3>The quiet before.</h3><p>Dress, details, the people who raised you. I arrive early and stay out of the way.</p></div>
+        </article>
+        <article class="panel panel-wide">
+          <img data-photo="g5" alt="The ceremony: candlelight on the grand staircase" width="1600" height="1000">
+          <div class="panel-txt"><p class="mono">12:00 · Ceremony</p><h3>The moment you say yes.</h3><p>Two angles, no flash, nothing staged. The vows, the look, the first kiss.</p></div>
+        </article>
+        <article class="panel">
+          <img data-photo="g1" alt="Couple portraits at golden hour on a Beirut terrace" width="800" height="1000">
+          <div class="panel-txt"><p class="mono">17:30 · Golden hour</p><h3>Twenty minutes, just you two.</h3><p>Timed to the sun. The portraits you will print and frame.</p></div>
+        </article>
+        <article class="panel">
+          <img data-photo="featured" alt="The party: fireworks over the fountain" width="800" height="1000">
+          <div class="panel-txt"><p class="mono">22:00 · The party</p><h3>Until the last dance.</h3><p>Low light, real laughter, the dance floor as it was.</p></div>
+        </article>
+        <article class="panel panel-end">
+          <div class="panel-txt">
+            <p class="mono">After · Delivery</p>
+            <h3>Your gallery, <em>within weeks.</em></h3>
+            <p>Professionally edited, high resolution, in a private online gallery you can share with family.</p>
+            <p class="ft-addon"><span class="mono">Cinematic reel add-on</span><b>$150</b></p>
+            <a class="btn" href="#contact" data-session="Wedding">Check your date</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about wrap" id="about" aria-labelledby="about-h">
+    <div class="about-art">
+      <div class="stack" id="stack">
+        <div class="print print-back"><img data-photo="g7" alt="" width="800" height="1000"></div>
+        <div class="print print-front">
+          <img data-photo="about" alt="Rami Wehbi, wedding and portrait photographer in Lebanon" width="800" height="1000">
+          <p class="print-cap"><span>Rami Wehbi</span><span>Lebanon</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">The studio<span class="sec-num">04</span></p>
+      <h2 id="about-h" class="rv"><span class="rv-line"><span class="l">Hello, I’m <em>Rami.</em></span></span></h2>
+      <p>I’m Rami Wehbi, a photographer from Lebanon focused on weddings, portraits and outdoor sessions. My goal is simple: photographs that feel elegant, emotional and timeless.</p>
+      <p>I work with professional digital photography and a detailed editing process. Whether it’s your wedding day or an outdoor session, I focus on natural expressions, beautiful light and a polished final result.</p>
+      <dl class="spec">
+        <div><dt>Based in</dt><dd>Lebanon</dd></div>
+        <div><dt>Specialty</dt><dd>Weddings &amp; Portraits</dd></div>
+        <div><dt>Sessions</dt><dd>Outdoor &amp; Studio</dd></div>
+        <div><dt>Travel</dt><dd>Lebanon &amp; worldwide</dd></div>
+      </dl>
+      <a class="btn btn-ghost" href="#contact">Start a conversation</a>
+    </div>
+  </section>
+
+  <section class="packages wrap" id="packages" aria-labelledby="pk-h">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Packages<span class="sec-num">05</span></p>
+        <h2 id="pk-h" class="rv"><span class="rv-line"><span class="l">Clear prices, <em>no surprises.</em></span></span></h2>
+      </div>
+      <p class="sec-note">Simple packages with clear pricing. Message me for your date and custom wedding requirements.</p>
+    </div>
+    <div class="pk-grid">
+      <article class="pk pk-feature" data-tilt>
+        <div>
+          <p class="pk-tag">Most booked</p>
+          <h3>Wedding Package</h3>
+          <p class="pk-for">Wedding photography coverage</p>
+        </div>
+        <p class="price"><span class="cur">$</span>1,000</p>
+        <ul class="pk-list">
+          <li>Wedding day photography coverage</li>
+          <li>Professionally edited images</li>
+          <li>High-resolution delivery</li>
+          <li>Professional color grading</li>
+          <li>Private online gallery</li>
+        </ul>
+        <a class="btn" href="#contact" data-session="Wedding">Check your date</a>
+      </article>
+      <article class="pk" data-tilt>
+        <div class="pk-top">
+          <div><h3>20 Photos</h3><p class="pk-for">Outdoor photo session</p></div>
+          <p class="price"><span class="cur">$</span>250</p>
+        </div>
+        <ul class="pk-list"><li>20 edited photos</li><li>High-res delivery</li><li>Color grading</li><li>Online gallery</li></ul>
+        <a class="btn btn-ghost btn-small" href="#contact" data-session="Outdoor Session">Book a session</a>
+      </article>
+      <article class="pk" data-tilt>
+        <div class="pk-top">
+          <div><h3>30 Photos</h3><p class="pk-for">Outdoor photo session</p></div>
+          <p class="price"><span class="cur">$</span>300</p>
+        </div>
+        <ul class="pk-list"><li>30 edited photos</li><li>High-res delivery</li><li>Color grading</li><li>Online gallery</li></ul>
+        <a class="btn btn-ghost btn-small" href="#contact" data-session="Outdoor Session">Book a session</a>
+      </article>
+      <article class="pk" data-tilt>
+        <div class="pk-top">
+          <div><h3>Reel Outdoor</h3><p class="pk-for">Outdoor cinematic reel</p></div>
+          <p class="price"><span class="cur">$</span>150</p>
+        </div>
+        <ul class="pk-list"><li>Cinematic shooting</li><li>Color grading</li><li>Edited vertical reel</li><li>Ready for Instagram</li></ul>
+        <a class="btn btn-ghost btn-small" href="#contact" data-session="Reel">Book a reel</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="feedback wrap" id="feedback" aria-labelledby="fb-h">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">In their words<span class="sec-num">06</span></p>
+        <h2 id="fb-h" class="rv"><span class="rv-line"><span class="l">Client <em>feedback</em></span></span></h2>
+      </div>
+      <p class="sec-note">A few words from couples and clients of Rami Wehbi Photography.</p>
+    </div>
+    <div class="quotes">
+      <figure class="q">
+        <blockquote>Rami was professional, creative, and easy to work with. The photos exceeded our expectations and captured our day beautifully.</blockquote>
+        <figcaption><b>Bride &amp; Groom</b><span>Wedding client</span></figcaption>
+      </figure>
+      <figure class="q">
+        <blockquote>Rami captured every moment beautifully. The whole experience was smooth, comfortable, and truly professional.</blockquote>
+        <figcaption><b>Engagement client</b><span>Outdoor session</span></figcaption>
+      </figure>
+      <figure class="q">
+        <blockquote>Rami has a unique eye for detail. Our wedding photos are elegant, emotional, and absolutely stunning.</blockquote>
+        <figcaption><b>Wedding client</b><span>Wedding photography</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="contact wrap" id="contact" aria-labelledby="ct-h">
+    <div class="contact-copy">
+      <p class="eyebrow">Let’s make something<span class="sec-num">07</span></p>
+      <h2 id="ct-h" class="rv"><span class="rv-line"><span class="l">Let’s plan your <em>shoot.</em></span></span></h2>
+      <p>Tell me about your wedding or photo session, your date, and what you have in mind. I’ll get back to you with the details.</p>
+      <div class="lines">
+        <div class="line">
+          <div><p class="mono">WhatsApp</p><p class="phone" id="phone">+961 71 560 613</p></div>
+          <button class="copy-btn" type="button" id="copy-phone">Copy number</button>
+        </div>
+        <div class="line">
+          <p class="mono">Instagram</p>
+          <a class="val" href="https://www.instagram.com/ramiwehbiphotographyy/" target="_blank" rel="noopener">@ramiwehbiphotographyy</a>
+        </div>
+        <div class="line">
+          <p class="mono">Availability</p>
+          <p>Weddings &amp; outdoor sessions · Lebanon &amp; worldwide</p>
+        </div>
+      </div>
+    </div>
+    <form class="form" id="enquiry" novalidate>
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" autocomplete="name" required placeholder="Maya &amp; Karim">
+        <p class="err" id="f-name-err" hidden>Add your name so Rami knows who is writing.</p>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-type">Session type</label>
+          <select id="f-type" name="type">
+            <option>Wedding</option>
+            <option>Outdoor Session</option>
+            <option>Portrait Session</option>
+            <option>Reel</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-date">Approx. date</label>
+          <input id="f-date" name="date" type="date">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-story">Tell me a little about it</label>
+        <textarea id="f-story" name="story" rows="4" placeholder="Venue, number of guests, the look you love…"></textarea>
+      </div>
+      <a class="btn" id="wa-send" href="https://wa.me/96171560613" target="_blank" rel="noopener">Send on WhatsApp</a>
+      <p class="form-note">Opens WhatsApp with your message written out. You press send.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <p class="foot-lead">Wedding, portrait and outdoor photography. Lebanon and worldwide.</p>
+    <div>
+      <h3>Explore</h3>
+      <ul><li><a href="#work">Portfolio</a></li><li><a href="#about">The studio</a></li><li><a href="#packages">Packages</a></li><li><a href="#feedback">Feedback</a></li></ul>
+    </div>
+    <div>
+      <h3>Follow</h3>
+      <ul><li><a href="https://www.instagram.com/ramiwehbiphotographyy/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://wa.me/96171560613" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+    </div>
+    <div>
+      <h3>Booking</h3>
+      <ul><li>By appointment</li><li>+961 71 560 613</li><li><a href="#contact">Book a shoot →</a></li></ul>
+    </div>
+  </div>
+  <p class="wordmark" aria-hidden="true">Rami <em>Wehbi</em></p>
+  <div class="wrap foot-base"><span>© 2026 Rami Wehbi Photography. All rights reserved.</span><span class="mono">Lebanon · 33.9°N 35.5°E</span></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/96171560613?text=Hello%20Rami%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener" aria-label="Chat with Rami on WhatsApp" data-af="Chat">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.6-4.2A8.5 8.5 0 1 1 20.5 11.6z"/><path d="M9.3 8.4c.3-.5.9-.5 1.2 0l.6 1.3c.1.3 0 .6-.2.8l-.5.5c.5 1 1.3 1.8 2.3 2.3l.5-.5c.2-.2.5-.3.8-.2l1.3.6c.5.3.5.9 0 1.2-.8.6-1.8.8-2.8.3a8 8 0 0 1-3.6-3.6c-.5-1-.3-2 .4-2.7z"/></svg>
+</a>
+
+<div class="bar" id="bar">
+  <p class="bar-txt"><b>Weddings from $1,000</b><span>Lebanon &amp; worldwide</span></p>
+  <a class="btn" href="https://wa.me/96171560613?text=Hello%20Rami%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.6-4.2A8.5 8.5 0 1 1 20.5 11.6z"/></svg>WhatsApp</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <div class="lb-top"><p class="mono" id="lb-count">01 / 08</p><button class="round" type="button" id="lb-close" aria-label="Close viewer">✕</button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <div class="lb-bottom">
+    <p class="lb-cap" id="lb-cap"></p>
+    <div class="lb-nav"><button class="round" type="button" id="lb-prev" aria-label="Previous photo">←</button><button class="round" type="button" id="lb-next" aria-label="Next photo">→</button></div>
+  </div>
+</div>
+
+<div class="af" id="af" aria-hidden="true"><i></i><i></i><i></i><i></i><span id="af-label"></span></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
-(function () {
-  var form = document.getElementById('ap-contact-form');
-  if (!form) return;
+(function(){
+'use strict';
+/* safety net: whatever happens, the intro screen never traps the visitor */
+function forceOpen(){var s=document.getElementById('shutter');if(s&&!s.classList.contains('open')){s.classList.add('open');document.documentElement.classList.remove('intro');document.documentElement.style.overflow='';}}
+window.addEventListener('error',forceOpen);setTimeout(forceOpen,8000);
+var $=function(s,el){return (el||document).querySelector(s)};
+var $$=function(s,el){return Array.prototype.slice.call((el||document).querySelectorAll(s))};
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia('(pointer: fine)').matches;
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    event.stopImmediatePropagation();
+/* ---------- Photos ----------
+   On ramiwehbi.com the real files in /img/ are used.
+   Anywhere else (this preview) a painted stand-in is drawn for each file.
+   To show real photos in a preview, put data: URIs in EMBEDDED, e.g. EMBEDDED.g1 = "data:image/jpeg;base64,...". */
+var EMBEDDED={};
+var PHOTOS=[
+  {id:'g1',n:'01',lens:'85mm',ap:'f/1.8',cat:'Wedding',look:'window',seed:11,alt:'Bride and groom laughing on a sunlit terrace in Beirut'},
+  {id:'g2',n:'02',lens:'35mm',ap:'f/5.6',cat:'Outdoor',look:'land',seed:23,alt:'Street scene in an old European square, outdoor session'},
+  {id:'g3',n:'03',lens:'50mm',ap:'f/2',cat:'Wedding',look:'dusk',seed:37,alt:'Bride in a full gown in front of a white palace facade'},
+  {id:'g4',n:'04',lens:'105mm',ap:'f/2.8',cat:'Portrait',look:'soft',seed:41,alt:'Bride from behind, beaded open-back dress, palace steps'},
+  {id:'g5',n:'05',lens:'35mm',ap:'f/1.4',cat:'Wedding',look:'peak',seed:53,alt:'Bride by candlelight on a grand staircase'},
+  {id:'g6',n:'06',lens:'50mm',ap:'f/2',cat:'Portrait',look:'mono',seed:67,alt:'Seated bridal portrait in soft window light'},
+  {id:'g7',n:'07',lens:'35mm',ap:'f/2.8',cat:'Wedding',look:'barn',seed:71,alt:'Bride in a tulle gown in a sunlit glass room'},
+  {id:'g8',n:'08',lens:'85mm',ap:'f/2',cat:'Portrait',look:'key',seed:83,alt:'Bride turning in a tulle gown, veil catching the light'}
+];
+var EXTRA={
+  hero:{id:'hero',look:'dusk',seed:5,w:1600,h:1000},
+  about:{id:'about',look:'soft',seed:9},
+  featured:{id:'featured',look:'barn',seed:13,w:1600,h:1000}
+};
+var onSite=true;
+var SOURCES={};
 
-    var name = document.getElementById('ap-name');
-    var type = document.getElementById('ap-type');
-    var date = document.getElementById('ap-date');
-    var message = document.getElementById('ap-message');
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function T(c,a){return 'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')';}
+function glow(x,cx,cy,r,c,a){var g=x.createRadialGradient(cx,cy,0,cx,cy,r);g.addColorStop(0,T(c,a));g.addColorStop(1,T(c,0));x.fillStyle=g;x.fillRect(cx-r,cy-r,r*2,r*2);}
+function vgrad(x,W,H,st){var g=x.createLinearGradient(0,0,0,H);st.forEach(function(s){g.addColorStop(s[0],s[1]);});x.fillStyle=g;x.fillRect(0,0,W,H);}
+function hgrad(x,W,H,st){var g=x.createLinearGradient(0,0,W,0);st.forEach(function(s){g.addColorStop(s[0],s[1]);});x.fillStyle=g;x.fillRect(0,0,W,H);}
+function bokeh(x,W,H,r,n,c,y0,y1,s0,s1,a){
+  x.save();x.globalCompositeOperation='screen';
+  for(var i=0;i<n;i++){
+    var cx=r()*W,cy=(y0+r()*(y1-y0))*H,rad=(s0+r()*(s1-s0))*W,al=a*(.35+r()*.65);
+    var g=x.createRadialGradient(cx,cy,0,cx,cy,rad);
+    g.addColorStop(0,T(c,al*.5));g.addColorStop(.8,T(c,al*.8));g.addColorStop(1,T(c,0));
+    x.fillStyle=g;x.beginPath();x.arc(cx,cy,rad,0,Math.PI*2);x.fill();
+  }
+  x.restore();
+}
+function ridge(x,W,H,r,base,amp,col){
+  var p0=r()*6,p1=r()*6,p2=r()*6;
+  x.beginPath();x.moveTo(0,H);
+  for(var i=0;i<=90;i++){var t=i/90;x.lineTo(t*W,base*H+amp*H*(Math.sin(t*3+p0)*.5+Math.sin(t*7.3+p1)*.3+Math.sin(t*17+p2)*.12));}
+  x.lineTo(W,H);x.closePath();x.fillStyle=col;x.fill();
+}
+function mist(x,W,H,y,a){var g=x.createLinearGradient(0,(y-.07)*H,0,(y+.05)*H);g.addColorStop(0,'rgba(240,234,222,0)');g.addColorStop(.6,'rgba(240,234,222,'+(a||.32)+')');g.addColorStop(1,'rgba(240,234,222,0)');x.fillStyle=g;x.fillRect(0,(y-.07)*H,W,H*.12);}
+function figure(x,H,cx,cy,s,side,lit){
+  var d=side==='left'?-1:1;
+  var g=x.createLinearGradient(cx+d*s*1.6,0,cx-d*s*1.6,0);
+  g.addColorStop(0,T(lit,1));g.addColorStop(.4,T(lit.map(function(v){return (v*.3)|0;}),1));g.addColorStop(1,'rgb(10,8,7)');
+  x.fillStyle=g;
+  x.beginPath();x.moveTo(cx-s*2.5,H+2);
+  x.bezierCurveTo(cx-s*2.35,cy+s*1.75,cx-s*1.25,cy+s*1.38,cx-s*.4,cy+s*1.18);
+  x.lineTo(cx-s*.36,cy+s*.62);x.lineTo(cx+s*.36,cy+s*.62);x.lineTo(cx+s*.4,cy+s*1.18);
+  x.bezierCurveTo(cx+s*1.25,cy+s*1.38,cx+s*2.35,cy+s*1.75,cx+s*2.5,H+2);
+  x.closePath();x.fill();
+  x.beginPath();x.ellipse(cx,cy,s*.62,s*.8,0,0,Math.PI*2);x.fill();
+  x.save();x.globalCompositeOperation='screen';x.strokeStyle=T(lit,.5);x.lineWidth=s*.045;x.shadowColor=T(lit,.9);x.shadowBlur=s*.35;
+  x.beginPath();
+  if(d<0)x.ellipse(cx,cy,s*.62,s*.8,0,Math.PI*.55,Math.PI*1.5);else x.ellipse(cx,cy,s*.62,s*.8,0,-Math.PI*.5,Math.PI*.45);
+  x.stroke();x.restore();
+}
+function couple(x,cx,base,h,col){
+  var s=h/8;x.fillStyle=col;
+  var gx=cx-s*.9;
+  x.beginPath();x.ellipse(gx,base-h+s*.7,s*.55,s*.68,0,0,Math.PI*2);x.fill();
+  x.beginPath();x.moveTo(gx-s*1.25,base-h+s*2.1);x.quadraticCurveTo(gx,base-h+s*1.5,gx+s*1.15,base-h+s*2.0);
+  x.lineTo(gx+s*.95,base);x.lineTo(gx-s*1.05,base);x.closePath();x.fill();
+  var bx=cx+s*.75;
+  x.beginPath();x.ellipse(bx,base-h+s*1.1,s*.5,s*.62,-.25,0,Math.PI*2);x.fill();
+  x.beginPath();x.moveTo(bx-s*.95,base-h+s*2.3);x.quadraticCurveTo(bx,base-h+s*1.8,bx+s*.95,base-h+s*2.3);
+  x.lineTo(bx+s*.55,base-h+s*4.2);x.quadraticCurveTo(bx+s*1.6,base-s*1.0,bx+s*2.6,base);
+  x.lineTo(bx-s*1.6,base);x.quadraticCurveTo(bx-s*.8,base-s*1.4,bx-s*.6,base-h+s*4.2);x.closePath();x.fill();
+  x.fillStyle='rgba(255,235,210,.13)';
+  x.beginPath();x.moveTo(bx+s*.2,base-h+s*.8);x.quadraticCurveTo(bx+s*2.4,base-h+s*3,bx+s*2,base-s*2);x.lineTo(bx+s*.7,base-h+s*3);x.closePath();x.fill();
+}
+var LOOKS={
+  window:function(x,W,H,r){
+    hgrad(x,W,H,[[0,'#3b2d23'],[.5,'#1d1713'],[1,'#100d0b']]);
+    glow(x,W*.02,H*.32,W*.95,[246,216,178],.42);
+    x.save();x.globalCompositeOperation='screen';var g=x.createLinearGradient(0,0,W*.4,0);g.addColorStop(0,'rgba(255,236,210,.22)');g.addColorStop(1,'rgba(255,236,210,0)');x.fillStyle=g;x.fillRect(0,0,W*.4,H);x.restore();
+    figure(x,H,W*.58,H*.4,W*.17,'left',[226,182,140]);
+  },
+  soft:function(x,W,H,r){
+    vgrad(x,W,H,[[0,'#6e5a4a'],[1,'#30261f']]);
+    glow(x,W*.92,H*.22,W*.85,[255,232,204],.5);
+    bokeh(x,W,H,r,9,[255,224,186],.02,.45,.03,.08,.25);
+    figure(x,H,W*.44,H*.43,W*.18,'right',[236,196,158]);
+  },
+  key:function(x,W,H,r){
+    hgrad(x,W,H,[[0,'#1b1b1f'],[1,'#09090a']]);
+    glow(x,W*.15,H*.18,W*.7,[205,210,224],.3);
+    figure(x,H,W*.56,H*.42,W*.16,'left',[214,218,230]);
+  },
+  land:function(x,W,H,r){
+    vgrad(x,W,H,[[0,'#d8c6ab'],[.45,'#b6b3a5'],[.8,'#7c8782'],[1,'#5f6a65']]);
+    glow(x,W*.68,H*.4,W*.6,[255,228,184],.55);
+    ridge(x,W,H,r,.5,.05,'#939a92');mist(x,W,H,.56);
+    ridge(x,W,H,r,.6,.06,'#66726b');mist(x,W,H,.67,.25);
+    ridge(x,W,H,r,.72,.05,'#3d4943');ridge(x,W,H,r,.85,.04,'#1f2824');
+  },
+  peak:function(x,W,H,r){
+    vgrad(x,W,H,[[0,'#6f97b6'],[.65,'#c9d7de'],[1,'#e4e1d6']]);
+    var pts=[[0,.74],[.12,.66],[.22,.6],[.3,.5],[.38,.44],[.45,.35],[.52,.27],[.56,.3],[.6,.36],[.66,.4],[.72,.47],[.8,.52],[.9,.6],[1,.66]];
+    x.beginPath();x.moveTo(0,H);pts.forEach(function(p){x.lineTo(p[0]*W,(p[1]+(r()-.5)*.018)*H);});x.lineTo(W,H);x.closePath();
+    var g=x.createLinearGradient(W*.3,0,W*.75,0);g.addColorStop(0,'#efe6d6');g.addColorStop(.48,'#d5c9b6');g.addColorStop(.53,'#7d838c');g.addColorStop(1,'#5b616b');x.fillStyle=g;x.fill();
+    mist(x,W,H,.72,.4);ridge(x,W,H,r,.82,.035,'#2c3634');
+  },
+  mono:function(x,W,H,r){
+    vgrad(x,W,H,[[0,'#e4e3df'],[.5,'#c9c8c3'],[1,'#7d7c78']]);
+    x.fillStyle='#454542';x.beginPath();x.moveTo(0,0);x.lineTo(W*.43,H*.38);x.lineTo(W*.43,H*.56);x.lineTo(0,H*.94);x.closePath();x.fill();
+    x.fillStyle='#343432';x.beginPath();x.moveTo(W,H*.04);x.lineTo(W*.57,H*.39);x.lineTo(W*.57,H*.56);x.lineTo(W,H*.9);x.closePath();x.fill();
+    x.strokeStyle='rgba(230,230,225,.12)';x.lineWidth=W*.003;
+    for(var k=1;k<8;k++){var t=k/8;
+      x.beginPath();x.moveTo(0,H*.94*t);x.lineTo(W*.43,H*.38+H*.18*t);x.stroke();
+      x.beginPath();x.moveTo(W,H*.04+H*.86*t);x.lineTo(W*.57,H*.39+H*.17*t);x.stroke();}
+    var g=x.createLinearGradient(0,H*.56,0,H);g.addColorStop(0,'#a9a8a3');g.addColorStop(1,'#4c4b48');x.fillStyle=g;
+    x.beginPath();x.moveTo(W*.43,H*.56);x.lineTo(W*.57,H*.56);x.lineTo(W,H*.9);x.lineTo(W,H);x.lineTo(0,H);x.lineTo(0,H*.94);x.closePath();x.fill();
+    x.fillStyle='rgba(235,235,230,.55)';
+    for(var j=0;j<7;j++){var t0=Math.pow(j/7,1.6),t1=Math.pow((j+.45)/7,1.6),y0=H*.56+H*.44*t0,y1=H*.56+H*.44*t1,w0=W*.004+W*.02*t0,w1=W*.004+W*.02*t1;
+      x.beginPath();x.moveTo(W*.5-w0/2,y0);x.lineTo(W*.5+w0/2,y0);x.lineTo(W*.5+w1/2,y1);x.lineTo(W*.5-w1/2,y1);x.closePath();x.fill();}
+    glow(x,W*.5,H*.47,W*.45,[255,255,250],.55);
+  },
+  dusk:function(x,W,H,r){
+    vgrad(x,W,H,[[0,'#e7b37d'],[.42,'#c07a4f'],[.68,'#5a3222'],[1,'#170e0a']]);
+    glow(x,W*.6,H*.55,W*.6,[255,214,150],.75);
+    bokeh(x,W,H,r,24,[255,206,140],.05,.55,.015,.06,.5);
+    x.fillStyle='#2a170f';
+    for(var k=0;k<16;k++){x.beginPath();x.ellipse(r()*W,H*(.6+r()*.04),W*(.05+r()*.07),H*(.035+r()*.035),0,0,Math.PI*2);x.fill();}
+    var g=x.createLinearGradient(0,H*.62,0,H);g.addColorStop(0,'rgba(36,20,13,.96)');g.addColorStop(1,'#120a07');x.fillStyle=g;x.fillRect(0,H*.62,W,H*.38);
+    couple(x,W*.5,H*.96,H*.44,'#0f0906');
+    x.save();x.globalCompositeOperation='screen';glow(x,W*.6,H*.55,W*.3,[255,220,160],.28);x.restore();
+  },
+  barn:function(x,W,H,r){
+    vgrad(x,W,H,[[0,'#160e0a'],[.5,'#2a1810'],[1,'#0e0806']]);
+    glow(x,W*.5,H*.55,W*.65,[232,150,82],.38);
+    for(var s=0;s<2;s++){var y0=H*(.1+s*.12),sag=H*(.08+s*.03);
+      for(var k=0;k<=22;k++){var t=k/22,px=t*W,py=y0+Math.sin(t*Math.PI)*sag;
+        glow(x,px,py,W*.035,[255,196,120],.45);x.fillStyle='rgba(255,236,200,.95)';x.beginPath();x.arc(px,py,W*.0045,0,Math.PI*2);x.fill();}}
+    bokeh(x,W,H,r,14,[255,180,100],.3,.8,.04,.1,.22);
+    couple(x,W*.5,H*.97,H*.46,'#0c0705');
+    x.save();x.globalCompositeOperation='screen';glow(x,W*.5,H*.5,W*.3,[255,190,120],.22);x.restore();
+  }
+};
+function paint(spec,W,H){
+  var c=document.createElement('canvas');c.width=W;c.height=H;
+  var x=c.getContext('2d');var r=rng(spec.seed);
+  LOOKS[spec.look](x,W,H,r);
+  var v=x.createRadialGradient(W/2,H/2,Math.min(W,H)*.25,W/2,H/2,Math.hypot(W,H)*.62);
+  v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.55)');x.fillStyle=v;x.fillRect(0,0,W,H);
+  x.font=Math.round(Math.min(W,H)*.02)+'px ui-monospace, Menlo, monospace';
+  x.fillStyle='rgba(240,233,221,.55)';x.textBaseline='bottom';
+  x.fillText(('Your photo · '+spec.id+'.jpg').toUpperCase(),W*.04,H-Math.min(W,H)*.035);
+  return c;
+}
+function specFor(id){
+  for(var i=0;i<PHOTOS.length;i++)if(PHOTOS[i].id===id)return PHOTOS[i];
+  return EXTRA[id];
+}
+function source(id){
+  if(SOURCES[id])return SOURCES[id];
+  var spec=specFor(id),s;
+  if(EMBEDDED[id])s={src:EMBEDDED[id]};
+  else if(onSite)s={src:'img/'+id+'.jpg',ring:'img/ring/'+id+'.jpg'};
+  else{var c=paint(spec,spec.w||800,spec.h||1000);s={src:c.toDataURL('image/jpeg',.88),canvas:c};}
+  SOURCES[id]=s;return s;
+}
+$$('img[data-photo]').forEach(function(img){
+  var below=img.getBoundingClientRect().top>window.innerHeight*1.5;
+  if(below){img.loading='lazy';img.decoding='async';}
+  img.src=source(img.dataset.photo).src;
+});
+var stripEl=$('#strip');stripEl.innerHTML+=stripEl.innerHTML;
 
-    if (!name.value.trim() || !message.value.trim()) {
-      form.classList.add('ap-form--invalid');
-      if (!name.value.trim()) name.focus();
-      else message.focus();
-      return;
+/* ---------- Smooth scroll ---------- */
+var lenis=null;
+if(!reduce&&window.Lenis){
+  try{
+    lenis=new window.Lenis({lerp:.1,smoothWheel:true});
+    var lraf=function(t){lenis.raf(t);requestAnimationFrame(lraf);};requestAnimationFrame(lraf);
+  }catch(e){lenis=null;}
+}
+function scrollToEl(el){
+  if(lenis)lenis.scrollTo(el,{offset:el.id==='top'?0:-72});
+  else el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+}
+
+/* ---------- Nav + menu ---------- */
+var nav=$('#nav'),mnav=$('#mnav'),menuBtn=$('#menu-btn');
+function setMenu(open){
+  mnav.hidden=!open;menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'Close':'Menu';
+  if(lenis){open?lenis.stop():lenis.start();}
+}
+menuBtn.addEventListener('click',function(){setMenu(mnav.hidden);});
+var typeSel=$('#f-type');
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]');if(!a)return;
+  var id=a.getAttribute('href').slice(1);var el=id&&document.getElementById(id);if(!el)return;
+  e.preventDefault();
+  if(a.dataset.session){typeSel.value=a.dataset.session;updateWa();}
+  if(!mnav.hidden)setMenu(false);
+  scrollToEl(el);
+});
+
+/* ---------- Scroll-linked bits ---------- */
+var statement=$('#statement'),words=$$('#statement .w');
+var ticking=false;
+function onScroll(){
+  nav.classList.toggle('solid',window.scrollY>40);
+  if(reduce){words.forEach(function(w){w.classList.add('on');});return;}
+  var r=statement.getBoundingClientRect(),vh=window.innerHeight;
+  var p=Math.min(1,Math.max(0,(vh*.9-r.top)/(vh*.5+r.height*.5)));
+  var k=Math.round(p*words.length);
+  words.forEach(function(w,i){w.classList.toggle('on',i<k);});
+}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(function(){ticking=false;onScroll();});}},{passive:true});
+onScroll();
+
+/* ---------- Portfolio filter ---------- */
+var cards=$$('.card'),chips=$$('.chip');
+chips.forEach(function(ch){
+  ch.addEventListener('click',function(){
+    var f=ch.dataset.filter;
+    var apply=function(){
+      chips.forEach(function(c){c.setAttribute('aria-pressed',String(c===ch));});
+      cards.forEach(function(c){c.hidden=!(f==='all'||c.dataset.cat===f);});
+    };
+    if(document.startViewTransition&&!reduce)document.startViewTransition(apply);else apply();
+  });
+});
+
+/* ---------- 3D tilt ---------- */
+function tilt(el,target,max){
+  el.addEventListener('pointermove',function(e){
+    if(e.pointerType!=='mouse'||reduce)return;
+    var r=el.getBoundingClientRect(),px=(e.clientX-r.left)/r.width,py=(e.clientY-r.top)/r.height;
+    target.style.transform='perspective(1000px) rotateX('+((.5-py)*max).toFixed(2)+'deg) rotateY('+((px-.5)*max).toFixed(2)+'deg)';
+    target.style.setProperty('--gx',(px*100).toFixed(1)+'%');target.style.setProperty('--gy',(py*100).toFixed(1)+'%');
+  });
+  el.addEventListener('pointerleave',function(){target.style.transform='';});
+}
+$$('.card-in').forEach(function(b){tilt(b,b,10);});
+$$('[data-tilt]').forEach(function(p){tilt(p,p,5);});
+var stack=$('#stack'),aboutSec=$('#about');
+aboutSec.addEventListener('pointermove',function(e){
+  if(e.pointerType!=='mouse'||reduce)return;
+  var r=aboutSec.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;
+  stack.style.transform='rotateY('+(px*16).toFixed(2)+'deg) rotateX('+(-py*12).toFixed(2)+'deg)';
+});
+aboutSec.addEventListener('pointerleave',function(){stack.style.transform='';});
+
+/* ---------- Lightbox ---------- */
+var lb=$('#lb'),lbImg=$('#lb-img'),lbCap=$('#lb-cap'),lbCount=$('#lb-count'),lbIndex=0,lbReturn=null;
+function showLb(i){
+  lbIndex=(i+PHOTOS.length)%PHOTOS.length;var p=PHOTOS[lbIndex];
+  lbImg.src=source(p.id).src;lbImg.alt=p.alt;
+  lbCap.innerHTML='';var b=document.createElement('b');b.textContent='Frame '+p.n+' · '+p.lens+' · '+p.ap+' · '+p.cat;lbCap.appendChild(b);lbCap.appendChild(document.createTextNode(p.alt));
+  lbCount.textContent=p.n+' / 08';
+}
+function openLb(i){lbReturn=document.activeElement;showLb(i);lb.hidden=false;if(lenis)lenis.stop();document.documentElement.style.overflow='hidden';$('#lb-close').focus();}
+function closeLb(){lb.hidden=true;if(lenis)lenis.start();document.documentElement.style.overflow='';if(lbReturn&&lbReturn.focus)lbReturn.focus();}
+$('#lb-close').addEventListener('click',closeLb);
+$('#lb-prev').addEventListener('click',function(){showLb(lbIndex-1);});
+$('#lb-next').addEventListener('click',function(){showLb(lbIndex+1);});
+lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('lb-stage'))closeLb();});
+document.addEventListener('keydown',function(e){
+  if(lb.hidden){if(e.key==='Escape'&&!mnav.hidden)setMenu(false);return;}
+  if(e.key==='Escape')closeLb();else if(e.key==='ArrowLeft')showLb(lbIndex-1);else if(e.key==='ArrowRight')showLb(lbIndex+1);
+});
+var sx=0;
+lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)showLb(lbIndex+(dx<0?1:-1));},{passive:true});
+cards.forEach(function(c){$('.card-in',c).addEventListener('click',function(){openLb(+c.dataset.i);});});
+
+/* ---------- Contact ---------- */
+var fName=$('#f-name'),fDate=$('#f-date'),fStory=$('#f-story'),waSend=$('#wa-send'),nameErr=$('#f-name-err');
+function fmtDate(d){try{return new Date(d+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});}catch(e){return d;}}
+function updateWa(){
+  var n=fName.value.trim(),msg='Hello Rami'+(n?', this is '+n:'')+'. I would like to book: '+typeSel.value+'.';
+  if(fDate.value)msg+='\nDate: '+fmtDate(fDate.value);
+  if(fStory.value.trim())msg+='\n'+fStory.value.trim();
+  waSend.href='https://wa.me/96171560613?text='+encodeURIComponent(msg);
+}
+/* keep an unsent draft on this phone (best effort; storage may be unavailable) */
+var DRAFT='rw-enquiry';
+try{var d=JSON.parse(localStorage.getItem(DRAFT)||'null');if(d){fName.value=d.n||'';typeSel.value=d.t||'Wedding';fDate.value=d.d||'';fStory.value=d.s||'';}}catch(e){}
+function saveDraft(){try{localStorage.setItem(DRAFT,JSON.stringify({n:fName.value,t:typeSel.value,d:fDate.value,s:fStory.value}));}catch(e){}}
+[fName,typeSel,fDate,fStory].forEach(function(el){el.addEventListener('input',function(){updateWa();saveDraft();});el.addEventListener('change',function(){updateWa();saveDraft();});});
+fName.addEventListener('input',function(){if(fName.value.trim())nameErr.hidden=true;});
+waSend.addEventListener('click',function(e){if(!fName.value.trim()){e.preventDefault();nameErr.hidden=false;fName.focus();}});
+$('#enquiry').addEventListener('submit',function(e){e.preventDefault();waSend.focus();});
+updateWa();
+var copyBtn=$('#copy-phone');
+copyBtn.addEventListener('click',function(){
+  var done=function(){copyBtn.textContent='Copied';setTimeout(function(){copyBtn.textContent='Copy number';},1800);};
+  var fallback=function(){var r=document.createRange();r.selectNodeContents($('#phone'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);copyBtn.textContent='Selected';};
+  try{navigator.clipboard.writeText('+961 71 560 613').then(done,fallback);}catch(e){fallback();}
+});
+
+/* ---------- Beirut light: the site follows the sun over Lebanon ---------- */
+var SUN=(function(){
+  var LAT=33.89,LON=35.50,TZ='Asia/Beirut';
+  function sunPos(d){
+    var rad=Math.PI/180,J=d.getTime()/864e5-0.5+2440588,n=J-2451545;
+    var M=(357.5291+0.98560028*n)%360,C=1.9148*Math.sin(M*rad)+0.02*Math.sin(2*M*rad)+0.0003*Math.sin(3*M*rad);
+    var L=(M+C+180+102.9372)%360,dec=Math.asin(Math.sin(L*rad)*Math.sin(23.4397*rad));
+    var gmst=(280.16+360.9856235*n)%360,ha=((gmst+LON-(Math.atan2(Math.sin(L*rad)*Math.cos(23.4397*rad),Math.cos(L*rad))/rad))%360+360)%360;
+    if(ha>180)ha-=360;
+    var alt=Math.asin(Math.sin(LAT*rad)*Math.sin(dec)+Math.cos(LAT*rad)*Math.cos(dec)*Math.cos(ha*rad))/rad;
+    return {alt:alt,rising:ha<0};
+  }
+  function beirutTime(d){try{return d.toLocaleTimeString('en-GB',{timeZone:TZ,hour:'2-digit',minute:'2-digit'});}catch(e){return d.toTimeString().slice(0,5);}}
+  var now=new Date(),s=sunPos(now),alt=s.alt;
+  var phase,warm,ambient;
+  if(alt<-6){phase='Night';warm=.55;ambient=.9;}
+  else if(alt<0){phase='Blue hour';warm=.2;ambient=.95;}
+  else if(alt<8){phase='Golden hour';warm=1;ambient=1.05;}
+  else{phase='Daylight';warm=.1;ambient=1;}
+  /* next golden hour: scan forward for alt crossing into 0..8 */
+  var next=null,t=new Date(now.getTime()+60000);
+  for(var i=0;i<1500&&!next;i++,t=new Date(t.getTime()+60000)){var a=sunPos(t).alt;if(phase!=='Golden hour'&&a>0&&a<8)next=t;if(phase==='Golden hour'&&(a<=0||a>=8))next=t;}
+  var mins=next?Math.round((next-now)/60000):null,label;
+  if(phase==='Golden hour')label='Golden hour · '+(mins?mins+' min left':'');
+  else label=mins===null?phase:(mins<60?'Golden hour in '+mins+' min':'Golden hour at '+beirutTime(next));
+  return {phase:phase,warm:warm,ambient:ambient,label:label,time:beirutTime(now)};
+})();
+(function(){
+  var el=$('#hud-sun');if(!el)return;el.textContent='Beirut '+SUN.time+' · '+SUN.label;
+  $('#sun-line').textContent='Beirut '+SUN.time+' · '+SUN.label;
+  document.documentElement.style.setProperty('--sun-warm',SUN.warm);
+  document.documentElement.style.setProperty('--sun-phase','"'+SUN.phase+'"');
+})();
+
+/* ---------- WebGL gallery ring ---------- */
+var hero=$('.hero'),glCanvas=$('#gl'),glHover=null;
+var hudFrame=$('#hud-frame'),hudLens=$('#hud-lens'),hudCat=$('#hud-cat');
+function noGL(){hero.classList.add('no-gl');$('.hero-fallback').style.backgroundImage='url("'+source('hero').src+'")';}
+(function initGL(){
+  if(!window.THREE){noGL();return;}
+  var THREE=window.THREE,renderer;
+  var running=true;
+  try{renderer=new THREE.WebGLRenderer({canvas:glCanvas,antialias:true,alpha:false,powerPreference:'high-performance'});}
+  catch(e){noGL();return;}
+  if(!renderer.getContext()){noGL();return;}
+  renderer.setClearColor(0x0d0c0b,1);
+  /* device budget: weak phones get a lighter scene */
+  var LOW=(navigator.hardwareConcurrency||4)<=4||(navigator.deviceMemory&&navigator.deviceMemory<=3)||(window.innerWidth<700&&(window.devicePixelRatio||1)>=3);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,LOW?1.25:(window.innerWidth<700?1.5:1.75)));
+  /* survive a lost GPU context (tab switch on iOS, memory pressure) */
+  glCanvas.addEventListener('webglcontextlost',function(e){e.preventDefault();running=false;},false);
+  glCanvas.addEventListener('webglcontextrestored',function(){running=true;start();},false);
+  var scene=new THREE.Scene();
+  var camera=new THREE.PerspectiveCamera(50,1,.1,80);
+  var R=8,N=12,PW=2.9,PH=3.6,ROWY=[2.0,-2.0];
+  var aniso=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+
+  var geo=new THREE.PlaneGeometry(PW,PH,32,1);
+  var pos=geo.attributes.position;
+  for(var k=0;k<pos.count;k++){var a=pos.getX(k)/R;pos.setX(k,R*Math.sin(a));pos.setZ(k,-R*Math.cos(a));}
+  pos.needsUpdate=true;geo.computeBoundingSphere();geo.computeBoundingBox();
+
+  var shared={uVel:{value:0},uIntro:{value:reduce?1:0},uDof:{value:0},uFocusDepth:{value:R},uWarm:{value:SUN.warm},uAmbient:{value:SUN.ambient}};
+  var VS=[
+    'uniform float uVel;uniform float uIntro;',
+    'varying vec2 vUv;varying float vEdge;varying float vDepth;',
+    'void main(){',
+    '  vUv=uv;',
+    '  vec4 mv=modelViewMatrix*vec4(position,1.0);',
+    '  float nx=mv.x/max(-mv.z,0.001);',
+    '  mv.y+=uVel*nx*nx*1.2;',
+    '  mv.z-=(1.0-uIntro)*9.0*(0.6+0.4*abs(nx));',
+    '  vEdge=abs(nx);vDepth=-mv.z;',
+    '  gl_Position=projectionMatrix*mv;',
+    '}'].join('\n');
+  var FS=[
+    'uniform sampler2D uTex;uniform vec2 uRepeat;uniform vec2 uOffset;uniform float uHover;uniform float uVel;uniform float uIntro;',
+    'uniform float uDof;uniform float uFocusDepth;uniform float uWarm;uniform float uAmbient;uniform float uMirror;',
+    'varying vec2 vUv;varying float vEdge;varying float vDepth;',
+    'vec3 tap(vec2 uv,float s){return vec3(texture2D(uTex,uv+vec2(s,0.0)).r,texture2D(uTex,uv).g,texture2D(uTex,uv-vec2(s,0.0)).b);}',
+    'void main(){',
+    '  vec2 ctr=uOffset+uRepeat*0.5;',
+    '  vec2 uv=(vUv*uRepeat+uOffset-ctr)*(1.0-uHover*0.06)+ctr;',
+    '  float s=clamp(uVel,-1.0,1.0)*0.008;',
+    '  float coc=uDof*clamp(abs(vDepth-uFocusDepth)/5.0,0.0,1.0)*0.018+uMirror*0.012*(1.0-vUv.y);',
+    '  vec3 c=tap(uv,s);',
+    '  if(coc>0.0005){',
+    '    c+=tap(uv+vec2(coc,0.0),s)+tap(uv-vec2(coc,0.0),s)+tap(uv+vec2(0.0,coc),s)+tap(uv-vec2(0.0,coc),s);',
+    '    c+=tap(uv+vec2(coc,coc)*0.7,s)+tap(uv-vec2(coc,coc)*0.7,s)+tap(uv+vec2(coc,-coc)*0.7,s)+tap(uv-vec2(coc,-coc)*0.7,s);',
+    '    c/=9.0;',
+    '  }',
+    '  float shade=1.0-smoothstep(0.22,1.45,vEdge)*0.84;',
+    '  c*=shade*(0.86+uHover*0.22)*uAmbient;',
+    '  c=mix(c,c*vec3(1.08,0.96,0.82),uWarm);',
+    '  c=mix(vec3(0.051,0.047,0.043),c,uIntro);',
+    '  float a=1.0-uMirror*(1.0-smoothstep(1.0,0.15,vUv.y)*0.42);',
+    '  gl_FragColor=vec4(c,a);',
+    '}'].join('\n');
+
+  var texCache={},waiting={};
+  function mkTex(t){t.minFilter=THREE.LinearFilter;t.magFilter=THREE.LinearFilter;t.generateMipmaps=false;t.anisotropy=aniso;return t;}
+  function cover(mat,iw,ih){
+    var pa=PW/PH,ta=iw/ih;
+    if(ta>pa){var rx=pa/ta;mat.uniforms.uRepeat.value.set(rx,1);mat.uniforms.uOffset.value.set((1-rx)/2,0);}
+    else{var ry=ta/pa;mat.uniforms.uRepeat.value.set(1,ry);mat.uniforms.uOffset.value.set(0,(1-ry)/2);}
+  }
+  function bind(mat,id){
+    var s=source(id);
+    if(s.canvas){
+      if(!texCache[id])texCache[id]={tex:mkTex(new THREE.CanvasTexture(s.canvas)),w:s.canvas.width,h:s.canvas.height};
+      var t=texCache[id];mat.uniforms.uTex.value=t.tex;cover(mat,t.w,t.h);return;
     }
+    if(texCache[id]){var c=texCache[id];mat.uniforms.uTex.value=c.tex;cover(mat,c.w,c.h);return;}
+    (waiting[id]=waiting[id]||[]).push(mat);
+    if(waiting[id].length>1)return;
+    var img=new Image();img.decoding='async';img.crossOrigin='anonymous';
+    img.onload=function(){
+      var tex=mkTex(new THREE.Texture(img));tex.needsUpdate=true;
+      texCache[id]={tex:tex,w:img.naturalWidth,h:img.naturalHeight};
+      waiting[id].forEach(function(m){m.uniforms.uTex.value=tex;cover(m,img.naturalWidth,img.naturalHeight);});
+    };
+    img.src=s.ring||s.src;
+  }
+  var blank=new THREE.DataTexture(new Uint8Array([23,21,18,255]),1,1,THREE.RGBAFormat);blank.needsUpdate=true;
 
-    var text =
-      'Hello Rami, I would like to book a photography session.%0A%0A' +
-      'Name: ' + encodeURIComponent(name.value.trim()) + '%0A' +
-      'Session: ' + encodeURIComponent(type.value) + '%0A' +
-      'Date: ' + encodeURIComponent(date.value || 'Not specified') + '%0A' +
-      'Message: ' + encodeURIComponent(message.value.trim());
+  var rows=[new THREE.Group(),new THREE.Group()],mirrorRows=[new THREE.Group(),new THREE.Group()],meshes=[];
+  rows.forEach(function(g){scene.add(g);});mirrorRows.forEach(function(g){scene.add(g);});
+  for(var row=0;row<2;row++){
+    for(var i=0;i<N;i++){
+      var pi=row===0?i%8:(i+4)%8;
+      var mat=new THREE.ShaderMaterial({
+        uniforms:{uTex:{value:blank},uRepeat:{value:new THREE.Vector2(1,1)},uOffset:{value:new THREE.Vector2(0,0)},uHover:{value:0},uVel:shared.uVel,uIntro:shared.uIntro,uDof:shared.uDof,uFocusDepth:shared.uFocusDepth,uWarm:shared.uWarm,uAmbient:shared.uAmbient,uMirror:{value:0}},
+        vertexShader:VS,fragmentShader:FS,side:THREE.DoubleSide
+      });
+      var m=new THREE.Mesh(geo,mat);
+      var holder=new THREE.Group();holder.rotation.y=(i+(row?.5:0))*Math.PI*2/N;holder.position.y=ROWY[row];
+      holder.add(m);rows[row].add(holder);
+      m.userData={pi:pi,row:row,theta:holder.rotation.y};
+      meshes.push(m);bind(mat,PHOTOS[pi].id);
+      /* wet-floor reflection: same textures, flipped, faded, softened */
+      var mm=new THREE.ShaderMaterial({uniforms:{uTex:mat.uniforms.uTex,uRepeat:mat.uniforms.uRepeat,uOffset:mat.uniforms.uOffset,uHover:mat.uniforms.uHover,uVel:shared.uVel,uIntro:shared.uIntro,uDof:{value:0},uFocusDepth:shared.uFocusDepth,uWarm:shared.uWarm,uAmbient:shared.uAmbient,uMirror:{value:1}},vertexShader:VS,fragmentShader:FS,side:THREE.DoubleSide,transparent:true,depthWrite:false});
+      var mh=new THREE.Group();mh.rotation.y=holder.rotation.y;mh.position.y=ROWY[row];mh.add(new THREE.Mesh(geo,mm));mirrorRows[row].add(mh);
+    }
+  }
+  var FLOOR=-3.95;
+  mirrorRows.forEach(function(g){g.scale.y=-1;g.position.y=FLOOR*2;});
 
-    window.open('https://wa.me/96171560613?text=' + text, '_blank', 'noopener');
-  }, true);
+  /* god rays backdrop */
+  var raysMat=new THREE.ShaderMaterial({
+    uniforms:{uTime:{value:0},uWarm:shared.uWarm,uIntro:shared.uIntro},
+    vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}',
+    fragmentShader:[
+      'uniform float uTime;uniform float uWarm;uniform float uIntro;varying vec2 vUv;',
+      'void main(){',
+      '  vec2 src=vec2(0.78,1.15);vec2 d=vUv-src;float ang=atan(d.y,d.x);float dist=length(d);',
+      '  float rays=0.0;',
+      '  rays+=sin(ang*22.0+uTime*0.25)*0.5+0.5;',
+      '  rays+=sin(ang*41.0-uTime*0.17+1.7)*0.5+0.5;',
+      '  rays+=sin(ang*9.0+uTime*0.09+0.4)*0.5+0.5;',
+      '  rays/=3.0;rays=pow(rays,2.2);',
+      '  float fall=smoothstep(1.6,0.05,dist);',
+      '  float base=smoothstep(1.3,0.0,dist)*0.12;',
+      '  vec3 warm=vec3(0.86,0.66,0.42),cool=vec3(0.45,0.55,0.70);',
+      '  vec3 col=mix(cool,warm,uWarm)*(rays*fall*0.55+base)*(0.45+uWarm*0.75)*uIntro;',
+      '  gl_FragColor=vec4(col,1.0);',
+      '}'].join('\n'),
+    depthWrite:false
+  });
+  var rays=new THREE.Mesh(new THREE.PlaneGeometry(70,42),raysMat);rays.position.set(0,2,-R-7);scene.add(rays);
+
+  /* floating light dust */
+  var PN=LOW?90:(window.innerWidth<700?140:320),pp=new Float32Array(PN*3),ps=new Float32Array(PN),pr=rng(99);
+  for(var q=0;q<PN;q++){pp[q*3]=(pr()-.5)*22;pp[q*3+1]=(pr()-.5)*14;pp[q*3+2]=-pr()*16;ps[q]=.4+pr()*1.6;}
+  var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pp,3));pg.setAttribute('aSize',new THREE.BufferAttribute(ps,1));
+  var pc=document.createElement('canvas');pc.width=pc.height=64;var px=pc.getContext('2d');var pgr=px.createRadialGradient(32,32,0,32,32,32);pgr.addColorStop(0,'rgba(255,236,200,1)');pgr.addColorStop(.35,'rgba(255,220,170,.5)');pgr.addColorStop(1,'rgba(255,200,140,0)');px.fillStyle=pgr;px.fillRect(0,0,64,64);
+  var ptex=new THREE.CanvasTexture(pc);
+  var pm=new THREE.ShaderMaterial({
+    uniforms:{uTime:{value:0},uTex:{value:ptex},uWarm:shared.uWarm,uIntro:shared.uIntro,uPx:{value:renderer.getPixelRatio()}},
+    vertexShader:['attribute float aSize;uniform float uTime;uniform float uPx;varying float vA;',
+      'void main(){vec3 p=position;p.y+=sin(uTime*0.3+p.x*0.7)*0.4;p.x+=cos(uTime*0.2+p.z*0.5)*0.5;',
+      'vec4 mv=modelViewMatrix*vec4(p,1.0);gl_Position=projectionMatrix*mv;',
+      'gl_PointSize=aSize*uPx*120.0/max(1.0,-mv.z);vA=smoothstep(26.0,3.0,-mv.z)*(0.35+0.65*fract(sin(aSize*91.7)*43758.5));}'].join('\n'),
+    fragmentShader:['uniform sampler2D uTex;uniform float uWarm;uniform float uIntro;varying float vA;',
+      'void main(){vec4 t=texture2D(uTex,gl_PointCoord);gl_FragColor=vec4(t.rgb*(0.7+uWarm*0.5),t.a*vA*0.55*uIntro);}'].join('\n'),
+    transparent:true,depthWrite:false,blending:THREE.AdditiveBlending
+  });
+  scene.add(new THREE.Points(pg,pm));
+
+  var baseFov=50;
+  function resize(){
+    var w=hero.clientWidth,h=hero.clientHeight;if(!w||!h)return;
+    renderer.setSize(w,h,false);camera.aspect=w/h;baseFov=camera.aspect<.8?64:50;camera.updateProjectionMatrix();
+  }
+  resize();
+  if(window.ResizeObserver)new ResizeObserver(resize).observe(hero);else window.addEventListener('resize',resize);
+
+  var rot=0,dragVel=0,vel=0,lastY=window.scrollY,last=performance.now(),t0=last,auto=reduce?0:.05;
+  var mouse={x:0,y:0},cm={x:0,y:0},drag=null,ray=new THREE.Raycaster(),ndc=new THREE.Vector2();
+  window.addEventListener('pointermove',function(e){
+    mouse.x=e.clientX/window.innerWidth*2-1;mouse.y=e.clientY/window.innerHeight*2-1;
+  },{passive:true});
+  function pick(e){
+    var r=glCanvas.getBoundingClientRect();
+    ndc.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height)*2+1);
+    ray.setFromCamera(ndc,camera);
+    var hit=ray.intersectObjects(meshes,false)[0];
+    return hit?hit.object:null;
+  }
+  glCanvas.addEventListener('pointerdown',function(e){drag={x:e.clientX,sx:e.clientX,moved:false,id:e.pointerId};glCanvas.classList.add('grabbing');swipeHint.classList.add('gone');});
+  glCanvas.addEventListener('pointermove',function(e){
+    if(drag){
+      var dx=e.clientX-drag.x;drag.x=e.clientX;dragVel=-dx*.0042;
+      if(Math.abs(e.clientX-drag.sx)>6&&!drag.moved){drag.moved=true;try{glCanvas.setPointerCapture(drag.id);}catch(err){}}
+    }else if(e.pointerType==='mouse'){
+      glHover=pick(e);
+      if(glHover){var h=ray.intersectObject(glHover,false)[0];if(h)shared.uFocusDepth.value+=(h.distance-shared.uFocusDepth.value)*.3;dofTarget=1;}
+      else dofTarget=0;
+    }
+  });
+  /* Tap to focus: AF square + real depth of field, then "Open" */
+  var afBox=$('#afbox'),afOpen=$('#afopen'),afTimer=null,dofTarget=0,focused=null,afLabel=$('#afbox-label');
+  function focusOn(m,e){
+    focused=m;dofTarget=1;
+    var r=glCanvas.getBoundingClientRect();
+    var hit=ray.intersectObject(m,false)[0];
+    if(hit)shared.uFocusDepth.value=hit.distance;
+    afBox.style.left=(e.clientX-r.left)+'px';afBox.style.top=(e.clientY-r.top)+'px';
+    afBox.classList.remove('lock');afBox.classList.add('on');afLabel.textContent='AF';
+    setTimeout(function(){afBox.classList.add('lock');afLabel.textContent='Locked · '+PHOTOS[m.userData.pi].ap;},320);
+    afOpen.hidden=false;afOpen.dataset.pi=m.userData.pi;
+    clearTimeout(afTimer);afTimer=setTimeout(releaseFocus,4000);
+  }
+  function releaseFocus(){dofTarget=0;focused=null;afBox.classList.remove('on','lock');afOpen.hidden=true;}
+  afOpen.addEventListener('click',function(){var pi=+afOpen.dataset.pi;releaseFocus();openLb(pi);});
+  function endDrag(e,cancel){
+    if(!drag)return;
+    var wasMoved=drag.moved;drag=null;glCanvas.classList.remove('grabbing');
+    if(cancel||wasMoved)return;
+    var m=pick(e);
+    if(!m){releaseFocus();return;}
+    if(e.pointerType==='mouse'||(focused===m)){releaseFocus();openLb(m.userData.pi);}
+    else focusOn(m,e);
+  }
+  glCanvas.addEventListener('pointerup',function(e){endDrag(e,false);});
+  glCanvas.addEventListener('pointercancel',function(e){endDrag(e,true);});
+  glCanvas.addEventListener('pointerleave',function(){glHover=null;if(!focused)dofTarget=0;});
+
+  var frontId=-1,loopOn=false;
+  /* adaptive quality: if frames drop under ~40fps for a while, drop pixel ratio once */
+  var slow=0,degraded=false;
+  function watchFps(dt){if(degraded||reduce)return;if(dt>.028)slow++;else slow=Math.max(0,slow-1);if(slow>90){degraded=true;renderer.setPixelRatio(1);resize();}}
+  function start(){if(loopOn||!running||document.hidden)return;loopOn=true;last=performance.now();requestAnimationFrame(frame);}
+  if(window.IntersectionObserver){new IntersectionObserver(function(en){running=en[0].isIntersecting;start();}).observe(hero);}
+  document.addEventListener('visibilitychange',start);
+  function wrap(a){return Math.atan2(Math.sin(a),Math.cos(a));}
+  function frame(now){
+    if(!running||document.hidden){loopOn=false;return;}
+    var dt=Math.min(.05,Math.max(.001,(now-last)/1000));last=now;watchFps(dt);
+    var sy=window.scrollY,ds=sy-lastY;lastY=sy;
+    var step=auto*dt+(reduce?0:ds*.0016)+dragVel;
+    if(!drag)dragVel*=.93;
+    rot+=step;
+    vel+=(step/dt-vel)*.12;
+    shared.uVel.value=reduce?0:Math.max(-.65,Math.min(.65,vel*.12));
+    shared.uDof.value+=(dofTarget-shared.uDof.value)*.08;
+    rows[0].rotation.y=rot;rows[1].rotation.y=-rot*.85;
+    mirrorRows[0].rotation.y=rot;mirrorRows[1].rotation.y=-rot*.85;
+    raysMat.uniforms.uTime.value=now/1000;pm.uniforms.uTime.value=now/1000;
+    if(!reduce){var p=Math.min(1,(now-t0)/2200);shared.uIntro.value=1-Math.pow(1-p,3);}
+    var hp=Math.min(1,sy/Math.max(1,hero.clientHeight));
+    cm.x+=(mouse.x-cm.x)*.05;cm.y+=(mouse.y-cm.y)*.05;
+    camera.position.set(cm.x*.55,.4-cm.y*.35-hp*1.4,0);
+    camera.lookAt(cm.x*.15,-.5-cm.y*.1-hp*.6,-R);
+    camera.fov=baseFov+hp*10;camera.updateProjectionMatrix();
+    var best=9,bestM=null;
+    meshes.forEach(function(m){
+      var target=m===glHover?1:0;m.material.uniforms.uHover.value+=(target-m.material.uniforms.uHover.value)*.12;
+      if(m.userData.row===0){var d=Math.abs(wrap(m.userData.theta+rot));if(d<best){best=d;bestM=m;}}
+    });
+    if(bestM&&bestM.userData.pi!==frontId){
+      frontId=bestM.userData.pi;var ph=PHOTOS[frontId];
+      hudFrame.textContent='Frame '+ph.n+' / 08';hudLens.textContent=ph.lens+' · '+ph.ap;hudCat.textContent=ph.cat;
+    }
+    renderer.render(scene,camera);
+    requestAnimationFrame(frame);
+  }
+  start();
+})();
+
+/* ---------- Shutter intro ---------- */
+(function(){
+  var sh=$('#shutter'),iris=$('#iris'),cam=$('#cam'),flash=$('#flash'),sub=$('#shutter-sub');
+  if(reduce){sh.classList.add('off');return;}
+  document.documentElement.classList.add('intro');
+  if(lenis)lenis.stop();
+  document.documentElement.style.overflow='hidden';
+  /* the iris opens with REAL image loading progress (min 1.1s so it never flashes) */
+  var t0=performance.now(),D=1100,loaded=0,total=0;
+  $$('img[data-photo]').forEach(function(img){
+    if(img.complete&&img.naturalWidth)return;total++;
+    var done=function(){loaded++;};img.addEventListener('load',done,{once:true});img.addEventListener('error',done,{once:true});
+  });
+  var giveUp=t0+6000;
+  (function tick(now){
+    var tp=Math.min(1,(now-t0)/D),lp=total?loaded/total:1;
+    var p=Math.min(tp,now>giveUp?1:(0.25+lp*0.75)),e=1-Math.pow(1-p,3);
+    iris.style.setProperty('--p',(e*.92).toFixed(3));
+    if(p<1){requestAnimationFrame(tick);return;}
+    /* shutter release */
+    setTimeout(function(){
+      cam.classList.add('click');iris.classList.add('snap');iris.style.setProperty('--p','0');sub.textContent='Shooting';
+      setTimeout(function(){
+        flash.classList.add('go');sh.classList.add('white');
+        setTimeout(function(){sh.classList.remove('white');cam.classList.remove('click');iris.style.setProperty('--p','.92');sub.textContent='Frame 01 · captured';},130);
+        setTimeout(function(){sh.classList.add('open');document.documentElement.classList.remove('intro');document.documentElement.style.overflow='';if(lenis)lenis.start();setTimeout(function(){sh.classList.add('off');},1200);},420);
+      },110);
+    },220);
+  })(t0);
+})();
+
+/* ---------- Progress + chapters + reveals ---------- */
+var progress=$('#progress'),chN=$('#ch-n'),chT=$('#ch-t');
+var chapters=[['top','01','Intro'],['intro','01','Approach'],['work','02','Work'],['story','03','Your day'],['about','04','Studio'],['packages','05','Packages'],['feedback','06','Feedback'],['contact','07','Booking']]
+  .map(function(c){return {el:document.getElementById(c[0]),n:c[1],t:c[2]};}).filter(function(c){return c.el;});
+var navLinks=$$('.nav-links a');
+var curCh='';
+var bar=$('#bar'),swipeHint=$('#swipe-hint'),contactSec=$('#contact');
+function onScroll2(){
+  var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+  var inContact=contactSec.getBoundingClientRect().top<window.innerHeight*.6&&contactSec.getBoundingClientRect().bottom>0;
+  bar.classList.toggle('show',window.scrollY>window.innerHeight*.7&&!inContact);
+  if(window.scrollY>80)swipeHint.classList.add('gone');
+  progress.style.transform='scaleX('+(max>0?window.scrollY/max:0).toFixed(4)+')';
+  var y=window.scrollY+window.innerHeight*.4,c=chapters[0];
+  chapters.forEach(function(ch){if(ch.el.offsetTop<=y)c=ch;});
+  if(c.t!==curCh){curCh=c.t;chN.textContent=c.n;chT.textContent=c.t;
+    navLinks.forEach(function(a){a.classList.toggle('cur',a.getAttribute('href')==='#'+c.el.id);});}
+}
+window.addEventListener('scroll',onScroll2,{passive:true});onScroll2();
+if(!reduce&&window.IntersectionObserver){
+  var rvs=$$('.rv');
+  rvs.forEach(function(el){if(el.getBoundingClientRect().top>window.innerHeight)el.classList.add('pend');});
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('pend');io.unobserve(x.target);}});},{rootMargin:'0px 0px -12% 0px'});
+  rvs.forEach(function(el){io.observe(el);});
+}
+
+/* ---------- Wedding-day story scrub ---------- */
+var story=$('#story'),track=$('#story-track'),stFill=$('#st-fill'),stTime=$('#st-time'),heroH1=$('.hero h1');
+var wideMQ=window.matchMedia('(min-width:880px)');
+function fmtT(p){var m=7*60+Math.round(p*19*60),h=Math.floor(m/60)%24,mm=m%60;return (h<10?'0':'')+h+':'+(mm<10?'0':'')+mm;}
+function storyScrub(){
+  var p;
+  if(wideMQ.matches){
+    var r=story.getBoundingClientRect(),total=story.offsetHeight-window.innerHeight;
+    p=Math.min(1,Math.max(0,-r.top/Math.max(1,total)));
+    var max=track.scrollWidth-window.innerWidth;
+    track.style.transform='translate3d('+(-p*max).toFixed(1)+'px,0,0)';
+  }else{
+    track.style.transform='';
+    p=track.scrollWidth>track.clientWidth?track.scrollLeft/(track.scrollWidth-track.clientWidth):0;
+  }
+  stFill.style.setProperty('--p',(p*100).toFixed(1)+'%');stTime.textContent=fmtT(p);
+}
+window.addEventListener('scroll',storyScrub,{passive:true});track.addEventListener('scroll',storyScrub,{passive:true});window.addEventListener('resize',storyScrub);storyScrub();
+
+/* hero weight follows scroll speed */
+var lastHy=window.scrollY,hw=400;
+(function hwLoop(){
+  var v=Math.abs(window.scrollY-lastHy);lastHy=window.scrollY;
+  hw+=(400+Math.min(300,v*6)-hw)*.15;
+  if(!reduce&&window.scrollY<window.innerHeight)heroH1.style.setProperty('--hw',Math.round(hw));
+  requestAnimationFrame(hwLoop);
+})();
+
+/* wordmark letters */
+(function(){
+  var wm=$('.wordmark');if(!wm)return;var i=0;
+  Array.prototype.slice.call(wm.childNodes).forEach(function(n){
+    var holder=n.nodeName==='EM'?n:wm,txt=n.textContent,frag=document.createDocumentFragment();
+    txt.split('').forEach(function(c){var s=document.createElement('span');s.className='ch';s.style.setProperty('--i',i++);s.textContent=c===' '?' ':c;frag.appendChild(s);});
+    if(holder===wm)wm.replaceChild(frag,n);else{n.textContent='';n.appendChild(frag);}
+  });
+})();
+
+/* ---------- Magnetic buttons + light leak ---------- */
+if(fine&&!reduce){
+  $$('.btn,.round,.wa-float').forEach(function(b){
+    b.addEventListener('pointermove',function(e){
+      var r=b.getBoundingClientRect(),dx=e.clientX-(r.left+r.width/2),dy=e.clientY-(r.top+r.height/2);
+      b.style.transform='translate('+(dx*.22).toFixed(1)+'px,'+(dy*.22).toFixed(1)+'px)';
+    });
+    b.addEventListener('pointerleave',function(){b.style.transform='';});
+  });
+  var leak=$('#leak');
+  window.addEventListener('pointermove',function(e){
+    leak.style.setProperty('--lx',(e.clientX/window.innerWidth*100).toFixed(1)+'%');
+    leak.style.setProperty('--ly',(e.clientY/window.innerHeight*100).toFixed(1)+'%');
+  },{passive:true});
+}
+
+/* ---------- Arabic / English ---------- */
+var AR={
+  '.nav-links a[href="#work"]':'الأعمال','.nav-links a[href="#about"]':'عنّي','.nav-links a[href="#packages"]':'الباقات','.nav-links a[href="#feedback"]':'آراء العرسان',
+  '.nav .btn-small':'احجز جلستك','#menu-btn':'القائمة',
+  '.mnav a[href="#work"]':'الأعمال','.mnav a[href="#about"]':'عنّي','.mnav a[href="#packages"]':'الباقات','.mnav a[href="#feedback"]':'آراء العرسان','.mnav a[href="#contact"]':'احجز جلستك',
+  '.hero .eyebrow':'لبنان · تصوير أعراس وفنّ','.hero h1':'<span class="rv-line"><span class="l">لحظات ما بتتكرّر،</span></span> <span class="rv-line"><em class="l">مصوّرة بكل جمالها.</em></span>',
+  '.lede':'تصوير أعراس وبورتريه وجلسات خارجية في لبنان، بأسلوب خالد، وإحساس حقيقي، واهتمام بكل تفصيل.',
+  '.cta-row .btn:first-child':'شوف الأعمال','.cta-row .btn-ghost':'احجز جلسة','.drag-hint':'اسحب لتدوير المعرض','#swipe-hint':'<i></i>اسحب للتدوير','#afopen':'افتح الصورة',
+  '.approach .eyebrow':'الأسلوب<span class="sec-num">01</span>',
+  '#statement':'<span class="w">بصوّر</span> <span class="w">اللحظات</span> <span class="w">اللي</span> <em><span class="w">ما</span> <span class="w">خطّطتوا</span></em> <span class="w">تتصوّروها.</span>',
+  '.approach-cols p:nth-child(1)':'ما في لحظات مصطنعة. بركّز على المشاعر الحقيقية، والبورتريه الأنيق، والتفاصيل الصغيرة اللي بتخلّي يومكم لا يُنسى.',
+  '.approach-cols p:nth-child(2)':'من الأعراس للجلسات الخارجية، كل صورة بتتعدّل بعناية لتطلع نظيفة، خالدة، وبإحساس سينمائي.',
+  '.work .eyebrow':'لقطات مختارة<span class="sec-num">02</span>','#work-h':'<span class="rv-line"><span class="l"><em>الأعمال</em></span></span>','.work .sec-note':'مختارات من تصوير الأعراس والبورتريه والجلسات الخارجية.',
+  '.chip[data-filter="all"]':'الكل <span>08</span>','.chip[data-filter="Wedding"]':'أعراس <span>04</span>','.chip[data-filter="Portrait"]':'بورتريه <span>03</span>','.chip[data-filter="Outdoor"]':'خارجي <span>01</span>',
+  '.story-head .eyebrow':'يوم عرسكم<span class="sec-num">03</span>','#st-h':'<span class="rv-line"><span class="l">يوم واحد، <em>محكي بالضوء.</em></span></span>',
+  '.panel:nth-child(1) h3':'الهدوء قبل البداية.','.panel:nth-child(1) p:not(.mono)':'الفستان، التفاصيل، والناس اللي ربّوكم. بوصل بكير وبضلّ بعيد عن الطريق.',
+  '.panel:nth-child(2) h3':'لحظة "نعم".','.panel:nth-child(2) p:not(.mono)':'زاويتين، بلا فلاش، ولا شي مرتّب. العهود، النظرة، وأوّل قبلة.',
+  '.panel:nth-child(3) h3':'عشرين دقيقة، إلكم انتو التنين.','.panel:nth-child(3) p:not(.mono)':'موقّتة مع الشمس. الصور اللي رح تطبعوها وتعلّقوها.',
+  '.panel:nth-child(4) h3':'لآخر رقصة.','.panel:nth-child(4) p:not(.mono)':'ضوء خافت، ضحك حقيقي، وحلبة الرقص متل ما كانت.',
+  '.panel-end h3':'معرضكم، <em>خلال أسابيع.</em>','.panel-end p:not(.mono):not(.ft-addon)':'معدّلة باحتراف، بدقّة عالية، بمعرض خاص على الإنترنت بتقدروا تشاركوه مع العيلة.',
+  '.panel-end .ft-addon .mono':'ريل سينمائي إضافي','.panel-end .btn':'تأكّد من تاريخكم',
+  '.about .eyebrow':'الاستوديو<span class="sec-num">04</span>','#about-h':'<span class="rv-line"><span class="l">أهلاً، أنا <em>رامي.</em></span></span>',
+  '.about-copy > p:nth-of-type(1)':'أنا رامي وهبي، مصوّر من لبنان، متخصّص بالأعراس والبورتريه والجلسات الخارجية. هدفي بسيط: صور أنيقة، صادقة، وخالدة.',
+  '.about-copy > p:nth-of-type(2)':'بشتغل بتصوير رقمي احترافي وعملية تعديل دقيقة. عرس أو جلسة خارجية، بركّز على التعابير الطبيعية، الضوء الجميل، ونتيجة نهائية مصقولة.',
+  '.spec div:nth-child(1) dt':'مقيم في','.spec div:nth-child(1) dd':'لبنان','.spec div:nth-child(2) dt':'التخصّص','.spec div:nth-child(2) dd':'أعراس وبورتريه','.spec div:nth-child(3) dt':'الجلسات','.spec div:nth-child(3) dd':'خارجي واستوديو','.spec div:nth-child(4) dt':'السفر','.spec div:nth-child(4) dd':'لبنان والعالم',
+  '.about-copy .btn':'خلّينا نحكي',
+  '.packages .eyebrow':'الباقات<span class="sec-num">05</span>','#pk-h':'<span class="rv-line"><span class="l">أسعار واضحة، <em>بلا مفاجآت.</em></span></span>','.packages .sec-note':'باقات بسيطة بأسعار واضحة. راسلني لتاريخكم ولأي طلبات خاصة بالعرس.',
+  '.pk-tag':'الأكثر حجزاً','.pk-feature h3':'باقة العرس','.pk-feature .pk-for':'تغطية تصوير يوم العرس',
+  '.pk-feature .pk-list li:nth-child(1)':'تغطية تصوير يوم العرس','.pk-feature .pk-list li:nth-child(2)':'صور معدّلة باحتراف','.pk-feature .pk-list li:nth-child(3)':'تسليم بدقّة عالية','.pk-feature .pk-list li:nth-child(4)':'تدريج ألوان احترافي','.pk-feature .pk-list li:nth-child(5)':'معرض خاص على الإنترنت','.pk-feature .btn':'تأكّد من تاريخكم',
+  '.pk:nth-child(2) h3':'20 صورة','.pk:nth-child(2) .pk-for':'جلسة تصوير خارجية','.pk:nth-child(2) .pk-list':'<li>20 صورة معدّلة</li><li>دقّة عالية</li><li>تدريج ألوان</li><li>معرض إلكتروني</li>','.pk:nth-child(2) .btn':'احجز جلسة',
+  '.pk:nth-child(3) h3':'30 صورة','.pk:nth-child(3) .pk-for':'جلسة تصوير خارجية','.pk:nth-child(3) .pk-list':'<li>30 صورة معدّلة</li><li>دقّة عالية</li><li>تدريج ألوان</li><li>معرض إلكتروني</li>','.pk:nth-child(3) .btn':'احجز جلسة',
+  '.pk:nth-child(4) h3':'ريل خارجي','.pk:nth-child(4) .pk-for':'ريل سينمائي خارجي','.pk:nth-child(4) .pk-list':'<li>تصوير سينمائي</li><li>تدريج ألوان</li><li>ريل عمودي معدّل</li><li>جاهز لإنستغرام</li>','.pk:nth-child(4) .btn':'احجز ريل',
+  '.feedback .eyebrow':'بكلماتهم<span class="sec-num">06</span>','#fb-h':'<span class="rv-line"><span class="l">آراء <em>العرسان</em></span></span>','.feedback .sec-note':'كلمات من عرسان وزبائن رامي وهبي للتصوير.',
+  '.q:nth-child(1) blockquote':'رامي محترف ومبدع وسهل التعامل معه. الصور فاقت توقّعاتنا وصوّرت يومنا بكل جماله.','.q:nth-child(1) b':'عروس وعريس','.q:nth-child(1) span':'زبون عرس',
+  '.q:nth-child(2) blockquote':'رامي صوّر كل لحظة بجمال. التجربة كلها كانت سلسة ومريحة واحترافية فعلاً.','.q:nth-child(2) b':'زبون خطوبة','.q:nth-child(2) span':'جلسة خارجية',
+  '.q:nth-child(3) blockquote':'عند رامي عين مميّزة للتفاصيل. صور عرسنا أنيقة ومؤثّرة ومذهلة فعلاً.','.q:nth-child(3) b':'زبون عرس','.q:nth-child(3) span':'تصوير عرس',
+  '.contact .eyebrow':'خلّينا نعمل شي حلو<span class="sec-num">07</span>','#ct-h':'<span class="rv-line"><span class="l">خلّينا نخطّط <em>لجلستكم.</em></span></span>',
+  '.contact-copy > p:not(.eyebrow)':'خبّرني عن عرسكم أو جلستكم، التاريخ، وشو بخاطركم. برجعلكم بكل التفاصيل.',
+  '.line:nth-child(1) .mono':'واتساب','#copy-phone':'انسخ الرقم','.line:nth-child(2) .mono':'إنستغرام','.line:nth-child(3) .mono':'التوفّر','.line:nth-child(3) p:not(.mono)':'أعراس وجلسات خارجية · لبنان والعالم',
+  'label[for="f-name"]':'اسمكم','label[for="f-type"]':'نوع الجلسة','label[for="f-date"]':'التاريخ التقريبي','label[for="f-story"]':'خبّرني شوي عنها','#f-name-err':'اكتب اسمك ليعرف رامي مين عم يراسله.',
+  '#wa-send':'أرسل على واتساب','.form-note':'بيفتح واتساب ورسالتكم مكتوبة. انتو بتكبسوا إرسال.',
+  '.foot-lead':'تصوير أعراس وبورتريه وجلسات خارجية. لبنان والعالم.','.foot-grid div:nth-child(2) h3':'استكشف','.foot-grid a[href="#work"]':'الأعمال','.foot-grid a[href="#about"]':'الاستوديو','.foot-grid a[href="#packages"]':'الباقات','.foot-grid a[href="#feedback"]':'آراء العرسان',
+  '.foot-grid div:nth-child(3) h3':'تابعني','.foot-grid div:nth-child(4) h3':'الحجز','.foot-grid div:nth-child(4) li:nth-child(1)':'بالموعد','.foot-grid div:nth-child(4) a':'احجز جلستك ←',
+  '.wordmark':'رامي <em>وهبي</em>','.foot-base span:first-child':'© 2026 رامي وهبي للتصوير. جميع الحقوق محفوظة.',
+  '.bar-txt b':'الأعراس من $1,000','.bar-txt span':'لبنان والعالم','.bar .btn':'واتساب',
+  '.strip-track':'<span><em>أعراس</em></span><span>بورتريه</span><span><em>جلسات خارجية</em></span><span>ريلز سينمائية</span><span><em>لبنان</em></span><span>والعالم</span><span><em>مكتوب بالضوء</em></span><span>رامي وهبي للتصوير</span>'
+};
+var EN={},langBtn=$('#lang-btn'),curLang='en';
+Object.keys(AR).forEach(function(sel){var el=$(sel);if(el)EN[sel]=el.innerHTML;});
+function setLang(l){
+  curLang=l;var dict=l==='ar'?AR:EN;
+  Object.keys(dict).forEach(function(sel){var el=$(sel);if(!el)return;el.innerHTML=dict[sel];});
+  document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
+  langBtn.textContent=l==='ar'?'EN':'عربي';
+  if(l==='ar'){var o=$('#f-type').options;o[0].text='عرس';o[1].text='جلسة خارجية';o[2].text='جلسة بورتريه';o[3].text='ريل';}
+  else{var o2=$('#f-type').options;o2[0].text='Wedding';o2[1].text='Outdoor Session';o2[2].text='Portrait Session';o2[3].text='Reel';}
+  words=$$('#statement .w');$$('.rv').forEach(function(el){el.classList.remove('pend');});
+  if(l==='ar'){var wm=$('.wordmark');$$('.ch',wm).forEach(function(c){c.classList.remove('ch');});}
+  try{localStorage.setItem('rw-lang',l);}catch(e){}
+  updateWa();onScroll();
+}
+langBtn.addEventListener('click',function(){setLang(curLang==='ar'?'en':'ar');});
+try{var savedLang=localStorage.getItem('rw-lang');if(savedLang==='ar')setLang('ar');}catch(e){}
+
+/* ---------- Sound (opt-in, synthesized, no files) ---------- */
+var snd={on:false,ctx:null},sndBtn=$('#snd-btn');
+function ac(){if(!snd.ctx){try{snd.ctx=new (window.AudioContext||window.webkitAudioContext)();}catch(e){}}return snd.ctx;}
+function shutterSound(){
+  if(!snd.on)return;var c=ac();if(!c)return;if(c.state==='suspended')c.resume();
+  var t=c.currentTime;
+  /* mirror slap: short noise burst */
+  var n=c.createBufferSource(),buf=c.createBuffer(1,c.sampleRate*.09,c.sampleRate),d=buf.getChannelData(0);
+  for(var i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/d.length,2.2);
+  n.buffer=buf;var f=c.createBiquadFilter();f.type='bandpass';f.frequency.value=2600;f.Q.value=.8;
+  var g=c.createGain();g.gain.setValueAtTime(.5,t);g.gain.exponentialRampToValueAtTime(.001,t+.09);
+  n.connect(f);f.connect(g);g.connect(c.destination);n.start(t);
+  /* second curtain click */
+  var o=c.createOscillator(),g2=c.createGain();o.type='square';o.frequency.setValueAtTime(1800,t+.07);o.frequency.exponentialRampToValueAtTime(400,t+.1);
+  g2.gain.setValueAtTime(.12,t+.07);g2.gain.exponentialRampToValueAtTime(.001,t+.12);o.connect(g2);g2.connect(c.destination);o.start(t+.07);o.stop(t+.13);
+}
+function tickSound(){
+  if(!snd.on)return;var c=ac();if(!c)return;var t=c.currentTime,o=c.createOscillator(),g=c.createGain();
+  o.type='sine';o.frequency.value=2200;g.gain.setValueAtTime(.05,t);g.gain.exponentialRampToValueAtTime(.001,t+.04);o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+.05);
+}
+sndBtn.addEventListener('click',function(){snd.on=!snd.on;sndBtn.setAttribute('aria-pressed',String(snd.on));if(snd.on){ac();tickSound();}});
+var _openLb=openLb;openLb=function(i){shutterSound();_openLb(i);};
+$$('.chip').forEach(function(ch){ch.addEventListener('click',tickSound);});
+
+/* ---------- Focus reticle cursor ---------- */
+if(fine&&!reduce){
+  document.body.classList.add('has-af');
+  var af=$('#af'),afLabel=$('#af-label');
+  var cur={x:innerWidth/2,y:innerHeight/2,w:26,h:26},mp={x:cur.x,y:cur.y},lock=null,lastLabel='';
+  window.addEventListener('pointermove',function(e){if(e.pointerType!=='mouse')return;mp.x=e.clientX;mp.y=e.clientY;af.classList.add('on');},{passive:true});
+  document.addEventListener('pointerover',function(e){lock=e.target.closest('[data-focus],a,button,input,select,textarea,#gl');});
+  document.documentElement.addEventListener('pointerleave',function(){af.classList.remove('on');});
+  (function loop(){
+    var tx=mp.x,ty=mp.y,tw=26,th=26,label='',hide=false;
+    if(lock){
+      if(lock.matches('input,select,textarea'))hide=true;
+      else if(lock.id==='gl'){tw=th=glHover?78:58;label=glHover?'Open':'Drag';}
+      else{
+        var r=lock.getBoundingClientRect(),pad=lock.hasAttribute('data-focus')?-14:7;
+        tx=r.left+r.width/2;ty=r.top+r.height/2;tw=Math.max(20,r.width+pad*2);th=Math.max(20,r.height+pad*2);
+        label=lock.dataset.af||'';
+      }
+    }
+    cur.x+=(tx-cur.x)*.24;cur.y+=(ty-cur.y)*.24;cur.w+=(tw-cur.w)*.2;cur.h+=(th-cur.h)*.2;
+    af.style.width=cur.w.toFixed(1)+'px';af.style.height=cur.h.toFixed(1)+'px';
+    af.style.transform='translate3d('+(cur.x-cur.w/2).toFixed(1)+'px,'+(cur.y-cur.h/2).toFixed(1)+'px,0)';
+    af.style.visibility=hide?'hidden':'visible';
+    if(label!==lastLabel){afLabel.textContent=label;lastLabel=label;}
+    requestAnimationFrame(loop);
+  })();
+}
 })();
 </script>
 
-
-    <!-- Floating WhatsApp -->
-    <a class="rami-whatsapp" href="https://wa.me/96171560613?text=Hello%20Rami%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener" aria-label="Chat with Rami on WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.3ZM12.2 21.6c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.9 1 1-3.8-.2-.3a9.8 9.8 0 1 1 8.2 4.6Zm5.4-7.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.6-3.1-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.2 3.4 5.4 4.8.8.3 1.4.6 1.9.7.8.2 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3Z"/>
-      </svg>
-    </a>
-
-  </body>
-</html>
+</body></html>
