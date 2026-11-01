@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Wedding Album | Rami Wehbi Photography</title>
+<meta name="description" content="Turn the pages of a Rami Wehbi wedding album: wedding and bridal photography in Lebanon, printed the way your album will be.">
+<link rel="canonical" href="https://ramiwehbi.com/album/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Wedding Album | Rami Wehbi Photography">
+<meta property="og:description" content="Turn the pages of a wedding album by Rami Wehbi, wedding photographer in Lebanon.">
+<meta property="og:url" content="https://ramiwehbi.com/album/">
+<meta property="og:image" content="https://ramiwehbi.com/img/g13.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0d0c0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Geist:wght@300..600&family=Geist+Mono:wght@400;500&family=Amiri:ital,wght@0,400;1,400&display=swap">
+<style>
+:root{
+  /* Same palette as the main site: a dark room, warm paper, one gold accent. */
+  --ink:#0d0c0b;--ink-2:#171512;--paper:#f0e9dd;--page:#f6f1e7;--muted:#a69d91;--accent:#dcbd8d;
+  --line:color-mix(in srgb,var(--paper) 13%,transparent);--line-2:color-mix(in srgb,var(--paper) 26%,transparent);
+  --f-display:"Bodoni Moda","Bodoni 72",Didot,"Times New Roman",serif;
+  --f-body:"Geist","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --f-ar:"Amiri","Noto Naskh Arabic",serif;
+  --gutter:max(16px,4vw);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--ink);color:var(--paper);font-family:var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(60% 55% at 50% 52%,color-mix(in srgb,var(--accent) 14%,transparent),transparent 70%)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.mono{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+
+.top{position:relative;z-index:2;display:flex;align-items:center;gap:16px;padding:calc(env(safe-area-inset-top,0px) + 14px) var(--gutter) 10px}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;margin-right:auto}
+.brand b{font-family:var(--f-display);font-weight:400;font-size:1.3rem}
+.brand span{font-family:var(--f-mono);font-size:.54rem;letter-spacing:.42em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.pill{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--paper);font-family:var(--f-mono);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+.pill:hover{border-color:var(--paper)}
+#snd i{width:6px;height:6px;border-radius:50%;background:var(--muted)}
+#snd[aria-pressed="true"] i{background:var(--accent);box-shadow:0 0 8px var(--accent)}
+
+.stage{position:relative;z-index:1;display:grid;place-items:center;padding:8px var(--gutter) 0;min-height:calc(100svh - 150px)}
+/* Width chosen so the open spread (two 2:3 pages, so 4:3) always fits the screen height */
+.book-wrap{width:min(100%,1100px,calc((100svh - 190px) * 4 / 3));filter:drop-shadow(0 40px 60px rgba(0,0,0,.6))}
+@media (max-width:699px){.book-wrap{width:min(100%,calc((100svh - 210px) * 2 / 3))}}
+#book{margin-inline:auto}
+/* A closed book sits on one side of the spread; slide it to the middle while closed */
+.book-wrap{transition:transform .9s cubic-bezier(.2,.7,.1,1)}
+.book-wrap.at-front{transform:translateX(-25%)}
+.book-wrap.at-back{transform:translateX(25%)}
+
+.page{background:var(--page);color:#2a2622;overflow:hidden}
+.page.--left{background:linear-gradient(to left,#e4ddd0 0%,var(--page) 9%)}
+.page.--right{background:linear-gradient(to right,#e4ddd0 0%,var(--page) 9%)}
+.pg{height:100%;display:flex;flex-direction:column;padding:7% 7% 5%}
+.ph{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.ph img{display:block;max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 1px 2px rgba(0,0,0,.18),0 8px 18px -10px rgba(0,0,0,.35)}
+.cap{display:flex;justify-content:space-between;gap:10px;padding-top:4.5%;font-family:var(--f-mono);font-size:clamp(.42rem,1vw,.58rem);letter-spacing:.16em;text-transform:uppercase;color:#8a8174}
+
+.text{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12%;gap:4%}
+.text h2{margin:0;font-family:var(--f-display);font-weight:400;font-size:clamp(1.2rem,3vw,2.3rem);line-height:1.12;text-wrap:balance}
+.text h2 em{color:#a8834f}
+.text .ar{font-family:var(--f-ar);font-size:clamp(.95rem,2.2vw,1.5rem);color:#6e655a;direction:rtl}
+.text .rule{width:36px;height:1px;background:#a8834f}
+.text .btn{display:inline-flex;align-items:center;gap:.6em;min-height:42px;padding:.7em 1.3em;border-radius:999px;background:var(--ink);color:var(--paper);font-family:var(--f-mono);font-size:clamp(.55rem,1.1vw,.7rem);letter-spacing:.13em;text-transform:uppercase;text-decoration:none}
+.text .btn:hover{background:#a8834f}
+.text .link{font-family:var(--f-mono);font-size:clamp(.5rem,1vw,.62rem);letter-spacing:.14em;text-transform:uppercase;color:#6e655a}
+
+/* Covers: dark leather, gold foil */
+.page.cover,.page.cover.--left,.page.cover.--right{background:#14110e;color:var(--accent)}
+.cover .cv{position:absolute;inset:0;background:
+  radial-gradient(120% 80% at 30% 20%,rgba(255,235,200,.07),transparent 60%),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cover .frame{position:absolute;inset:6%;border:1px solid color-mix(in srgb,var(--accent) 55%,transparent)}
+.cover .frame::after{content:"";position:absolute;inset:6px;border:1px solid color-mix(in srgb,var(--accent) 25%,transparent)}
+.cover .in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:3%;padding:14%}
+.foil{background:linear-gradient(115deg,#9c7a45 0%,#f3dcae 28%,#c9a46a 46%,#fff0cf 60%,#b48d55 80%,#e9cf9c 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cover .name{font-family:var(--f-display);font-weight:400;font-size:clamp(1.8rem,5.4vw,3.8rem);line-height:.95;letter-spacing:-.01em}
+.cover .name em{display:block;font-style:italic}
+.cover .sub{font-family:var(--f-mono);font-size:clamp(.45rem,1vw,.62rem);letter-spacing:.42em;text-transform:uppercase}
+.cover .ar{font-family:var(--f-ar);font-size:clamp(.9rem,2vw,1.3rem)}
+.cover .mono-rw{font-family:var(--f-display);font-size:clamp(1.6rem,4vw,2.8rem)}
+.cover .mono-rw em{font-style:italic}
+
+.bar{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:14px;padding:14px var(--gutter) calc(env(safe-area-inset-bottom,0px) + 16px)}
+.round{width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--paper);font-size:1.05rem;cursor:pointer;display:grid;place-items:center}
+.round:hover{background:var(--paper);color:var(--ink)}
+.round:disabled{opacity:.3;cursor:default;background:transparent;color:var(--paper)}
+#count{min-width:9ch;text-align:center;color:var(--muted);font-variant-numeric:tabular-nums}
+.hint{position:relative;z-index:2;text-align:center;color:var(--muted);margin:0;padding:0 var(--gutter);transition:opacity .6s}
+.hint.gone{opacity:0}
+.noscript{padding:40px var(--gutter);text-align:center}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="Rami Wehbi Photography, back to the site"><b>Rami Wehbi</b><span>Photography</span></a>
+  <button class="pill" id="snd" type="button" aria-pressed="true"><i></i>Sound</button>
+  <a class="pill" href="/#work">← Back</a>
+</header>
+
+<main class="stage">
+  <div class="book-wrap">
+    <div id="book" aria-label="Wedding album. Use the arrow buttons or keys, or drag a page corner, to turn the pages.">
+      <div class="page cover" data-density="hard">
+        <div class="cv"></div><div class="frame"></div>
+        <div class="in">
+          <p class="sub foil">The Wedding Album</p>
+          <p class="name foil">Rami <em>Wehbi</em></p>
+          <p class="ar foil">ألبوم العرس</p>
+          <p class="sub foil">Lebanon · Est. in light</p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="text">
+          <p class="link">Chapter one</p>
+          <h2>Timeless moments, <em>beautifully captured.</em></h2>
+          <span class="rule"></span>
+          <p class="ar">لحظات ما بتتكرّر، مصوّرة بكل جمالها.</p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g13-800.webp" srcset="/img/w/g13-480.webp 480w, /img/w/g13-800.webp 800w, /img/w/g13-1200.webp 1200w, /img/w/g13-1718.webp 1718w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride in a full satin ball gown at the foot of a marble staircase" decoding="async"></div>
+          <p class="cap"><span>No. 01</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g9-800.webp" srcset="/img/w/g9-480.webp 480w, /img/w/g9-800.webp 800w, /img/w/g9-1200.webp 1200w, /img/w/g9-1718.webp 1718w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride reaching toward the camera, beaded corset gown and lace veil" decoding="async"></div>
+          <p class="cap"><span>No. 02</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g10-800.webp" srcset="/img/w/g10-480.webp 480w, /img/w/g10-800.webp 800w, /img/w/g10-1200.webp 1200w, /img/w/g10-1718.webp 1718w" sizes="(min-width:700px) 42vw, 88vw" alt="Smiling bride leaning on an antique gilded desk" decoding="async"></div>
+          <p class="cap"><span>No. 03</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g11-800.webp" srcset="/img/w/g11-480.webp 480w, /img/w/g11-800.webp 800w, /img/w/g11-1200.webp 1200w, /img/w/g11-1718.webp 1718w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride holding her lace veil in warm backlight on a grand staircase" decoding="async"></div>
+          <p class="cap"><span>No. 04</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g12-800.webp" srcset="/img/w/g12-480.webp 480w, /img/w/g12-800.webp 800w, /img/w/g12-1200.webp 1200w, /img/w/g12-1696.webp 1696w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride and groom face to face by a curtained window" decoding="async"></div>
+          <p class="cap"><span>No. 05</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g14-800.webp" srcset="/img/w/g14-480.webp 480w, /img/w/g14-800.webp 800w, /img/w/g14-1200.webp 1200w, /img/w/g14-1696.webp 1696w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride looking at the camera behind the groom in a black tuxedo" decoding="async"></div>
+          <p class="cap"><span>No. 06</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g15-800.webp" srcset="/img/w/g15-480.webp 480w, /img/w/g15-800.webp 800w, /img/w/g15-1200.webp 1200w, /img/w/g15-1696.webp 1696w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride resting her head on the groom's shoulder" decoding="async"></div>
+          <p class="cap"><span>No. 07</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g1-800.webp" srcset="/img/w/g1-480.webp 480w, /img/w/g1-800.webp 800w, /img/w/g1-1200.webp 1200w, /img/w/g1-1662.webp 1662w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride and groom laughing on a sunlit terrace in Beirut" decoding="async"></div>
+          <p class="cap"><span>No. 08</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g3-800.webp" srcset="/img/w/g3-480.webp 480w, /img/w/g3-800.webp 800w, /img/w/g3-1200.webp 1200w, /img/w/g3-1643.webp 1643w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride in a full gown in front of a white palace facade" decoding="async"></div>
+          <p class="cap"><span>No. 09</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g5-800.webp" srcset="/img/w/g5-480.webp 480w, /img/w/g5-800.webp 800w, /img/w/g5-1200.webp 1200w, /img/w/g5-1800.webp 1800w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride by candlelight on a grand staircase" decoding="async"></div>
+          <p class="cap"><span>No. 10</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g7-800.webp" srcset="/img/w/g7-480.webp 480w, /img/w/g7-800.webp 800w, /img/w/g7-1200.webp 1200w, /img/w/g7-1467.webp 1467w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride in a tulle gown in a sunlit glass room" decoding="async"></div>
+          <p class="cap"><span>No. 11</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g4-800.webp" srcset="/img/w/g4-480.webp 480w, /img/w/g4-800.webp 800w, /img/w/g4-1200.webp 1200w, /img/w/g4-1760.webp 1760w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride from behind, beaded open-back dress, palace steps" decoding="async"></div>
+          <p class="cap"><span>No. 12</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g6-800.webp" srcset="/img/w/g6-480.webp 480w, /img/w/g6-800.webp 800w, /img/w/g6-1200.webp 1200w, /img/w/g6-1800.webp 1800w" sizes="(min-width:700px) 42vw, 88vw" alt="Seated bridal portrait in soft window light" decoding="async"></div>
+          <p class="cap"><span>No. 13</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g8-800.webp" srcset="/img/w/g8-480.webp 480w, /img/w/g8-800.webp 800w, /img/w/g8-1200.webp 1200w, /img/w/g8-1467.webp 1467w" sizes="(min-width:700px) 42vw, 88vw" alt="Bride turning in a tulle gown, veil catching the light" decoding="async"></div>
+          <p class="cap"><span>No. 14</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pg">
+          <div class="ph"><img src="/img/w/g2-800.webp" srcset="/img/w/g2-480.webp 480w, /img/w/g2-800.webp 800w, /img/w/g2-1200.webp 1200w, /img/w/g2-1630.webp 1630w" sizes="(min-width:700px) 42vw, 88vw" alt="Street scene in an old European square, outdoor session" decoding="async"></div>
+          <p class="cap"><span>No. 15</span><span>Rami Wehbi</span></p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="text">
+          <h2>I capture the moments you <em>never planned</em> to pose for.</h2>
+          <span class="rule"></span>
+          <p class="ar">بصوّر اللحظات اللي ما خطّطتوا تتصوّروها.</p>
+        </div>
+      </div>
+      <div class="page">
+        <div class="text">
+          <p class="link">Your story, next</p>
+          <h2>An album like this, <em>for your day.</em></h2>
+          <p class="ar">ألبوم متل هيدا، لنهار عرسكم.</p>
+          <a class="btn" href="https://wa.me/96171560613?text=Hello%20Rami%2C%20I%20saw%20the%20wedding%20album%20on%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20my%20date." target="_blank" rel="noopener">Ask on WhatsApp</a>
+          <a class="link" href="/#packages">See the packages →</a>
+        </div>
+      </div>
+      <div class="page cover" data-density="hard">
+        <div class="cv"></div><div class="frame"></div>
+        <div class="in"><p class="mono-rw foil">R<em>W</em></p><p class="sub foil">ramiwehbi.com</p></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<p class="hint mono" id="hint">Drag a corner or tap the page to turn it</p>
+<nav class="bar" aria-label="Album pages">
+  <button class="round" id="prev" type="button" aria-label="Previous page" disabled>←</button>
+  <p class="mono" id="count" aria-live="polite">Cover</p>
+  <button class="round" id="next" type="button" aria-label="Next page">→</button>
+</nav>
+<noscript><p class="noscript">Turn on JavaScript to flip through the album, or <a href="/#work">see the portfolio</a>.</p></noscript>
+
+<script src="/album/page-flip.browser.js"></script>
+<script>
+(function(){
+'use strict';
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var bookEl=document.getElementById('book'),prev=document.getElementById('prev'),next=document.getElementById('next'),count=document.getElementById('count'),hint=document.getElementById('hint');
+if(!window.St){hint.textContent='The album could not load. See the portfolio instead.';return;}
+
+var flip=new St.PageFlip(bookEl,{
+  width:500,height:750,size:'stretch',
+  minWidth:200,maxWidth:600,minHeight:300,maxHeight:900,
+  showCover:true,usePortrait:true,mobileScrollSupport:true,
+  maxShadowOpacity:.55,flippingTime:reduce?300:900,swipeDistance:24
+});
+flip.loadFromHTML(document.querySelectorAll('#book .page'));
+
+var total=flip.getPageCount();
+function label(i){
+  if(i===0)return 'Cover';
+  if(i>=total-1)return 'Back cover';
+  if(flip.getOrientation()==='landscape'&&i+1<total-1)return i+'–'+(i+1)+' / '+(total-2);
+  return i+' / '+(total-2);
+}
+var wrap=document.querySelector('.book-wrap');
+function update(){
+  var i=flip.getCurrentPageIndex(),land=flip.getOrientation()==='landscape';
+  wrap.classList.toggle('at-front',land&&i===0);
+  wrap.classList.toggle('at-back',land&&i>=total-1);
+  count.textContent=label(i);
+  prev.disabled=i<=0;next.disabled=i>=total-1;
+}
+prev.addEventListener('click',function(){flip.flipPrev();});
+next.addEventListener('click',function(){flip.flipNext();});
+document.addEventListener('keydown',function(e){
+  if(e.key==='ArrowRight')flip.flipNext();
+  else if(e.key==='ArrowLeft')flip.flipPrev();
+});
+
+/* Paper sound, synthesized (no audio files): a short filtered noise sweep */
+var sndBtn=document.getElementById('snd'),soundOn=true,ctx=null;
+try{if(localStorage.getItem('rw-album-sound')==='off')soundOn=false;}catch(e){}
+sndBtn.setAttribute('aria-pressed',String(soundOn));
+sndBtn.addEventListener('click',function(){
+  soundOn=!soundOn;sndBtn.setAttribute('aria-pressed',String(soundOn));
+  try{localStorage.setItem('rw-album-sound',soundOn?'on':'off');}catch(e){}
+});
+function paper(){
+  if(!soundOn)return;
+  try{
+    ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();
+    var len=.42,n=Math.floor(ctx.sampleRate*len),buf=ctx.createBuffer(1,n,ctx.sampleRate),d=buf.getChannelData(0);
+    for(var i=0;i<n;i++){var t=i/n;d[i]=(Math.random()*2-1)*Math.pow(Math.sin(Math.PI*t),1.6)*(.6+.4*Math.random());}
+    var src=ctx.createBufferSource();src.buffer=buf;
+    var bp=ctx.createBiquadFilter();bp.type='bandpass';bp.Q.value=.7;
+    var now=ctx.currentTime;bp.frequency.setValueAtTime(900,now);bp.frequency.exponentialRampToValueAtTime(3800,now+len);
+    var g=ctx.createGain();g.gain.value=.22;
+    src.connect(bp);bp.connect(g);g.connect(ctx.destination);src.start();
+  }catch(e){}
+}
+
+flip.on('changeState',function(e){if(e.data==='flipping')paper();});
+flip.on('flip',function(){update();hint.classList.add('gone');});
+flip.on('changeOrientation',update);
+update();
+})();
+</script>
+</body>
+</html>

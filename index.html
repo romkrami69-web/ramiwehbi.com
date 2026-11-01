@@ -200,6 +200,9 @@ html[dir="rtl"] .phone{text-align:right}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
 .chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;padding:0 16px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--paper);cursor:pointer;transition:background .3s,color .3s,border-color .3s}
 .chip span{color:var(--muted);font-variant-numeric:tabular-nums}
+.chip-album{text-decoration:none;border-color:color-mix(in srgb,var(--accent) 60%,transparent);color:var(--accent)}
+.chip-album:hover{background:var(--accent);color:var(--ink)}
+.chip-album:hover span{color:var(--ink)}
 .chip[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
 .chip[aria-pressed="true"] span{color:color-mix(in srgb,var(--ink) 60%,transparent)}
 .sheet{columns:1;column-gap:20px}
@@ -661,6 +664,7 @@ html.intro{overflow:hidden}
       <button class="chip" type="button" data-filter="Wedding" aria-pressed="false">Wedding <span>08</span></button>
       <button class="chip" type="button" data-filter="Portrait" aria-pressed="false">Portrait <span>06</span></button>
       <button class="chip" type="button" data-filter="Outdoor" aria-pressed="false">Outdoor <span>01</span></button>
+      <a class="chip chip-album" href="/album/">3D album <span>→</span></a>
     </div>
     <div class="sheet" id="sheet">
       <figure class="card" data-cat="Portrait" data-i="8" style="view-transition-name:f9">
@@ -1238,7 +1242,7 @@ window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAni
 onScroll();
 
 /* ---------- Portfolio filter ---------- */
-var cards=$$('.card'),chips=$$('.chip');
+var cards=$$('.card'),chips=$$('.chip[data-filter]');
 chips.forEach(function(ch){
   ch.addEventListener('click',function(){
     var f=ch.dataset.filter;
@@ -1732,7 +1736,7 @@ var AR={
   '.approach-cols p:nth-child(1)':'ما في لحظات مصطنعة. بركّز على المشاعر الحقيقية، والبورتريه الأنيق، والتفاصيل الصغيرة اللي بتخلّي يومكم لا يُنسى.',
   '.approach-cols p:nth-child(2)':'من الأعراس للجلسات الخارجية، كل صورة بتتعدّل بعناية لتطلع نظيفة، خالدة، وبإحساس سينمائي.',
   '.work .eyebrow':'لقطات مختارة<span class="sec-num">02</span>','#work-h':'<span class="rv-line"><span class="l"><em>الأعمال</em></span></span>','.work .sec-note':'مختارات من تصوير الأعراس والبورتريه والجلسات الخارجية.',
-  '.chip[data-filter="all"]':'الكل <span>15</span>','.chip[data-filter="Wedding"]':'أعراس <span>08</span>','.chip[data-filter="Portrait"]':'بورتريه <span>06</span>','.chip[data-filter="Outdoor"]':'خارجي <span>01</span>',
+  '.chip[data-filter="all"]':'الكل <span>15</span>','.chip[data-filter="Wedding"]':'أعراس <span>08</span>','.chip[data-filter="Portrait"]':'بورتريه <span>06</span>','.chip-album':'ألبوم 3D <span>←</span>','.chip[data-filter="Outdoor"]':'خارجي <span>01</span>',
   '.story-head .eyebrow':'يوم عرسكم<span class="sec-num">03</span>','#st-h':'<span class="rv-line"><span class="l">يوم واحد، <em>محكي بالضوء.</em></span></span>',
   '.panel:nth-child(1) h3':'الهدوء قبل البداية.','.panel:nth-child(1) p:not(.mono)':'الفستان، التفاصيل، والناس اللي ربّوكم. بوصل بكير وبضلّ بعيد عن الطريق.',
   '.panel:nth-child(2) h3':'لحظة "نعم".','.panel:nth-child(2) p:not(.mono)':'زاويتين، بلا فلاش، ولا شي مرتّب. العهود، النظرة، وأوّل قبلة.',
