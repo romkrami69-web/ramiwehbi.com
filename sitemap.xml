@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ramiwehbi.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ramiwehbi.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ramiwehbi.com/ar/"/>
     <lastmod>2026-11-01</lastmod>
     <image:image><image:loc>https://ramiwehbi.com/img/hero.jpg</image:loc></image:image>
     <image:image><image:loc>https://ramiwehbi.com/img/about.jpg</image:loc></image:image>
@@ -14,5 +16,11 @@
     <image:image><image:loc>https://ramiwehbi.com/img/g6.jpg</image:loc></image:image>
     <image:image><image:loc>https://ramiwehbi.com/img/g7.jpg</image:loc></image:image>
     <image:image><image:loc>https://ramiwehbi.com/img/g8.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramiwehbi.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ramiwehbi.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ramiwehbi.com/ar/"/>
+    <lastmod>2026-11-01</lastmod>
   </url>
 </urlset>

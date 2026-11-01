@@ -8,6 +8,9 @@
     <meta name="author" content="Rami Wehbi Photography">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="https://ramiwehbi.com/">
+    <link rel="alternate" hreflang="en" href="https://ramiwehbi.com/">
+    <link rel="alternate" hreflang="ar" href="https://ramiwehbi.com/ar/">
+    <link rel="alternate" hreflang="x-default" href="https://ramiwehbi.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Rami Wehbi Photography | Wedding Photographer in Lebanon">
     <meta property="og:description" content="Wedding, portrait and outdoor photography in Lebanon by Rami Wehbi.">
@@ -102,7 +105,8 @@ section{scroll-margin-top:84px}
 .nav-links a:hover{color:var(--paper)}
 .tog{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:999px;min-height:36px;padding:0 12px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:color .3s,border-color .3s}
 .tog:hover{color:var(--paper);border-color:var(--line-2)}
-#lang-btn{font-family:var(--f-ar-body,var(--f-mono));font-size:.8rem;letter-spacing:0;text-transform:none}
+#lang-btn{font-family:var(--f-ar-body,var(--f-mono));font-size:.8rem;letter-spacing:0;text-transform:none;text-decoration:none}
+html[lang="ar"] .swipe-hint,html[lang="ar"] .drag-hint,html[lang="ar"] .afopen{font-family:var(--f-ar-body);letter-spacing:0;text-transform:none;font-size:.8rem}
 #snd-btn i{width:6px;height:6px;border-radius:50%;background:var(--muted)}
 #snd-btn[aria-pressed="true"]{color:var(--paper)}
 #snd-btn[aria-pressed="true"] i{background:var(--accent);box-shadow:0 0 8px var(--accent)}
@@ -585,7 +589,7 @@ html.intro{overflow:hidden}
     <a href="#packages">Packages</a>
     <a href="#feedback">Feedback</a>
   </nav>
-  <button class="tog" id="lang-btn" type="button" aria-label="Switch language">عربي</button>
+  <a class="tog" id="lang-btn" href="/ar/" hreflang="ar" lang="ar" aria-label="النسخة العربية">عربي</a>
   <button class="tog" id="snd-btn" type="button" aria-pressed="false" aria-label="Sound"><i></i>Sound</button>
   <a class="btn btn-small" href="#contact" data-i="nav.book">Book a shoot</a>
   <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mnav">Menu</button>
@@ -878,10 +882,10 @@ html.intro{overflow:hidden}
         <div class="field">
           <label for="f-type">Session type</label>
           <select id="f-type" name="type">
-            <option>Wedding</option>
-            <option>Outdoor Session</option>
-            <option>Portrait Session</option>
-            <option>Reel</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Outdoor Session">Outdoor Session</option>
+            <option value="Portrait Session">Portrait Session</option>
+            <option value="Reel">Reel</option>
           </select>
         </div>
         <div class="field">
@@ -1110,18 +1114,31 @@ function specFor(id){
   for(var i=0;i<PHOTOS.length;i++)if(PHOTOS[i].id===id)return PHOTOS[i];
   return EXTRA[id];
 }
+var WIDTHS={about:[480,800,1200,1467],featured:[480,800,1200,1280],g1:[480,800,1200,1662],g2:[480,800,1200,1630],g3:[480,800,1200,1643],g4:[480,800,1200,1760],g5:[480,800,1200,1800],g6:[480,800,1200,1800],g7:[480,800,1200,1467],g8:[480,800,1200,1467],hero:[480,800,1200,1467]};
+function sizesFor(img){
+  if(img.closest('.card'))return '(min-width:980px) 30vw, 50vw';
+  if(img.closest('.panel-wide'))return '(min-width:880px) 46vw, 92vw';
+  if(img.closest('.panel'))return '(min-width:880px) 26vw, 78vw';
+  return '(min-width:880px) 500px, 92vw';
+}
 function source(id){
   if(SOURCES[id])return SOURCES[id];
   var spec=specFor(id),s;
   if(EMBEDDED[id])s={src:EMBEDDED[id]};
-  else if(onSite)s={src:'img/'+id+'.jpg',ring:'img/ring/'+id+'.jpg'};
+  else if(onSite){
+    /* WebP in several widths (img/w/), so each screen downloads only the size it needs */
+    var ws=WIDTHS[id]||[800],big=ws[ws.length-1];
+    s={src:'/img/w/'+id+'-'+big+'.webp',srcset:ws.map(function(w){return '/img/w/'+id+'-'+w+'.webp '+w+'w';}).join(','),ring:'/img/ring/'+id+'.webp'};
+  }
   else{var c=paint(spec,spec.w||800,spec.h||1000);s={src:c.toDataURL('image/jpeg',.88),canvas:c};}
   SOURCES[id]=s;return s;
 }
 $$('img[data-photo]').forEach(function(img){
   var below=img.getBoundingClientRect().top>window.innerHeight*1.5;
   if(below){img.loading='lazy';img.decoding='async';}
-  img.src=source(img.dataset.photo).src;
+  var s=source(img.dataset.photo);
+  if(s.srcset){img.sizes=sizesFor(img);img.srcset=s.srcset;}
+  img.src=s.src;
 });
 var stripEl=$('#strip');stripEl.innerHTML+=stripEl.innerHTML;
 
@@ -1229,8 +1246,9 @@ cards.forEach(function(c){$('.card-in',c).addEventListener('click',function(){op
 var fName=$('#f-name'),fDate=$('#f-date'),fStory=$('#f-story'),waSend=$('#wa-send'),nameErr=$('#f-name-err');
 function fmtDate(d){try{return new Date(d+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});}catch(e){return d;}}
 function updateWa(){
-  var n=fName.value.trim(),msg='Hello Rami'+(n?', this is '+n:'')+'. I would like to book: '+typeSel.value+'.';
-  if(fDate.value)msg+='\nDate: '+fmtDate(fDate.value);
+  var n=fName.value.trim(),ar=curLang==='ar',type=typeSel.options[typeSel.selectedIndex].text;
+  var msg=ar?'مرحبا رامي'+(n?'، أنا '+n:'')+'. بدّي احجز: '+type+'.':'Hello Rami'+(n?', this is '+n:'')+'. I would like to book: '+type+'.';
+  if(fDate.value)msg+=(ar?'\nالتاريخ: ':'\nDate: ')+fmtDate(fDate.value);
   if(fStory.value.trim())msg+='\n'+fStory.value.trim();
   waSend.href='https://wa.me/96171560613?text='+encodeURIComponent(msg);
 }
@@ -1703,7 +1721,6 @@ function setLang(l){
   curLang=l;var dict=l==='ar'?AR:EN;
   Object.keys(dict).forEach(function(sel){var el=$(sel);if(!el)return;el.innerHTML=dict[sel];});
   document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
-  langBtn.textContent=l==='ar'?'EN':'عربي';
   if(l==='ar'){var o=$('#f-type').options;o[0].text='عرس';o[1].text='جلسة خارجية';o[2].text='جلسة بورتريه';o[3].text='ريل';}
   else{var o2=$('#f-type').options;o2[0].text='Wedding';o2[1].text='Outdoor Session';o2[2].text='Portrait Session';o2[3].text='Reel';}
   words=$$('#statement .w');$$('.rv').forEach(function(el){el.classList.remove('pend');});
@@ -1711,8 +1728,11 @@ function setLang(l){
   try{localStorage.setItem('rw-lang',l);}catch(e){}
   updateWa();onScroll();
 }
-langBtn.addEventListener('click',function(){setLang(curLang==='ar'?'en':'ar');});
-try{var savedLang=localStorage.getItem('rw-lang');if(savedLang==='ar')setLang('ar');}catch(e){}
+/* each language has its own page (/ and /ar/) so search engines can index both */
+var pageLang=document.documentElement.lang==='ar'?'ar':'en';
+langBtn.addEventListener('click',function(){try{localStorage.setItem('rw-lang',pageLang==='ar'?'en':'ar');}catch(e){}});
+if(pageLang==='ar')setLang('ar');
+else{try{if(localStorage.getItem('rw-lang')==='ar')location.replace('/ar/'+location.hash);}catch(e){}}
 
 /* ---------- Sound (opt-in, synthesized, no files) ---------- */
 var snd={on:false,ctx:null},sndBtn=$('#snd-btn');
