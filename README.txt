@@ -21,3 +21,9 @@ Images:
   The .jpg files stay for link previews and search engines.
   If you add or replace a photo, regenerate its WebP sizes and update WIDTHS
   in index.html.
+
+3D album:
+  album/index.html  page-flip wedding album (photos in the order of the pages)
+  album/page-flip.browser.js  StPageFlip 2.0.7 (MIT), self-hosted
+  To add a photo to the album, copy one of the photo <div class="page"> blocks
+  and change the file names. Keep the total number of pages even.
